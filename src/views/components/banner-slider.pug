@@ -1,0 +1,14 @@
+.container
+    .banner-slider.swiper
+        .banner-slider__wrapper.swiper-wrapper
+            +loop(4)
+                .banner-slider__slide.bootstrap-wrapper.swiper-slide
+                    .row
+                        .col-5
+                            h2.banner-slider__title
+                                | Реализуем Вашу мечту
+                                br
+                                | о загородном доме
+                        .col-7
+                            img(src=require('../../public/images/banner.jpg')).banner-slider__image
+        .banner-slider__pagination.swiper-pagination

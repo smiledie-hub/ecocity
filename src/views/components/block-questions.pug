@@ -1,0 +1,61 @@
+.block-questions
+    .block-questions__background
+        img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
+        img(src=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
+    .container-small
+        .block-questions__wrapper
+            h2.block-questions__title.title Подберем дом за 5 минут, Дадим скидку 5%
+            .block-questions__content
+                .bootstrap-wrapper
+                    .row
+                        .col-8
+                            .block-questions-test
+                                h3.block-questions-test__title Когда вы планируете пользоваться домом?
+                                .block-questions-test__content
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions" value="Жить в нём постоянно" checked).block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions-item-1.jpg')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text Жить в нём постоянно
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions" value="Летом").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions-item-2.jpg')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text Летом
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions" value="По выходным и летом и зимой").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions-item-3.jpg')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text По выходным и летом и зимой
+                                .block-questions-test__footer
+                                    .block-questions-test__buttons
+                                        div.block-questions-test__buttons-wrapper
+                                            button.btn
+                                                +icon('arrow-small-left')
+                                                | Назад
+                                            button.btn
+                                                | Далее
+                                                +icon('arrow_right')
+                                    .block-questions-test__sale
+                                        +icon('percent')
+                                        div
+                                            p
+                                                | Ваша текущая скидка:
+                                                span 1%
+                                            progress(max="5" value="1")
+                        .col-4
+                            .block-questions-help
+                                img(src=require('../../public/images/block-questions-help.png')).block-questions-help__image
+                                .block-questions-help__wrapper
+                                    +icon('chat-plus')
+                                    div
+                                        p.block-questions-help__title Важная информация!
+                                        p.block-questions-help__text Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.
+                                .block-questions-help__block
+                                    p.block-questions-help__question
+                                        | вопрос
+                                        span 1/5

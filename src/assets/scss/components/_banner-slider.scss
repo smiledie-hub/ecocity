@@ -1,0 +1,60 @@
+@import "../spec/variables";
+@import "../spec/mixins";
+
+.banner-slider {
+  padding-top: 58px;
+  padding-bottom: 52px;
+
+  &__title {
+    font-family: $font-proxima;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    max-width: 482px;
+  }
+
+  &__image {
+    border-radius: 18px;
+    max-width: 100%;
+  }
+
+  .swiper-pagination {
+    z-index: 1;
+    width: auto;
+    display: table;
+    bottom: 52px + 26px;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #CBD8A4;
+      border-radius: 2px;
+      opacity: 1;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        width: 14px;
+        height: 10px;
+        background: #B2D551;
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+      }
+
+      &.swiper-pagination-bullet-active {
+        width: 27px;
+        position: relative;
+        transition: 300ms;
+
+        &:before {
+          left: 0;
+        }
+      }
+    }
+  }
+}

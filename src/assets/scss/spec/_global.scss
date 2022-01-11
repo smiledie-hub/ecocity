@@ -1,9 +1,9 @@
 @import "variables";
 
-html, body {
-  font-family: $font;
-}
-
-body {
-
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }

@@ -1,9 +1,35 @@
 extends ../layout/default
+include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
     - pageClass = 'home'
     - headTitle = 'Mainpage'
 block content
-    .container-small
-        p Lorem ipsum.
+    include ../components/banner-slider
+    include ../components/block-questions
+    include ../components/block-projects
+    .block-suitable
+        img(src=require('../../public/images/suitable.jpg')).block-suitable__background
+        .container-small
+            .bootstrap-wrapper.block-suitable__wrapper
+                .row.block-suitable__row
+                    .col-6
+                        .block-suitable__image
+                            img(src=require('../../public/images/suitable-image.jpg'))
+                            .block-suitable__item.block-suitable__item--first
+                                p У вас есть свои идеи и наброски?
+                            .block-suitable__item.block-suitable__item--last
+                                p Мы разработаем для вас проект бесплатно
+                    .col-6
+                        h2.block-suitable__title.title Не нашли подходящий проект среди типовых?
+                        p.block-suitable__text Мы сделаем для вас индивидуальный проект бесплатно
+
+                        .block-suitable__buttons
+                            a(href="#").btn.btn--primary
+                                | Записаться
+                                br
+                                | к архитектору
+                            a(href="#").btn.btn--primary-outline о проектировании
+
+
