@@ -2,36 +2,99 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         grid-gap: 36px;
         height: 102px;
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    &__order {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: 0.055em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #939393;
+        margin-top: 4px;
+        transition: color 300ms;
+
+        &:hover {
+            color: #272727;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 140%;
+        color: #272727;
+        font-style: normal;
+        font-weight: 500;
     }
 
     &__logo {
         svg {
-            width: 264px;
-            height: 45px;
+            width: 99px;
+            height: 63px;
+        }
+    }
+
+    &__email {
+        .icon {
+            position: relative;
+            top: 2px;
+            width: 18px;
+            height: 14px;
+            margin-right: 13px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 13px;
+        }
+
+        & > span {
+            display: flex;
+            flex-direction: column;
         }
     }
 
     &__block {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 100px;
+    }
+
     &__navs {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        gap: 0 40px;
+        padding: 30px 0;
+        border-bottom: 1px solid #B2D551;
 
         a {
-            font-weight: bold;
-            padding: 14px 24px 16px;
-            border-radius: 10px;
-            transition: background-color 300ms;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #818181;
+            transition: color 300ms;
 
             &:hover {
-                background-color: #F6F6F8;
+                color: #272727;
             }
         }
     }
