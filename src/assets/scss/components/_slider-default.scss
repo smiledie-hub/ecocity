@@ -1,0 +1,11 @@
+.slider-default {
+  user-select: none;
+
+  &__wrapper {
+    cursor: grab;
+  }
+
+  &__pagination {
+    position: static;
+  }
+}

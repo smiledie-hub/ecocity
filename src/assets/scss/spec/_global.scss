@@ -63,3 +63,30 @@ a {
     background-image: linear-gradient(180deg, #272727 -10.82%, #6B6B6B 112.69%);
   }
 }
+
+.ul {
+  padding-left: 20px;
+
+  li {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 0.8em;
+      left: -20px;
+      transform: translateY(-50%);
+      background: linear-gradient(321.66deg, #B2D551 19.32%, #C4EF4C 75.16%);
+      box-shadow: 0 0 8px #B5DC47;
+      margin-right: 11px;
+    }
+  }
+}

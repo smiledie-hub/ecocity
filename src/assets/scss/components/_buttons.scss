@@ -26,4 +26,14 @@
     filter: drop-shadow(0px 4px 15px rgba(178, 213, 81, 0.5));
     border-radius: 8px;
   }
+
+  &--blue {
+    background: linear-gradient(95.13deg, #22A7D6 -5.37%, #57C7EE 106.68%);
+    box-shadow: 0 4px 15px rgba(41, 172, 218, 0.5);
+    border-radius: 8px;
+    color: #fff;
+    height: 67px;
+    padding: 24px 40px;
+    display: inline-flex;
+  }
 }

@@ -1,11 +1,21 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Pagination } from 'swiper';
 
 export default {
     init() {
 
     },
     finalize() {
-        const swiper = new Swiper('.banner-slider', {
+        new Swiper('.slider-default', {
+            spaceBetween: 40,
+            slidesPerView: 3,
+            modules: [ Pagination ],
+            pagination: {
+                clickable: true,
+                el: '.slider-default__pagination',
+            },
+        })
+
+        new Swiper('.banner-slider', {
             spaceBetween: 40,
             slidesPerView: 1,
             modules: [ Pagination ],

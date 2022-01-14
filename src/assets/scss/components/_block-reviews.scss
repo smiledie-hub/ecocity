@@ -1,0 +1,37 @@
+.block-reviews {
+  padding: 85px 0;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+
+    .icon {
+      width: 111px;
+      height: 95px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+}
