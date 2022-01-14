@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack serve --config ./webpack/Parts/DevPart.js",
     "build": "set NODE_ENV=production & webpack --config ./webpack/Parts/ProdPart.js",
-    "build:dev": "webpack --config ./webpack/Parts/DevPart.js"
+    "build:dev": "webpack --config ./webpack/Parts/DevPart.js",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "browserslist": [
     "> 1%",
