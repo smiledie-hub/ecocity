@@ -1,9 +1,65 @@
 @import "variables";
 
+h1, .h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+}
+
+h2, .h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 140%;
+}
+
+h3, .h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+h4, .h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+h5, .h5, p, .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+h6, .h6 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
 .title {
   font-weight: 700;
   font-size: 32px;
   line-height: 140%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+
+  &--gradient {
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #272727;
+    background-image: linear-gradient(180deg, #272727 -10.82%, #6B6B6B 112.69%);
+  }
 }
