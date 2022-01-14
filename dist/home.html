@@ -1,518 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mainpage - HandyDealer</title>
-  <script defer src="/assets/js/main.bundle.js"></script><link href="/assets/css/style.css" rel="stylesheet"></head>
-  <body class="page-home">
-    <header class="header">
-      <div class="container">
+    <script defer src="assets/js/main.bundle.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="page-home">
+<header class="header">
+    <div class="container">
         <div class="header__wrapper">
-          <div class="header__logo"><a href="/">
-                  <svg class="icon icon--logo">
+            <div class="header__logo"><a href="/">
+                <svg class="icon icon--logo">
                     <use xlink:href="#logo"></use>
-                  </svg></a></div>
-          <div class="header__block">
-            <div class="header__info">
-              <div class="header__email">
-                    <svg class="icon icon--mail">
-                      <use xlink:href="#mail"></use>
-                    </svg><a class="header__link" href="mailto:info@eco-city.spb.ru">info@eco-city.spb.ru</a>
-              </div>
-              <div class="header__phone">
-                    <svg class="icon icon--phone">
-                      <use xlink:href="#phone"></use>
-                    </svg><span><a class="header__link" href="tel:+78129506050">+7 (812) 950-60-50</a><a class="header__order" href="#">Заказать звонок</a></span>
-              </div>
+                </svg>
+            </a></div>
+            <div class="header__block">
+                <div class="header__info">
+                    <div class="header__email">
+                        <svg class="icon icon--mail">
+                            <use xlink:href="#mail"></use>
+                        </svg>
+                        <a class="header__link" href="mailto:info@eco-city.spb.ru">info@eco-city.spb.ru</a>
+                    </div>
+                    <div class="header__phone">
+                        <svg class="icon icon--phone">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <span><a class="header__link" href="tel:+78129506050">+7 (812) 950-60-50</a><a
+                                class="header__order" href="#">Заказать звонок</a></span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <nav class="header__navs"><a class="current" href="#">Типовые проекты</a><a href="#">Построенные дома</a><a href="#">Технология Эко-Сити</a><a href="#">Индивидуальное проектирование</a><a href="#">Отзывы</a><a href="#">О нас</a><a href="#">Контакты</a></nav>
-      </div>
-    </header>
-    <div class="page-home__blocks">
-      <div class="page-home__slider">
-        <div class="container">
-          <div class="banner-slider swiper">
-            <div class="banner-slider__wrapper swiper-wrapper">
-              <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
-                <div class="row">
-                  <div class="col-5">
-                    <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о загородном доме</h2>
-                  </div>
-                  <div class="col-7"><img class="banner-slider__image" src="/public/images/banner.jpg"></div>
-                </div>
-              </div>
-              <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
-                <div class="row">
-                  <div class="col-5">
-                    <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о загородном доме</h2>
-                  </div>
-                  <div class="col-7"><img class="banner-slider__image" src="/public/images/banner.jpg"></div>
-                </div>
-              </div>
-              <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
-                <div class="row">
-                  <div class="col-5">
-                    <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о загородном доме</h2>
-                  </div>
-                  <div class="col-7"><img class="banner-slider__image" src="/public/images/banner.jpg"></div>
-                </div>
-              </div>
-              <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
-                <div class="row">
-                  <div class="col-5">
-                    <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о загородном доме</h2>
-                  </div>
-                  <div class="col-7"><img class="banner-slider__image" src="/public/images/banner.jpg"></div>
-                </div>
-              </div>
-            </div>
-            <div class="banner-slider__pagination swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__questions">
-        <div class="block-questions">
-          <div class="block-questions__background"><img class="block-questions__background-left" src="/public/images/block-questions__left.png"><img class="block-questions__background-bottom" src="/public/images/block-questions__bottom.png"><img class="block-questions__background-right" src="/public/images/block-questions__right.png"></div>
-          <div class="container-small">
-            <div class="block-questions__wrapper">
-              <h2 class="block-questions__title title title--gradient">Подберем дом за 5 минут, Дадим скидку 5%</h2>
-              <div class="block-questions__content">
-                <div class="bootstrap-wrapper">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="block-questions-test">
-                        <h3 class="block-questions-test__title">Когда вы планируете пользоваться домом?</h3>
-                        <div class="block-questions-test__content">
-                          <label class="block-questions-test-item">
-                            <input class="block-questions-test-item__radio" type="radio" name="questions" value="Жить в нём постоянно" checked><img class="block-questions-test-item__image" src="/public/images/block-questions-item-1.jpg">
-                            <div class="block-questions-test-item__wrapper"><span class="block-questions-test-item__icon"></span>
-                              <p class="block-questions-test-item__text">Жить в нём постоянно</p>
-                            </div>
-                          </label>
-                          <label class="block-questions-test-item">
-                            <input class="block-questions-test-item__radio" type="radio" name="questions" value="Летом"><img class="block-questions-test-item__image" src="/public/images/block-questions-item-2.jpg">
-                            <div class="block-questions-test-item__wrapper"><span class="block-questions-test-item__icon"></span>
-                              <p class="block-questions-test-item__text">Летом</p>
-                            </div>
-                          </label>
-                          <label class="block-questions-test-item">
-                            <input class="block-questions-test-item__radio" type="radio" name="questions" value="По выходным и летом и зимой"><img class="block-questions-test-item__image" src="/public/images/block-questions-item-3.jpg">
-                            <div class="block-questions-test-item__wrapper"><span class="block-questions-test-item__icon"></span>
-                              <p class="block-questions-test-item__text">По выходным и летом и зимой</p>
-                            </div>
-                          </label>
-                        </div>
-                        <div class="block-questions-test__footer">
-                          <div class="block-questions-test__buttons">
-                            <div class="block-questions-test__buttons-wrapper">
-                              <button class="btn">
-                                    <svg class="icon icon--arrow-small-left">
-                                      <use xlink:href="#arrow-small-left"></use>
-                                    </svg>Назад
-                              </button>
-                              <button class="btn">Далее
-                                    <svg class="icon icon--arrow_right">
-                                      <use xlink:href="#arrow_right"></use>
-                                    </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="block-questions-test__sale">
-                                <svg class="icon icon--percent">
-                                  <use xlink:href="#percent"></use>
-                                </svg>
-                            <div>
-                              <p>Ваша текущая скидка:<span>1%</span></p>
-                              <progress max="5" value="1"></progress>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="block-questions-help"><img class="block-questions-help__image" src="/public/images/block-questions-help.png">
-                        <div class="block-questions-help__wrapper">
-                              <svg class="icon icon--chat-plus">
-                                <use xlink:href="#chat-plus"></use>
-                              </svg>
-                          <div>
-                            <p class="block-questions-help__title">Важная информация!</p>
-                            <p class="block-questions-help__text">Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.</p>
-                          </div>
-                        </div>
-                        <div class="block-questions-help__block">
-                          <p class="block-questions-help__question">вопрос<span>1/5</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__projects">
-        <div class="block-projects">
-          <div class="container-small">
-            <h2 class="block-projects__title title title--gradient">Наши проекты</h2>
-            <div class="block-projects__items">
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/1.jpg">
-                    <p class="badge project__badge badge--blue">НОВИНКА</p>
-                  </div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/2.jpg">
-                    <p class="badge project__badge badge--red">АКЦИЯ</p>
-                  </div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/3.jpg">
-                    <p class="badge project__badge badge--green">ХИТ</p>
-                  </div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/4.jpg"></div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/5.jpg"></div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-              <article class="project"><a class="project__link" href="#"></a>
-                <div class="project__wrapper">
-                  <div class="project__header"><img class="project__image" src="/public/images/projects/6.jpg"></div>
-                  <div class="project__main">
-                    <h3 class="project__title">Осиновая роща</h3>
-                    <p class="project__area">
-                          <svg class="icon icon--area">
-                            <use xlink:href="#area"></use>
-                          </svg>Общая площадь:<span>53.12 м2</span>
-                    </p>
-                    <p class="project__price">1 974 780 ₽</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="block-projects__footer"><a class="btn btn--primary" href="#">Смотреть все проекты</a><a class="btn btn--primary-outline" href="#">Как заказать дом</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__suitable">
-        <div class="block-suitable"><img class="block-suitable__background" src="/public/images/suitable.jpg">
-          <div class="container-small">
-            <div class="bootstrap-wrapper block-suitable__wrapper">
-              <div class="row block-suitable__row">
-                <div class="col-6">
-                  <div class="block-suitable__image"><img src="/public/images/suitable-image.jpg">
-                    <div class="block-suitable__item block-suitable__item--first">
-                      <p>У вас есть свои идеи и наброски?</p>
-                    </div>
-                    <div class="block-suitable__item block-suitable__item--last">
-                      <p>Мы разработаем для вас проект бесплатно</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <h2 class="block-suitable__title title title--gradient">Не нашли подходящий проект среди типовых?</h2>
-                  <p class="block-suitable__text">Мы сделаем для вас индивидуальный проект бесплатно</p>
-                  <div class="block-suitable__buttons"><a class="btn btn--primary" href="#">Записаться<br>к архитектору</a><a class="btn btn--primary-outline" href="#">о проектировании</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__why">
-        <div class="block-why">
-          <div class="block-why__container container-small">
-            <h2 class="block-why__title title">Почему Эко-сити?</h2>
-          </div>
-          <div class="block-why__wrapper">
-            <div class="block-why__background"><img src="/public/images/block-why__background.jpg"></div>
-            <div class="block-why__container container-small">
-              <div class="block-why__content">
-                <div class="block-why__center"><span class="block-why__circle"></span>
-                  <p class="block-why__text">построено<span class="block-why__number">950<span class="block-why__plus">+</span></span>Домов</p>
-                  <div class="block-why__items">
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Строим с 2007 года</p>
-                    </div>
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Собственное производство</p>
-                    </div>
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Аккредитованы<br>в банках</p>
-                    </div>
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Запатентованная технология</p>
-                    </div>
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Пожизненная гарантия</p>
-                    </div>
-                    <div class="block-why-item"><span class="block-why-item__icon"></span>
-                      <p class="block-why-item__text">Работаем с материнским капиталом</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-why__home"><img src="/public/images/block-why__home.png"><a class="btn btn--primary" href="#">Больше о компании</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__mortgage">
-        <div class="block-mortgage">
-          <div class="block-mortgage__background"><img src="/public/images/block-mortgage__background.png"></div>
-          <div class="block-mortgage__wrapper">
-            <div class="block-mortgage__container container-small">
-              <h2 class="block-mortgage__title title">интересуетесь ипотекой?</h2>
-              <p class="block-mortgage__text">Мы работаем со всеми ведущими банками России</p>
-              <div class="block-mortgage-items">
-                <div class="block-mortgage-item">
-                  <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image" src="/public/images/block-mortgage-item-1.png">
-                    <div class="block-mortgage-item__content">
-                      <p class="block-mortgage-item__title">Ставка от</p>
-                      <p class="block-mortgage-item__subtitle">6—6,5%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="block-mortgage-item">
-                  <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image" src="/public/images/block-mortgage-item-2.png">
-                    <div class="block-mortgage-item__content">
-                      <p class="block-mortgage-item__title">Ставка от</p>
-                      <p class="block-mortgage-item__subtitle">6—6,5%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="block-mortgage-item">
-                  <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image" src="/public/images/block-mortgage-item-3.png">
-                    <div class="block-mortgage-item__content">
-                      <p class="block-mortgage-item__title">Ставка от</p>
-                      <p class="block-mortgage-item__subtitle">6—6,5%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="block-mortgage-item">
-                  <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image" src="/public/images/block-mortgage-item-4.png">
-                    <div class="block-mortgage-item__content">
-                      <p class="block-mortgage-item__title">Ставка от</p>
-                      <p class="block-mortgage-item__subtitle">6—6,5%</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__advantages">
-        <div class="block-advantages"><img class="block-advantages__background" src="/public/images/block-advantages__background.svg">
-          <div class="block-advantages__container container-small">
-            <h2 class="block-advantages__title title">Преимущества запатентованной технологии ЭКО-СИТИ</h2>
-            <p class="block-advantages__text">Особое внимание мы уделяем прочности здания. Собственное производство<br>и проектный отдел позволили нам усовершенствовать самые важные узлы и устранить<br>минусы канадской технологии. Результатом этого стали 3 патента на технологию сборки.</p>
-            <div class="block-advantages-block">
-              <p class="block-advantages-block__title">Посадка стропил в упор на опорную кровлю</p>
-              <ul class="block-advantages-block__list ul">
-                <li>Надежное крепление стропил</li>
-                <li>Исключение прогиба кровли и деформации стен</li>
-              </ul>
-            </div>
-            <div class="block-advantages__center"><img class="block-advantages__image" src="/public/images/block-advantages__home.png">
-              <div class="block-advantages__items">
-                <div class="block-advantages-item">
-                  <p class="block-advantages-item__title">Даем пожизненную гарантию</p>
-                </div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item1.png"></div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item2.png"></div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item3.png"></div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item4.png">
-                  <p class="block-advantages-item__text">Патент №174105</p>
-                </div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item5.png"></div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item6.png">
-                  <p class="block-advantages-item__text">Патент №174105</p>
-                </div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item7.png"></div>
-                <div class="block-advantages-item"><img src="/public/images/block-advantages__item8.png">
-                  <p class="block-advantages-item__text">Патент №180607</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__built">
-        <div class="block-built">
-          <div class="container-small">
-            <h2 class="block-built__title title">Построенные дома</h2>
-            <div class="slider-default swiper">
-              <div class="slider-default__wrapper swiper-wrapper">
-                <div class="block-built-slide swiper-slide"><img class="block-built-slide__image" src="/public/images/block-built__slide.jpg">
-                  <p class="block-built-slide__title">Осиновая роща</p>
-                </div>
-                <div class="block-built-slide swiper-slide"><img class="block-built-slide__image" src="/public/images/block-built__slide.jpg">
-                  <p class="block-built-slide__title">Осиновая роща</p>
-                </div>
-                <div class="block-built-slide swiper-slide"><img class="block-built-slide__image" src="/public/images/block-built__slide.jpg">
-                  <p class="block-built-slide__title">Осиновая роща</p>
-                </div>
-                <div class="block-built-slide swiper-slide"><img class="block-built-slide__image" src="/public/images/block-built__slide.jpg">
-                  <p class="block-built-slide__title">Осиновая роща</p>
-                </div>
-                <div class="block-built-slide swiper-slide"><img class="block-built-slide__image" src="/public/images/block-built__slide.jpg">
-                  <p class="block-built-slide__title">Осиновая роща</p>
-                </div>
-              </div>
-              <div class="block-built__buttons">
-                <div class="block-built__pagination slider-default__pagination swiper-pagination"></div><a class="btn btn--primary" href="#">смотреть все проекты</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__construction">
-        <div class="block-construction">
-          <div class="container-small">
-            <div class="block-construction__wrapper">
-              <div class="block-construction__items">
-                <div class="block-construction-item">
-                  <div class="block-construction-item__header">
-                    <p class="block-construction-item__title">У нас постоянно идут стройки сразу нескольких объектов.</p>
-                    <p class="block-construction-item__text">Это 1-этажные и 2-этажные дома. Все дома на разной стадии готовности. Регулярные фотоотчеты со всех строек Вы можете посмотреть тут:</p>
-                  </div>
-                  <div class="block-construction-item__socials"><a href="#">
-                          <svg class="icon icon--instagram">
-                            <use xlink:href="#instagram"></use>
-                          </svg></a><a href="#">
-                          <svg class="icon icon--vk">
-                            <use xlink:href="#vk"></use>
-                          </svg></a></div>
-                </div>
-                <div class="block-construction-item">
-                  <div class="block-construction-item__header">
-                    <p class="block-construction-item__title">Хотите увидеть все своими глазами?</p>
-                    <p class="block-construction-item__text">У нас нет демо-домов и потемкинских деревень. Мы показываем строительство реальных объектов, как оно есть. Вы увидите стройку, бригаду, материалы и наш подход своими глазами.</p>
-                  </div>
-                  <div class="block-construction-item__footer"><a class="btn btn--blue" href="#">Хочу на стройку</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-home__reviews">
-        <div class="block-reviews">
-          <div class="container-small">
-            <h2 class="block-reviews__title title">Отзывы</h2>
-            <div class="slider-default swiper">
-              <div class="slider-default__wrapper swiper-wrapper">
-                <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link" href="#"></a>
-                  <div class="block-reviews__image block-built-slide__image">
-                        <svg class="icon icon--play">
-                          <use xlink:href="#play"></use>
-                        </svg><img src="/public/images/block-built__slide.jpg">
-                  </div>
-                  <p class="block-built-slide__title">Антонио Бандерас</p>
-                </div>
-                <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link" href="#"></a>
-                  <div class="block-reviews__image block-built-slide__image">
-                        <svg class="icon icon--play">
-                          <use xlink:href="#play"></use>
-                        </svg><img src="/public/images/block-built__slide.jpg">
-                  </div>
-                  <p class="block-built-slide__title">Антонио Бандерас</p>
-                </div>
-                <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link" href="#"></a>
-                  <div class="block-reviews__image block-built-slide__image">
-                        <svg class="icon icon--play">
-                          <use xlink:href="#play"></use>
-                        </svg><img src="/public/images/block-built__slide.jpg">
-                  </div>
-                  <p class="block-built-slide__title">Антонио Бандерас</p>
-                </div>
-                <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link" href="#"></a>
-                  <div class="block-reviews__image block-built-slide__image">
-                        <svg class="icon icon--play">
-                          <use xlink:href="#play"></use>
-                        </svg><img src="/public/images/block-built__slide.jpg">
-                  </div>
-                  <p class="block-built-slide__title">Антонио Бандерас</p>
-                </div>
-                <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link" href="#"></a>
-                  <div class="block-reviews__image block-built-slide__image">
-                        <svg class="icon icon--play">
-                          <use xlink:href="#play"></use>
-                        </svg><img src="/public/images/block-built__slide.jpg">
-                  </div>
-                  <p class="block-built-slide__title">Антонио Бандерас</p>
-                </div>
-              </div>
-              <div class="block-built__buttons">
-                <div class="block-built__pagination slider-default__pagination swiper-pagination"></div><a class="btn btn--primary" href="#">смотреть все отзывы</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <nav class="header__navs"><a class="current" href="#">Типовые проекты</a><a href="#">Построенные дома</a><a
+                href="#">Технология Эко-Сити</a><a href="#">Индивидуальное проектирование</a><a href="#">Отзывы</a><a
+                href="#">О нас</a><a href="#">Контакты</a></nav>
     </div>
-  </body>
+</header>
+<div class="page-home__blocks">
+    <div class="page-home__slider">
+        <div class="container">
+            <div class="banner-slider swiper">
+                <div class="banner-slider__wrapper swiper-wrapper">
+                    <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
+                        <div class="row">
+                            <div class="col-5">
+                                <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о
+                                    загородном доме</h2>
+                            </div>
+                            <div class="col-7"><img class="banner-slider__image" src="public/images/banner.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
+                        <div class="row">
+                            <div class="col-5">
+                                <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о
+                                    загородном доме</h2>
+                            </div>
+                            <div class="col-7"><img class="banner-slider__image" src="public/images/banner.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
+                        <div class="row">
+                            <div class="col-5">
+                                <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о
+                                    загородном доме</h2>
+                            </div>
+                            <div class="col-7"><img class="banner-slider__image" src="public/images/banner.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="banner-slider__slide bootstrap-wrapper swiper-slide">
+                        <div class="row">
+                            <div class="col-5">
+                                <h2 class="banner-slider__title title title--gradient">Реализуем Вашу мечту<br>о
+                                    загородном доме</h2>
+                            </div>
+                            <div class="col-7"><img class="banner-slider__image" src="public/images/banner.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-slider__pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__questions">
+        <div class="block-questions">
+            <div class="block-questions__background"><img class="block-questions__background-left"
+                                                          src="public/images/block-questions__left.png"><img
+                    class="block-questions__background-bottom" src="public/images/block-questions__bottom.png"><img
+                    class="block-questions__background-right" src="public/images/block-questions__right.png"></div>
+            <div class="container-small">
+                <div class="block-questions__wrapper">
+                    <h2 class="block-questions__title title title--gradient">Подберем дом за 5 минут, Дадим скидку
+                        5%</h2>
+                    <div class="block-questions__content">
+                        <div class="bootstrap-wrapper">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="block-questions-test">
+                                        <h3 class="block-questions-test__title">Когда вы планируете пользоваться
+                                            домом?</h3>
+                                        <div class="block-questions-test__content">
+                                            <label class="block-questions-test-item">
+                                                <input class="block-questions-test-item__radio" type="radio"
+                                                       name="questions" value="Жить в нём постоянно" checked><img
+                                                    class="block-questions-test-item__image"
+                                                    src="public/images/block-questions-item-1.jpg">
+                                                <div class="block-questions-test-item__wrapper"><span
+                                                        class="block-questions-test-item__icon"></span>
+                                                    <p class="block-questions-test-item__text">Жить в нём постоянно</p>
+                                                </div>
+                                            </label>
+                                            <label class="block-questions-test-item">
+                                                <input class="block-questions-test-item__radio" type="radio"
+                                                       name="questions" value="Летом"><img
+                                                    class="block-questions-test-item__image"
+                                                    src="public/images/block-questions-item-2.jpg">
+                                                <div class="block-questions-test-item__wrapper"><span
+                                                        class="block-questions-test-item__icon"></span>
+                                                    <p class="block-questions-test-item__text">Летом</p>
+                                                </div>
+                                            </label>
+                                            <label class="block-questions-test-item">
+                                                <input class="block-questions-test-item__radio" type="radio"
+                                                       name="questions" value="По выходным и летом и зимой"><img
+                                                    class="block-questions-test-item__image"
+                                                    src="public/images/block-questions-item-3.jpg">
+                                                <div class="block-questions-test-item__wrapper"><span
+                                                        class="block-questions-test-item__icon"></span>
+                                                    <p class="block-questions-test-item__text">По выходным и летом и
+                                                        зимой</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="block-questions-test__footer">
+                                            <div class="block-questions-test__buttons">
+                                                <div class="block-questions-test__buttons-wrapper">
+                                                    <button class="btn">
+                                                        <svg class="icon icon--arrow-small-left">
+                                                            <use xlink:href="#arrow-small-left"></use>
+                                                        </svg>
+                                                        Назад
+                                                    </button>
+                                                    <button class="btn">Далее
+                                                        <svg class="icon icon--arrow_right">
+                                                            <use xlink:href="#arrow_right"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="block-questions-test__sale">
+                                                <svg class="icon icon--percent">
+                                                    <use xlink:href="#percent"></use>
+                                                </svg>
+                                                <div>
+                                                    <p>Ваша текущая скидка:<span>1%</span></p>
+                                                    <progress max="5" value="1"></progress>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="block-questions-help"><img class="block-questions-help__image"
+                                                                           src="public/images/block-questions-help.png">
+                                        <div class="block-questions-help__wrapper">
+                                            <svg class="icon icon--chat-plus">
+                                                <use xlink:href="#chat-plus"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="block-questions-help__title">Важная информация!</p>
+                                                <p class="block-questions-help__text">Дома из СИП идеальны для любого
+                                                    режима проживания. Зимой в них тепло, а летом нежарко.</p>
+                                            </div>
+                                        </div>
+                                        <div class="block-questions-help__block">
+                                            <p class="block-questions-help__question">вопрос<span>1/5</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__projects">
+        <div class="block-projects">
+            <div class="container-small">
+                <h2 class="block-projects__title title title--gradient">Наши проекты</h2>
+                <div class="block-projects__items">
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/1.jpg">
+                                <p class="badge project__badge badge--blue">НОВИНКА</p>
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/2.jpg">
+                                <p class="badge project__badge badge--red">АКЦИЯ</p>
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/3.jpg">
+                                <p class="badge project__badge badge--green">ХИТ</p>
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/4.jpg">
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/5.jpg">
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project"><a class="project__link" href="#"></a>
+                        <div class="project__wrapper">
+                            <div class="project__header"><img class="project__image" src="public/images/projects/6.jpg">
+                            </div>
+                            <div class="project__main">
+                                <h3 class="project__title">Осиновая роща</h3>
+                                <p class="project__area">
+                                    <svg class="icon icon--area">
+                                        <use xlink:href="#area"></use>
+                                    </svg>
+                                    Общая площадь:<span>53.12 м2</span>
+                                </p>
+                                <p class="project__price">1 974 780 ₽</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="block-projects__footer"><a class="btn btn--primary" href="#">Смотреть все проекты</a><a
+                        class="btn btn--primary-outline" href="#">Как заказать дом</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__suitable">
+        <div class="block-suitable"><img class="block-suitable__background" src="public/images/suitable.jpg">
+            <div class="container-small">
+                <div class="bootstrap-wrapper block-suitable__wrapper">
+                    <div class="row block-suitable__row">
+                        <div class="col-6">
+                            <div class="block-suitable__image"><img src="public/images/suitable-image.jpg">
+                                <div class="block-suitable__item block-suitable__item--first">
+                                    <p>У вас есть свои идеи и наброски?</p>
+                                </div>
+                                <div class="block-suitable__item block-suitable__item--last">
+                                    <p>Мы разработаем для вас проект бесплатно</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="block-suitable__title title title--gradient">Не нашли подходящий проект среди
+                                типовых?</h2>
+                            <p class="block-suitable__text">Мы сделаем для вас индивидуальный проект бесплатно</p>
+                            <div class="block-suitable__buttons"><a class="btn btn--primary" href="#">Записаться<br>к
+                                архитектору</a><a class="btn btn--primary-outline" href="#">о проектировании</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__why">
+        <div class="block-why">
+            <div class="block-why__container container-small">
+                <h2 class="block-why__title title">Почему Эко-сити?</h2>
+            </div>
+            <div class="block-why__wrapper">
+                <div class="block-why__background"><img src="public/images/block-why__background.jpg"></div>
+                <div class="block-why__container container-small">
+                    <div class="block-why__content">
+                        <div class="block-why__center"><span class="block-why__circle"></span>
+                            <p class="block-why__text">построено<span class="block-why__number">950<span
+                                    class="block-why__plus">+</span></span>Домов</p>
+                            <div class="block-why__items">
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Строим с 2007 года</p>
+                                </div>
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Собственное производство</p>
+                                </div>
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Аккредитованы<br>в банках</p>
+                                </div>
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Запатентованная технология</p>
+                                </div>
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Пожизненная гарантия</p>
+                                </div>
+                                <div class="block-why-item"><span class="block-why-item__icon"></span>
+                                    <p class="block-why-item__text">Работаем с материнским капиталом</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-why__home"><img src="public/images/block-why__home.png"><a
+                            class="btn btn--primary" href="#">Больше о компании</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__mortgage">
+        <div class="block-mortgage">
+            <div class="block-mortgage__background"><img src="public/images/block-mortgage__background.png"></div>
+            <div class="block-mortgage__wrapper">
+                <div class="block-mortgage__container container-small">
+                    <h2 class="block-mortgage__title title">интересуетесь ипотекой?</h2>
+                    <p class="block-mortgage__text">Мы работаем со всеми ведущими банками России</p>
+                    <div class="block-mortgage-items">
+                        <div class="block-mortgage-item">
+                            <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image"
+                                                                           src="public/images/block-mortgage-item-1.png">
+                                <div class="block-mortgage-item__content">
+                                    <p class="block-mortgage-item__title">Ставка от</p>
+                                    <p class="block-mortgage-item__subtitle">6—6,5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-mortgage-item">
+                            <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image"
+                                                                           src="public/images/block-mortgage-item-2.png">
+                                <div class="block-mortgage-item__content">
+                                    <p class="block-mortgage-item__title">Ставка от</p>
+                                    <p class="block-mortgage-item__subtitle">6—6,5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-mortgage-item">
+                            <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image"
+                                                                           src="public/images/block-mortgage-item-3.png">
+                                <div class="block-mortgage-item__content">
+                                    <p class="block-mortgage-item__title">Ставка от</p>
+                                    <p class="block-mortgage-item__subtitle">6—6,5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-mortgage-item">
+                            <div class="block-mortgage-item__wrapper"><img class="block-mortgage-item__image"
+                                                                           src="public/images/block-mortgage-item-4.png">
+                                <div class="block-mortgage-item__content">
+                                    <p class="block-mortgage-item__title">Ставка от</p>
+                                    <p class="block-mortgage-item__subtitle">6—6,5%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__advantages">
+        <div class="block-advantages"><img class="block-advantages__background"
+                                           src="public/images/block-advantages__background.svg">
+            <div class="block-advantages__container container-small">
+                <h2 class="block-advantages__title title">Преимущества запатентованной технологии ЭКО-СИТИ</h2>
+                <p class="block-advantages__text">Особое внимание мы уделяем прочности здания. Собственное
+                    производство<br>и проектный отдел позволили нам усовершенствовать самые важные узлы и устранить<br>минусы
+                    канадской технологии. Результатом этого стали 3 патента на технологию сборки.</p>
+                <div class="block-advantages-block">
+                    <p class="block-advantages-block__title">Посадка стропил в упор на опорную кровлю</p>
+                    <ul class="block-advantages-block__list ul">
+                        <li>Надежное крепление стропил</li>
+                        <li>Исключение прогиба кровли и деформации стен</li>
+                    </ul>
+                </div>
+                <div class="block-advantages__center"><img class="block-advantages__image"
+                                                           src="public/images/block-advantages__home.png">
+                    <div class="block-advantages__items">
+                        <div class="block-advantages-item">
+                            <p class="block-advantages-item__title">Даем пожизненную гарантию</p>
+                        </div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item1.png"></div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item2.png"></div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item3.png"></div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item4.png">
+                            <p class="block-advantages-item__text">Патент №174105</p>
+                        </div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item5.png"></div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item6.png">
+                            <p class="block-advantages-item__text">Патент №174105</p>
+                        </div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item7.png"></div>
+                        <div class="block-advantages-item"><img src="public/images/block-advantages__item8.png">
+                            <p class="block-advantages-item__text">Патент №180607</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__built">
+        <div class="block-built">
+            <div class="container-small">
+                <h2 class="block-built__title title">Построенные дома</h2>
+                <div class="slider-default swiper">
+                    <div class="slider-default__wrapper swiper-wrapper">
+                        <div class="block-built-slide swiper-slide"><img class="block-built-slide__image"
+                                                                         src="public/images/block-built__slide.jpg">
+                            <p class="block-built-slide__title">Осиновая роща</p>
+                        </div>
+                        <div class="block-built-slide swiper-slide"><img class="block-built-slide__image"
+                                                                         src="public/images/block-built__slide.jpg">
+                            <p class="block-built-slide__title">Осиновая роща</p>
+                        </div>
+                        <div class="block-built-slide swiper-slide"><img class="block-built-slide__image"
+                                                                         src="public/images/block-built__slide.jpg">
+                            <p class="block-built-slide__title">Осиновая роща</p>
+                        </div>
+                        <div class="block-built-slide swiper-slide"><img class="block-built-slide__image"
+                                                                         src="public/images/block-built__slide.jpg">
+                            <p class="block-built-slide__title">Осиновая роща</p>
+                        </div>
+                        <div class="block-built-slide swiper-slide"><img class="block-built-slide__image"
+                                                                         src="public/images/block-built__slide.jpg">
+                            <p class="block-built-slide__title">Осиновая роща</p>
+                        </div>
+                    </div>
+                    <div class="block-built__buttons">
+                        <div class="block-built__pagination slider-default__pagination swiper-pagination"></div>
+                        <a class="btn btn--primary" href="#">смотреть все проекты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__construction">
+        <div class="block-construction">
+            <div class="container-small">
+                <div class="block-construction__wrapper">
+                    <div class="block-construction__items">
+                        <div class="block-construction-item">
+                            <div class="block-construction-item__header">
+                                <p class="block-construction-item__title">У нас постоянно идут стройки сразу нескольких
+                                    объектов.</p>
+                                <p class="block-construction-item__text">Это 1-этажные и 2-этажные дома. Все дома на
+                                    разной стадии готовности. Регулярные фотоотчеты со всех строек Вы можете посмотреть
+                                    тут:</p>
+                            </div>
+                            <div class="block-construction-item__socials"><a href="#">
+                                <svg class="icon icon--instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a><a href="#">
+                                <svg class="icon icon--vk">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a></div>
+                        </div>
+                        <div class="block-construction-item">
+                            <div class="block-construction-item__header">
+                                <p class="block-construction-item__title">Хотите увидеть все своими глазами?</p>
+                                <p class="block-construction-item__text">У нас нет демо-домов и потемкинских деревень.
+                                    Мы показываем строительство реальных объектов, как оно есть. Вы увидите стройку,
+                                    бригаду, материалы и наш подход своими глазами.</p>
+                            </div>
+                            <div class="block-construction-item__footer"><a class="btn btn--blue" href="#">Хочу на
+                                стройку</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-home__reviews">
+        <div class="block-reviews">
+            <div class="container-small">
+                <h2 class="block-reviews__title title">Отзывы</h2>
+                <div class="slider-default swiper">
+                    <div class="slider-default__wrapper swiper-wrapper">
+                        <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link"
+                                                                                            href="#"></a>
+                            <div class="block-reviews__image block-built-slide__image">
+                                <svg class="icon icon--play">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                                <img src="public/images/block-built__slide.jpg">
+                            </div>
+                            <p class="block-built-slide__title">Антонио Бандерас</p>
+                        </div>
+                        <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link"
+                                                                                            href="#"></a>
+                            <div class="block-reviews__image block-built-slide__image">
+                                <svg class="icon icon--play">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                                <img src="public/images/block-built__slide.jpg">
+                            </div>
+                            <p class="block-built-slide__title">Антонио Бандерас</p>
+                        </div>
+                        <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link"
+                                                                                            href="#"></a>
+                            <div class="block-reviews__image block-built-slide__image">
+                                <svg class="icon icon--play">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                                <img src="public/images/block-built__slide.jpg">
+                            </div>
+                            <p class="block-built-slide__title">Антонио Бандерас</p>
+                        </div>
+                        <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link"
+                                                                                            href="#"></a>
+                            <div class="block-reviews__image block-built-slide__image">
+                                <svg class="icon icon--play">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                                <img src="public/images/block-built__slide.jpg">
+                            </div>
+                            <p class="block-built-slide__title">Антонио Бандерас</p>
+                        </div>
+                        <div class="block-reviews__slide block-built-slide swiper-slide"><a class="block-reviews__link"
+                                                                                            href="#"></a>
+                            <div class="block-reviews__image block-built-slide__image">
+                                <svg class="icon icon--play">
+                                    <use xlink:href="#play"></use>
+                                </svg>
+                                <img src="public/images/block-built__slide.jpg">
+                            </div>
+                            <p class="block-built-slide__title">Антонио Бандерас</p>
+                        </div>
+                    </div>
+                    <div class="block-built__buttons">
+                        <div class="block-built__pagination slider-default__pagination swiper-pagination"></div>
+                        <a class="btn btn--primary" href="#">смотреть все отзывы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
