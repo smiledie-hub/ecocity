@@ -1,4 +1,5 @@
 .btn {
+  font-family: $font-gotham;
   padding: 0 20px;
   font-size: 16px;
   line-height: 135%;
@@ -11,6 +12,7 @@
   color: #2C3B00;
   height: 80px;
   user-select: none;
+  font-weight: 500;
 
   &--primary {
     background: linear-gradient(95.13deg, #B2D551 -5.37%, #C4EF4C 106.68%);

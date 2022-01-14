@@ -1,8 +1,6 @@
 .block-questions {
-  margin-top: 60px;
   position: relative;
-  margin-bottom: 83px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 
   &__background {
     position: absolute;
@@ -58,7 +56,7 @@
   &__title {
     padding: 0 40px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 24px;
     line-height: 140%;
     color: #272727;
@@ -96,7 +94,7 @@
       align-items: center;
       justify-content: space-between;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 500;
       font-size: 18px;
       line-height: 140%;
       color: #272727;
@@ -137,16 +135,7 @@
     }
 
     .btn {
-      font-family: $font-gotham;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       height: auto;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 135%;
-      letter-spacing: 0.01em;
-      text-transform: uppercase;
 
       .icon {
         width: 24px;
@@ -195,7 +184,7 @@
     border-radius: 12px 0 0 12px;
     padding: 22px 99px 22px 27px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.01em;
@@ -225,7 +214,7 @@
   }
 
   &__title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     color: #272727;
@@ -234,7 +223,7 @@
 
   &__text {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     color: #272727;
@@ -328,5 +317,6 @@
 
   &__text {
     max-width: 100%;
+    font-weight: 500;
   }
 }

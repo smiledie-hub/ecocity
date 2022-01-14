@@ -1,3 +1,30 @@
-.home {
+.page-home {
+  &__slider {
+    padding-top: 58px;
+    padding-bottom: 52px;
+  }
 
+  &__questions {
+    margin-top: 60px;
+    margin-bottom: 83px;
+  }
+
+  &__projects {
+    padding-bottom: 85px;
+  }
+
+  &__suitable {
+    margin-bottom: 147px;
+  }
+
+  &__why {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__mortgage {
+    margin-top: -48px;
+    position: relative;
+    z-index: 1;
+  }
 }

@@ -2,13 +2,13 @@
 @import "../spec/mixins";
 
 .banner-slider {
-  padding-top: 58px;
-  padding-bottom: 52px;
+  cursor: grab;
+  user-select: none;
 
   &__title {
     font-family: $font-proxima;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 54px;
     line-height: 130%;
     letter-spacing: 0.01em;

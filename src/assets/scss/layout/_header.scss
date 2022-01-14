@@ -31,13 +31,15 @@
     }
 
     &__logo {
-        svg {
+        svg, img {
             width: 99px;
             height: 63px;
         }
     }
 
     &__email {
+        font-weight: 500;
+
         .icon {
             position: relative;
             top: 2px;
@@ -50,6 +52,7 @@
     &__phone {
         display: flex;
         align-items: center;
+        font-weight: 500;
 
         .icon {
             width: 22px;
@@ -89,6 +92,7 @@
             line-height: 140%;
             color: #818181;
             transition: color 300ms;
+            font-weight: 500;
 
             &:hover {
                 color: #272727;

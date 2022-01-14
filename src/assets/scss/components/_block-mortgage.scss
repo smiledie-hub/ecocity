@@ -1,0 +1,80 @@
+.block-mortgage {
+  &__wrapper {
+    padding-top: 320px;
+    padding-bottom: 91px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 371px;
+    margin: 0 auto 50px auto;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.block-mortgage-items {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 360px);
+  grid-gap: 30px;
+}
+
+.block-mortgage-item {
+  background: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(138, 138, 138, 0.15);
+  border-radius: 16px;
+  padding: 6px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 15px rgba(138, 138, 138, 0.25));
+    border-radius: 12px;
+    padding: 27px 22px;
+  }
+
+  &__image {
+    margin-right: 30px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 140%;
+  }
+}

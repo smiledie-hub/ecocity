@@ -3,33 +3,21 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'home'
+    - pageClass = 'page-home'
     - headTitle = 'Mainpage'
 block content
-    include ../components/banner-slider
-    include ../components/block-questions
-    include ../components/block-projects
-    .block-suitable
-        img(src=require('../../public/images/suitable.jpg')).block-suitable__background
-        .container-small
-            .bootstrap-wrapper.block-suitable__wrapper
-                .row.block-suitable__row
-                    .col-6
-                        .block-suitable__image
-                            img(src=require('../../public/images/suitable-image.jpg'))
-                            .block-suitable__item.block-suitable__item--first
-                                p У вас есть свои идеи и наброски?
-                            .block-suitable__item.block-suitable__item--last
-                                p Мы разработаем для вас проект бесплатно
-                    .col-6
-                        h2.block-suitable__title.title Не нашли подходящий проект среди типовых?
-                        p.block-suitable__text Мы сделаем для вас индивидуальный проект бесплатно
-
-                        .block-suitable__buttons
-                            a(href="#").btn.btn--primary
-                                | Записаться
-                                br
-                                | к архитектору
-                            a(href="#").btn.btn--primary-outline о проектировании
+    .page-home__blocks
+        .page-home__slider
+            include ../components/banner-slider
+        .page-home__questions
+            include ../components/block-questions
+        .page-home__projects
+            include ../components/block-projects
+        .page-home__suitable
+            include ../components/block-suitable
+        .page-home__why
+            include ../components/block-why
+        .page-home__mortgage
+            include ../components/block-mortgage
 
 

@@ -1,6 +1,4 @@
 .block-projects {
-  padding-bottom: 85px;
-
   &__title {
     margin-bottom: 40px;
   }
@@ -42,7 +40,7 @@
   }
 
   &__price {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 28px;
     line-height: 140%;
     color: #010101;
@@ -53,6 +51,7 @@
     line-height: 140%;
     color: #010101;
     margin-bottom: 14px;
+    font-weight: 600;
   }
 
   &__area {
@@ -64,6 +63,7 @@
     text-transform: uppercase;
     color: #838383;
     margin-bottom: 24px;
+    font-weight: 500;
 
     .icon {
       width: 24px;
@@ -76,7 +76,8 @@
       font-size: 18px;
       line-height: 140%;
       color: #010101;
-      font-weight: 300;
+      font-weight: 400;
+      padding-bottom: 6px;
     }
   }
 
@@ -115,8 +116,7 @@
   justify-content: center;
   border-radius: 6px;
   padding: 9px 17px;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   border: 2px solid transparent;
