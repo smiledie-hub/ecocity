@@ -1,5 +1,4 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 /**
  * Этот плагин извлекает CSS в отдельные файлы.
  *
