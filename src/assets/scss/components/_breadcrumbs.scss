@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  & > a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #818181;
+
+    &:after {
+      content: '-';
+      margin: 0 0.4em;
+    }
+
+    &:last-child {
+      font-weight: 500;
+      color: #272727;
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

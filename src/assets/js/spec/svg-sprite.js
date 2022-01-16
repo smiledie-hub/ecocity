@@ -22,3 +22,5 @@ import "@icons/block-why/factory.svg"
 import "@icons/block-why/infinite.svg"
 import "@icons/block-why/maternity.svg"
 import "@icons/block-why/quarantine.svg"
+
+import "@icons/arrow-small_right.svg"

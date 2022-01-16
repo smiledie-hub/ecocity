@@ -1,0 +1,21 @@
+extends ../layout/default
+include ../components/mixins/loop
+include ../components/mixins/icon
+
+block vars
+    - pageClass = 'page-sample-projects'
+    - headTitle = 'Типовые проекты'
+block content
+    .page-content
+        .container
+            .breadcrumbs
+                a(href="#") Главная
+                a(href="#") Типовые проекты
+        .page-sample-projects__blocks
+            include ../components/block-stanndart-projects
+            block content
+                include ../components/block-are-working
+
+
+
+

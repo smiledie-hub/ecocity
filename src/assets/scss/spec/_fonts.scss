@@ -1,69 +1,74 @@
 $font-directory-gotham: "../../public/fonts/Gotham Pro";
 $font-directory-proxima: "../../public/fonts/Proxima Nova";
+
 // Proxima Nova
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('#{$font-directory-proxima}/proximanova_regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url('#{$font-directory-proxima}/proximanova_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('#{$font-directory-proxima}/proximanova_light.otf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url('#{$font-directory-proxima}/proximanova_light.otf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('#{$font-directory-proxima}/proximanova_bold.otf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url('#{$font-directory-proxima}/proximanova_bold.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('#{$font-directory-proxima}/proximanova_extrabold.otf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url('#{$font-directory-proxima}/proximanova_extrabold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('#{$font-directory-proxima}/proximanova_black.otf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url('#{$font-directory-proxima}/proximanova_black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 // Gotham Pro
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('#{$font-directory-gotham}/gothampro.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('#{$font-directory-gotham}/gothampro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('#{$font-directory-gotham}/gothampro_light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('#{$font-directory-gotham}/gothampro_light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('#{$font-directory-gotham}/gothampro_medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('#{$font-directory-gotham}/gothampro_medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('#{$font-directory-gotham}/gothampro_bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('#{$font-directory-gotham}/gothampro_bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('#{$font-directory-gotham}/gothampro_black.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('#{$font-directory-gotham}/gothampro_black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }

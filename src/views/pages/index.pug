@@ -2,7 +2,15 @@ extends ../layout/default
 
 block vars
     - pageClass = 'index'
-    - headTitle = 'Links pages'
+    - headTitle = 'Все страницы'
 block content
-    .container-small
-        a(href='/home.html') Home
+    .page-content
+        .container-small
+            hr
+            h1 Все страницы
+            ul.ul
+                li
+                    a(href="/home.html") Главная
+                li
+                    a(href="/sample-projects.html") Типовые проекты
+            hr
