@@ -186,5 +186,13 @@
     min-height: 69px;
     background: #DDF6FF;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 42px;
+      height: 42px;
+    }
   }
 }
