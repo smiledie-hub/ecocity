@@ -1,0 +1,14 @@
+.catalog-aside__item
+    p.catalog-aside__title Цена
+    .min-max-slider
+        .min-max-slider__slider(data-input-min=".min-max-slider__input-min" data-input-max=".min-max-slider__input-max" data-start="2000000" data-end="7000000" data-min="1000000" data-max="9000500" data-step="500")
+        .min-max-slider__block
+            label.min-max-slider__min Мин
+                .min-max-slider__input
+                    input(name="price-min" type="text" value="1000000").min-max-slider__input-min
+                    span ₽
+            label.min-max-slider__max Макс
+                .min-max-slider__input
+                    input(name="price-max" type="text" value="9000500").min-max-slider__input-max
+                    span ₽
+    button(type="submit").catalog-aside__btn.btn.btn--primary Применить

@@ -1,0 +1,49 @@
+.checkbox {
+  $root: &;
+
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  input {
+    display: none;
+
+    &:checked {
+      & ~ #{$root}__box {
+        background: #B2D551;
+        border-color: #B2D551;
+
+        .icon {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D9EAA8;
+    border-radius: 2px;
+    margin-right: 12px;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      display: none;
+      height: 7px;
+      width: 10px;
+    }
+  }
+
+  &__value {
+    font-weight: 500;
+    font-size: 15.5373px;
+    line-height: 15px;
+    color: #3C3C3C;
+  }
+}

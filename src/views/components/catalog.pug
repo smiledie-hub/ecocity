@@ -1,0 +1,71 @@
+.catalog
+    aside.catalog-aside
+        .catalog-aside__wrapper
+            form.catalog-aside__items
+                include filter/price
+                include filter/floor
+                include filter/room
+        a(href="#").btn.btn--primary-outline как заказать дом
+    header.catalog-header
+        .catalog-header__wrapper
+            include filter/sorting
+    main.catalog-main
+        .catalog-main__wrapper
+            .catalog-main__projects.block-projects__items
+                article.project.project--blue
+                    a(href="#").project__link
+                    .project__wrapper
+                        .project__header
+                            img(src=require('../../public/images/projects/1.jpg')).project__image
+                            p.badge.project__badge.badge--blue НОВИНКА
+                        .project__main
+                            h3.project__title Осиновая роща
+                            p.project__area
+                                +icon('area')
+                                | Общая площадь:
+                                span 53.12 м2
+                            p.project__price 1 974 780
+                                span ₽
+                article.project.project--blue
+                    a(href="#").project__link
+                    .project__wrapper
+                        .project__header
+                            img(src=require('../../public/images/projects/1.jpg')).project__image
+                            p.badge.project__badge.badge--red АКЦИЯ
+                        .project__main
+                            h3.project__title Осиновая роща
+                            p.project__area
+                                +icon('area')
+                                | Общая площадь:
+                                span 53.12 м2
+                            p.project__price 1 974 780
+                                span ₽
+                article.project.project--blue
+                    a(href="#").project__link
+                    .project__wrapper
+                        .project__header
+                            img(src=require('../../public/images/projects/1.jpg')).project__image
+                            p.badge.project__badge.badge--green ХИТ
+                        .project__main
+                            h3.project__title Осиновая роща
+                            p.project__area
+                                +icon('area')
+                                | Общая площадь:
+                                span 53.12 м2
+                            p.project__price 1 974 780
+                                span ₽
+                +loop(12)
+                    article.project.project--blue
+                        a(href="#").project__link
+                        .project__wrapper
+                            .project__header
+                                img(src=require('../../public/images/projects/1.jpg')).project__image
+                            .project__main
+                                h3.project__title Осиновая роща
+                                p.project__area
+                                    +icon('area')
+                                    | Общая площадь:
+                                    span 53.12 м2
+                                p.project__price 1 974 780
+                                    span ₽
+        include pagination

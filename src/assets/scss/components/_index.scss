@@ -1,7 +1,17 @@
 /* COMPONENTS STYLES */
 @import "icon";
 @import "buttons";
+@import "component-slide";
+@import "breadcrumbs";
+@import "min-max-slider";
+@import "catalog";
+@import "checkbox";
+@import "sorting";
+@import "pagination";
+
 @import "banner-slider";
+@import "slider-default";
+
 @import "block-questions";
 @import "block-projects";
 @import "block-suitable";
@@ -9,11 +19,8 @@
 @import "block-mortgage";
 @import "block-advantages";
 @import "block-built";
-@import "slider-default";
 @import "block-construction";
 @import "block-reviews";
-
-@import "component-slide";
-@import "breadcrumbs";
 @import "block-stanndart-projects";
 @import "block-are-working";
+@import "block-choose-house";

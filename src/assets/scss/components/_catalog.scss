@@ -1,0 +1,73 @@
+.catalog {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "aside header" "aside main";
+  grid-gap: 30px;
+  padding-bottom: 55px;
+
+  &-header {
+    grid-area: header;
+  }
+
+  &-aside {
+    grid-area: aside;
+
+    &__wrapper {
+      background: #FFFFFF;
+      border-radius: 18px;
+      padding: 12px 0;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__item {
+      padding: 38px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #DADADA;
+      }
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17.7569px;
+      line-height: 17px;
+      color: #3C3C3C;
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      line-height: 135%;
+      letter-spacing: 0.02em;
+      color: #5D7E00;
+      width: 100%;
+      padding: 22px;
+      height: auto;
+      text-transform: none;
+      margin-top: 28px;
+    }
+  }
+
+  &-main {
+    grid-area: main;
+
+    &__wrapper {
+      margin-bottom: 44px;
+    }
+
+    &__projects {
+      grid-gap: 30px;
+    }
+  }
+}

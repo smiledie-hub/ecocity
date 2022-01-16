@@ -1,3 +1,11 @@
 .page-content {
-  margin-top: 51px;
+  padding-top: 51px + 184px;
+
+  .page-home & {
+    padding-top: 184px;
+  }
+
+  .page-sample-projects & {
+    padding-top: 0;
+  }
 }

@@ -1,0 +1,41 @@
+.block-choose-house {
+  &__items {
+    display: flex;
+    gap: 35px;
+  }
+
+  &__row {
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    max-width: 360px;
+  }
+
+  &__subtitle {
+    margin-bottom: 22px;
+    max-width: 360px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__text {
+    position: relative;
+    max-width: 386px;
+    padding-left: 32px;
+
+    &:before {
+      content: '';
+      width: 24px;
+      height: 4px;
+      background: #C4EF4C;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      top: .6em;
+    }
+  }
+}
