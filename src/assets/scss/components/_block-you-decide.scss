@@ -1,0 +1,54 @@
+.block-you-decide {
+  &__icon {
+    width: 50px;
+    height: 35px;
+    margin-bottom: 23px;
+  }
+
+  &__image {
+    position: relative;
+    width: 455px;
+    height: 455px;
+    border: 1px solid #C4EF4C;
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #B2D551;
+      border-radius: 50%;
+      width: 360px;
+      height: 360px;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 585px;
+      max-width: none;
+    }
+  }
+
+  &__row {
+    align-items: center;
+  }
+
+  &__title {
+    color: #8FB81E;
+    margin-bottom: 6px;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+}

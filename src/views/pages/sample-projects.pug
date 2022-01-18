@@ -21,24 +21,28 @@ block content
                     .container
                         include ../components/catalog
         .page-sample-projects__choose-house
-            .container
-                .block-choose-house
+            include ../components/block-choose-house
+        .page-sample-projects__you-decide
+            .container-small
+                .block-you-decide
                     .bootstrap-wrapper
-                        .block-choose-house__row.row
+                        .block-you-decide__row.row
+                            .col-6
+                                .block-you-decide__image
+                                    img(src=require('../../public/images/block-you-decide.png'))
                             .col-5
-                                h2.block-choose-house__title.title Как выбрать дом
-                                p.block-choose-house__subtitle Постройка любого здания начинается с проекта
-                                p.block-choose-house__text Это одна из самых главных составляющих успешного и быстрого строительства.
-                            .col-7
-                                .block-choose-house__items
-                                    +loop(2)
-                                        .component-slide
-                                            a(href="#").component-slide__link
-                                            .component-slide__image
-                                                +icon('play')
-                                                img(src=require('../../public/images/block-built__slide.jpg'))
-                                            p.component-slide__title Антонио Бандерас
-                        .block-choose-house__blocks
+                                +icon('quotes', 'block-you-decide__icon')
+                                p.block-you-decide__caption Допустим вы решили:
+                                h2.title.block-you-decide__title «Куплю каркасный дом!»
+                                p.block-you-decide__text Следующая ваша мысль – каким он должен быть, чтобы сочетать в себе комфорт, красоту и функциональность.
+                                    br
+                                    | Мы понимаем, что у каждого человека свои представления о том, каким должен быть идеальный дом,
+                                    br
+                                    | и при этом – совершенно разные возможности.
+        .page-sample-projects__several-schemes
+            .container
+                .several-schemes
+                    .several-schemes__wrapper
 
 
 

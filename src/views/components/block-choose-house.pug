@@ -1,0 +1,43 @@
+.container
+    .block-choose-house
+        .bootstrap-wrapper
+            .block-choose-house__row.row
+                .col-5
+                    h2.block-choose-house__title.title Как выбрать дом
+                    p.block-choose-house__subtitle Постройка любого здания начинается с проекта
+                    p.block-choose-house__text Это одна из самых главных составляющих успешного и быстрого строительства.
+                .col-7
+                    .block-choose-house__items
+                        +loop(2)
+                            .component-slide
+                                a(href="#").component-slide__link
+                                .component-slide__image
+                                    +icon('play')
+                                    img(src=require('../../public/images/block-built__slide.jpg'))
+            .block-choose-house-blocks
+                .block-choose-house-blocks__wrapper
+                    .block-choose-house-blocks__item
+                        .block-choose-house-blocks__icon
+                            +icon('screen')
+                        h3.block-choose-house-blocks__title Грамотно разработанные
+                            br
+                            | проекты каркасных домов
+                        p.block-choose-house-blocks__text позволят наиболее оптимально использовать площадь и сделать жилье максимально удобным и комфортным.
+                    .block-choose-house-blocks__item
+                        .block-choose-house-blocks__icon
+                            +icon('contacts')
+                        h3.block-choose-house-blocks__title Нужно учитывать
+                            br
+                            | не только площадь
+                        p.block-choose-house-blocks__text которая влияет на стоимость дома, но и количество членов семьи, их интересы, образ жизни и мнения всех будущих жильцов.
+                    .block-choose-house-blocks__item
+                        .block-choose-house-blocks__icon
+                            +icon('home')
+                        h3.block-choose-house-blocks__title Наши проекты каркасных
+                            br
+                            | домов и коттеджей
+                        p.block-choose-house-blocks__text тщательно отобраны инженерами
+                            | и архитекторами как наиболее универсальные, комфортные,
+                            | по оптимальному сочетанию цены
+                            | с получаемой площадью и удобством.
+

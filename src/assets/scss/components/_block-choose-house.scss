@@ -39,3 +39,60 @@
     }
   }
 }
+
+.block-choose-house-blocks {
+  background: #FBFFEF;
+  border-radius: 16px;
+  padding: 8px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 10px;
+  }
+
+  &__wrapper {
+    border: 1px solid #E5F5B6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    padding: 88px 120px 30px 80px;
+
+    &:not(:last-child) {
+      border-right: 1px solid #E5F5B6;
+    }
+
+    &:first-child {
+      padding-left: 60px;
+      padding-right: 162px;
+    }
+
+    &:last-child {
+      padding-right: 108px;
+    }
+  }
+
+  &__icon {
+    background: #FBFFEF;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -6px;
+    left: 70px;
+    z-index: 1;
+
+    .icon {
+      margin-top: -30px;
+      width: 88px;
+      height: 88px;
+    }
+  }
+}

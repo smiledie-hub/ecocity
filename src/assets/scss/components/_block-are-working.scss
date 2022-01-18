@@ -66,8 +66,12 @@
   }
 
   &__item {
-    max-width: 320px;
+    width: 100%;
     padding: 21px 23px 21px 30px;
+
+    &:not(:last-child) {
+      border-right: 1px solid #EEEEEE;
+    }
   }
 
   &__section {
