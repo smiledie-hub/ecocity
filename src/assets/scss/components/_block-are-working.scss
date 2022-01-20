@@ -9,6 +9,14 @@
   &__title {
     position: relative;
     z-index: 1;
+
+    .icon {
+      position: absolute;
+      right: -40px;
+      color: #B2D551;
+      width: 81px;
+      top: -7px;
+    }
   }
 
   &__content {
@@ -18,7 +26,7 @@
   }
 
   &__number {
-    // TODO font-family: Bebas Neue Pro;
+    font-family: $font-bebas;
     font-style: normal;
     font-weight: 800;
     font-size: 64px;

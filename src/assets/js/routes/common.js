@@ -4,6 +4,14 @@ import IMask from 'imask';
 
 export default {
     init() {
+
+        const phone_mask = document.querySelectorAll('.phone-mask')
+        phone_mask.forEach(item => {
+            IMask(item, {
+                mask: '+{7} (000) 000-00-00'
+            })
+        })
+
         const minMaxSlider = document.querySelectorAll('.min-max-slider__slider');
         minMaxSlider.forEach(slider => {
             const min = parseInt(slider.getAttribute('data-min')) || 0

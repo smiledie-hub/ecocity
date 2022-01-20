@@ -1,7 +1,59 @@
-$font-directory-gotham: "../../public/fonts/Gotham Pro";
-$font-directory-proxima: "../../public/fonts/Proxima Nova";
+$font-directory-gotham: "../../public/fonts/GothamPro";
+$font-directory-proxima: "../../public/fonts/ProximaNova";
+$font-directory-bebas: "../../public/fonts/BebasNeuePro";
 
-// Proxima Nova
+// BebasNeuePro
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded';
+  src: local('Bebas Neue Pro Expanded Regular'), local('BebasNeuePro-ExpandedRegular'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded';
+  src: local('Bebas Neue Pro Expanded Medium'), local('BebasNeuePro-ExpandedMedium'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded';
+  src: local('Bebas Neue Pro Expanded Bold'), local('BebasNeuePro-ExpandedBold'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded';
+  src: local('Bebas Neue Pro Expanded Light'), local('BebasNeuePro-ExpandedLight'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded';
+  src: local('Bebas Neue Pro Expanded Thin'), local('BebasNeuePro-ExpandedThin'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Bebas Neue Pro Expanded XBold';
+  src: local('Bebas Neue Pro Expanded ExtraBold'), local('BebasNeuePro-ExpandedExtraBold'),
+  url('#{$font-directory-bebas}/BebasNeuePro-ExpandedExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+// ProximaNova
 @font-face {
   font-family: 'Proxima Nova';
   src: url('#{$font-directory-proxima}/proximanova_regular.ttf') format('truetype');
@@ -37,7 +89,7 @@ $font-directory-proxima: "../../public/fonts/Proxima Nova";
   font-style: normal;
 }
 
-// Gotham Pro
+// GothamPro
 @font-face {
   font-family: 'Gotham Pro';
   src: url('#{$font-directory-gotham}/gothampro.ttf') format('truetype');
