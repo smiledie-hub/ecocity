@@ -27,61 +27,9 @@ block content
                 include ../components/block-you-decide
         .page-sample-projects__several-schemes
             .container
-                .block-several-schemes
-                    .block-several-schemes__wrapper
-                        .block-several-schemes__block
-                            img(src=require('../../public/images/several-schemes.jpg')).block-several-schemes__image
-                            h2.block-several-schemes__title Поэтому наша компания работает по нескольким схемам:
-                        .block-several-schemes__block
-                            article.block-several-schemes-item
-                                .block-several-schemes-item__wrapper
-                                    p.block-several-schemes-item__number 01
-                                    h3.block-several-schemes-item__title Заказ типового проекта, выбранного на сайте.
-                                    p.block-several-schemes-item__text После того, как вы нашли и утвердили подходящий проект, мы сразу приступаем
-                                        | к его реализации. Составляем график работ, выезжаем на место строительства для пробного бурения грунта и посадки здания и начинаем строительство.
-                            article.block-several-schemes-item
-                                .block-several-schemes-item__wrapper
-                                    p.block-several-schemes-item__number 02
-                                    h3.block-several-schemes-item__title Заказ измененного
-                                        br
-                                        | типового проекта.
-                                    p.block-several-schemes-item__text Наиболее распространенный вариант при выборе проекта. Клиенту нравится какой-то из представленных типовых проектов, но он хочет внести туда изменения. В этом случае мы берем
-                                        | за основу выбранный проект и меняем его согласно пожеланиям заказчика. Это может быть смещение межкомнатных стен, изменение площади некоторых комнат или хозяйственных помещений. После утверждения измененного проекта, мы сразу начнем строить ваш каркасный дом из сип-панелей.
-                            article.block-several-schemes-item
-                                .block-several-schemes-item__wrapper
-                                    p.block-several-schemes-item__number 03
-                                    h3.block-several-schemes-item__title Заказ индивидуального
-                                        br
-                                        | проекта.
-                                    p.block-several-schemes-item__text Клиенты, которые давно решили построить
-                                        | или купить дом и готовились к этому важному событию, часто сами знают, как именно должен выглядеть их дом. В этом случае вам нужно подробно описать свои пожелания нашим инженерам, и мы разработаем проект по вашему индивидуальному заказу. После его утверждения, вы можете быть точно уверены, что в ближайшем будущем поселитесь в доме вашей мечты.
-                            article.block-several-schemes-item
-                                .block-several-schemes-item__wrapper
-                                    p.block-several-schemes-item__number 04
-                                    h3.block-several-schemes-item__title Заказ материала и работ
-                                        br
-                                        | под существующий проект.
-                                    p.block-several-schemes-item__text Возможна ситуация, когда у заказчика уже есть готовый проект каркасного дома, и он ищет подрядчика, готового реализовать этот проект на выгодных для него условиях.
-                                        | В этом случае наши инженеры проверят проект, просчитают стоимость необходимых материалов, и после утверждения цены мы будем готовы приступить к выполнению строительных работ.
+                include ../components/block-several-schemes
         .page-sample-projects__contact-form
-            .contact-form
-                .contact-form__background
-                    img(src=require('../../public/images/contact-form.jpg')).contact-form__image
-                .contact-form__container.container-small
-                    .contact-form__wrapper
-                        .contact-form__header
-                            h2.contact-form__title.title.title--gradient Не нашли подходящий проект среди типовых?
-                            p.contact-form__text Мы сделаем для вас индивидуальный проект
-                        form.contact-form__main
-                            .contact-form__main-wrapper
-                                p.contact-form__caption Индивидуальный проект бесплатно/по Вашей цене
-                                label.contact-form__label
-                                    input(type="text" name="username" placeholder="Имя(без фамилии)" required).contact-form__input
-                                label.contact-form__label
-                                    input(type="email" name="usermail" placeholder="E-mail" required).contact-form__input
-                                label.contact-form__label
-                                    input(type="text" name="userphone" placeholder="Телефон" required).contact-form__input.phone-mask
-                                button(type="submit").contact-form__submit.btn.btn--primary оставить заявку
+            include ../components/contact-form
 
 
 
