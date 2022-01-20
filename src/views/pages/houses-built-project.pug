@@ -1,0 +1,27 @@
+extends ../layout/default
+include ../components/mixins/loop
+include ../components/mixins/icon
+
+block vars
+    - pageClass = 'page-houses-built-project'
+    - headTitle = 'Карточка товара'
+block content
+    .page-content
+        .page-houses-built-project__section
+            .container
+                .breadcrumbs
+                    a(href="#") Главная
+                    a(href="#") Типовые проекты
+                    a(href="#") Осиновая роща
+        .page-houses-built-project__block
+            .container
+                .houses-built-project
+                    h2.houses-built-project__title.title.title--gradient Дома построеные по этому проекту
+                    .houses-built-project__items
+                        +loop(12)
+                            article.houses-built-project-item
+                                a(href="#").houses-built-project-item__link
+                                .houses-built-project-item__image
+                                    img(src=require('../../public/images/projects/1.jpg'))
+                                h3.houses-built-project-item__title Осиновая роща
+
