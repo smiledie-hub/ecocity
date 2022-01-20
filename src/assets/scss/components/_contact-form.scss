@@ -23,19 +23,25 @@
     padding: 42px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__header {
     max-width: 490px;
-    margin-right: 160px;
+
+    &--big {
+      max-width: 700px;
+    }
   }
 
   &__main {
     max-width: 500px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0 1px 5px rgba(138, 138, 138, 0.15);
     border-radius: 16px;
     padding: 8px;
+    margin-right: 120px;
 
     &-wrapper {
       border: 1px solid #E7E7E7;
@@ -58,6 +64,10 @@
 
   &__title {
     margin-bottom: 17px;
+
+    &--big {
+      font-size: 56px;
+    }
   }
 
   &__text {

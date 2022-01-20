@@ -115,5 +115,10 @@ export default {
                 el: '.banner-slider__pagination',
             },
         })
+
+        new Swiper('.block-product-detail-gallary__items', {
+            spaceBetween: 18,
+            slidesPerView: 5,
+        })
     }
 }

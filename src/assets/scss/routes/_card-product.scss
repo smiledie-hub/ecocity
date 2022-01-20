@@ -1,0 +1,28 @@
+.page-card-product {
+  &__section {
+    margin-bottom: 51px;
+  }
+
+  &__product-detail {
+    margin-bottom: 100px;
+  }
+
+  &__contact-form {
+
+  }
+
+  &__button {
+    text-align: center;
+    margin-bottom: 100px;
+
+    .btn {
+      display: inline-flex;
+      margin: 55px auto;
+      width: 490px;
+    }
+  }
+
+  &__table {
+    margin-bottom: 100px;
+  }
+}

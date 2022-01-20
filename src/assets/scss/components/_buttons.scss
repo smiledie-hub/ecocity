@@ -15,16 +15,25 @@
   font-weight: 500;
   transition: 300ms;
 
+  &--text-small {
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0.02em;
+    text-transform: initial;
+  }
+
   &--primary {
     background: linear-gradient(95.13deg, #B2D551 -5.37%, #C4EF4C 106.68%);
     box-shadow: 0 4px 15px rgba(178, 213, 81, 0.5);
     border-radius: 8px;
+    color: #5D7E00;
   }
 
   &--primary-outline {
     border: 1px solid #B2D551;
     filter: drop-shadow(0px 4px 15px rgba(178, 213, 81, 0.5));
     border-radius: 8px;
+    color: #5D7E00;
   }
 
   &--blue {
