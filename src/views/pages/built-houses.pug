@@ -1,0 +1,31 @@
+extends ../layout/default
+include ../components/mixins/loop
+include ../components/mixins/icon
+
+block vars
+    - pageClass = 'page-built-houses'
+    - headTitle = 'Построенные дома'
+block content
+    .page-content
+        .page-built-houses__section
+            .container
+                .breadcrumbs
+                    a(href="#") Главная
+                    a(href="#") Построенные дома
+        .page-built-houses__blocks
+            .page-built-houses__map
+                .container
+                    .block-map
+                        h2.block-map__title.title.title--gradient Построенные дома
+
+            .page-built-houses__catalog
+                .container
+                    include ../components/catalog
+
+
+
+
+
+
+
+
