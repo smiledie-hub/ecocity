@@ -17,10 +17,64 @@ block content
                 .container
                     .block-map
                         h2.block-map__title.title.title--gradient Построенные дома
-
+                        img(src=require('../../public/images/map.jpg')).block-map__map
             .page-built-houses__catalog
                 .container
-                    include ../components/catalog
+                    .catalog
+                        aside.catalog-aside
+                            .catalog-aside__wrapper
+                                form.catalog-aside__items
+                                    .catalog-aside__item
+                                        p.catalog-aside__title Место
+                                        .catalog-aside__select
+                                            .select(data-state="")
+                                                .select__title(data-default="г. Москва") г. Москва
+                                                .select__content
+                                                    input(id="select-place1" type="radio" name="place").select__input
+                                                    label(for="select-place1").select__label г. Москва
+                                                    input(id="select-place2" type="radio" name="place" checked).select__input
+                                                    label(for="select-place2").select__label г. Москва
+
+                                    include ../components/filter/price
+                                    .catalog-aside__item
+                                        p.catalog-aside__title Площадь
+                                        .catalog-aside__checkboxes
+                                            label.checkbox
+                                                input(type="checkbox" name="floor" value="100" checked)
+                                                span.checkbox__box
+                                                    +icon('checkmark')
+                                                span.checkbox__value До 100
+                                            label.checkbox
+                                                input(type="checkbox" name="floor" value="300")
+                                                span.checkbox__box
+                                                    +icon('checkmark')
+                                                span.checkbox__value До 300
+                                            label.checkbox
+                                                input(type="checkbox" name="floor" value="200")
+                                                span.checkbox__box
+                                                    +icon('checkmark')
+                                                span.checkbox__value До 200
+                                            label.checkbox
+                                                input(type="checkbox" name="floor" value="400")
+                                                span.checkbox__box
+                                                    +icon('checkmark')
+                                                span.checkbox__value До 400
+                        header.catalog-header
+                        main.catalog-main.catalog-main--type2
+                            .catalog-main__wrapper
+                                .catalog-main__projects.block-projects__items
+                                    +loop(12)
+                                        article.houses-built-project-item
+                                            a(href="#").houses-built-project-item__link
+                                            .houses-built-project-item__image
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            h3.houses-built-project-item__title Осиновая роща
+                            include ../components/pagination
+            .page-built-houses__order-house
+                .container
+                    .block-order-house
+                        a(href="#").block-order-house__link
+                        h2.block-order-house__title.title.title--gradient Как заказать дом
 
 
 

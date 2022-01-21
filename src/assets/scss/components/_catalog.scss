@@ -60,6 +60,7 @@
   }
 
   &-main {
+    $main: &;
     grid-area: main;
 
     &__wrapper {
@@ -68,6 +69,10 @@
 
     &__projects {
       grid-gap: 30px;
+
+      #{$main}--type2 & {
+        grid-gap: 100px 30px;
+      }
     }
   }
 }

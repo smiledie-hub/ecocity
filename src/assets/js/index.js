@@ -1,6 +1,6 @@
 // FIXES
 import "./fixes"
-
+import './utils/select';
 import Router from './utils/Router';
 import common from './routes/common';
 import home from './routes/home';

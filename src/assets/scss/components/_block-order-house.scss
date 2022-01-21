@@ -1,0 +1,32 @@
+.block-order-house {
+  min-height: 279px;
+  background: #FBFFEF;
+  border-radius: 16px;
+  padding: 116px 100px;
+  position: relative;
+  overflow: hidden;
+  transition: 300ms;
+
+  &:hover {
+    background: #f4ffe0;
+  }
+
+  &__title {
+    font-family: $font-proxima;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
