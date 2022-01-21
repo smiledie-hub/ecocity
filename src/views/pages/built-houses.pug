@@ -20,7 +20,7 @@ block content
                         img(src=require('../../public/images/map.jpg')).block-map__map
             .page-built-houses__catalog
                 .container
-                    .catalog
+                    .catalog.catalog--type2
                         aside.catalog-aside
                             .catalog-aside__wrapper
                                 form.catalog-aside__items
@@ -59,16 +59,15 @@ block content
                                                 span.checkbox__box
                                                     +icon('checkmark')
                                                 span.checkbox__value До 400
-                        header.catalog-header
-                        main.catalog-main.catalog-main--type2
+                        main.catalog-main
                             .catalog-main__wrapper
                                 .catalog-main__projects.block-projects__items
                                     +loop(12)
-                                        article.houses-built-project-item
-                                            a(href="#").houses-built-project-item__link
-                                            .houses-built-project-item__image
-                                                img(src=require('../../public/images/projects/1.jpg'))
-                                            h3.houses-built-project-item__title Осиновая роща
+                                        article.component-slide
+                                            a(href="#").component-slide__link
+                                            .component-slide__image
+                                                img(src=require('../../public/images/block-built__slide.jpg'))
+                                            h3.component-slide__title Осиновая роща
                             include ../components/pagination
             .page-built-houses__order-house
                 .container

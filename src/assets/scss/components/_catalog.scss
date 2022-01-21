@@ -1,10 +1,27 @@
 .catalog {
+  $root: &;
   display: grid;
   grid-template-columns: 360px 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "aside header" "aside main";
   grid-gap: 30px;
   padding-bottom: 55px;
+
+  &--type2 {
+    grid-template-areas: "aside main" "aside main";
+
+    #{$root}-aside {
+      &__wrapper{
+        background: #FBFBFB;
+      }
+    }
+
+    #{$root}-main {
+      &__projects {
+        grid-gap: 100px 30px;
+      }
+    }
+  }
 
   &-header {
     grid-area: header;
@@ -60,7 +77,6 @@
   }
 
   &-main {
-    $main: &;
     grid-area: main;
 
     &__wrapper {
@@ -69,10 +85,6 @@
 
     &__projects {
       grid-gap: 30px;
-
-      #{$main}--type2 & {
-        grid-gap: 100px 30px;
-      }
     }
   }
 }

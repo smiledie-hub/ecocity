@@ -18,10 +18,10 @@ block content
                 .houses-built-project
                     h2.houses-built-project__title.title.title--gradient Дома построеные по этому проекту
                     .houses-built-project__items
-                        +loop(12)
-                            article.houses-built-project-item
-                                a(href="#").houses-built-project-item__link
-                                .houses-built-project-item__image
-                                    img(src=require('../../public/images/projects/1.jpg'))
-                                h3.houses-built-project-item__title Осиновая роща
+                        +loop(8)
+                            .component-slide
+                                a(href="#").component-slide__link
+                                .component-slide__image
+                                    img(src=require('../../public/images/block-built__slide.jpg'))
+                                p.component-slide__title Осиновая роща
 
