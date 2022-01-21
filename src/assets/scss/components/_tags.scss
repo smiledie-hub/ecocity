@@ -1,0 +1,26 @@
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 13px 19px;
+  background: #DDF6FF;
+  border-radius: 8px;
+  font-family: $font-gotham;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #22A7D6;
+  transition: 300ms;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -47,6 +47,10 @@
     line-height: 140%;
     color: #010101;
     gap: 24px;
+
+    &--big {
+      font-size: 32px;
+    }
   }
 
   &__price {

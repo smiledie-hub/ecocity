@@ -1,0 +1,79 @@
+extends ../layout/default
+include ../components/mixins/loop
+include ../components/mixins/icon
+
+block vars
+    - pageClass = 'page-built-card'
+    - headTitle = 'Карточка построенного проекта'
+block content
+    .page-content
+        .page-built-card__section
+            .container
+                .breadcrumbs
+                    a(href="#") Главная
+                    a(href="#") Построенные дома
+                    a(href="#") Осиновая роща
+        .page-built-card__tags
+            .container
+                .tags
+                    a(href="#").tag #экосити_глубокое
+        .page-built-card__product-detail
+            .block-product-detail
+                .container
+                    .block-product-detail__wrapper
+                        .block-product-detail__item
+                            .block-product-detail-gallary
+                                .block-product-detail-gallary__header
+                                    img(src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__image
+                                    p.block-product-detail-gallary__badge.badge.badge--red-full ХИТ
+                                .block-product-detail-gallary__main
+                                    .block-product-detail-gallary__items.swiper
+                                        .swiper-wrapper
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+                                            div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                img(src=require('../../public/images/projects/1.jpg'))
+
+                        .block-product-detail__item
+                            h1.block-product-detail__title Осиновая роща
+                            p.block-product-detail__text Одноэтажный дом с втопленной террасой общей площадью 108 м2 и жилой площадью 85 м2. В доме есть большая кухня-гостиная, 3 спальни. Дом возводили на винтовых сваях, межкомнатные перегородки каркасные, высота потолков 2,8.
+                            p.block-product-detail__text В качестве отделки заказчик выбрал битумную мягкую черепицу на кровлю, а для фасада – блок-хаус (имитация бруса).
+                            p.block-product-detail__text В кухне-гостиной есть панорамные окна в пол, а на террасе мы установили мансардные окна, чтобы добавить света.
+                            p.block-product-detail__prices.block-product-detail__prices--big
+                                span.block-product-detail__price 1 974 780
+                                    span ₽
+                            .block-product-detail__buttons
+                                a(href="#").btn.btn--primary.btn--text-small Оставить заявку
+                                span.btn
+        .page-built-card__contact-form
+            .contact-form
+                .contact-form__background
+                    img(src=require('../../public/images/contact-form.jpg')).contact-form__image
+                .contact-form__container.container
+                    .contact-form__wrapper
+                        .contact-form__header.contact-form__header--big
+                            h2.contact-form__title.contact-form__title--big.title.title--gradient Хочу такой же дом!
+                        form.contact-form__main
+                            .contact-form__main-wrapper
+                                p.contact-form__caption Обратиться к нам
+                                label.contact-form__label
+                                    input(type="text" name="username" placeholder="Имя(без фамилии)" required).contact-form__input
+                                label.contact-form__label
+                                    input(type="text" name="userphone" placeholder="Телефон" required).contact-form__input.phone-mask
+                                button(type="submit").contact-form__submit.btn.btn--primary оставить заявку

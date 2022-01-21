@@ -1,0 +1,14 @@
+extends ../layout/default
+include ../components/mixins/loop
+include ../components/mixins/icon
+
+block vars
+    - pageClass = 'page-individual-design'
+    - headTitle = 'Запись к архитектору'
+block content
+    .page-content
+        .page-individual-design__section
+            .container
+                .breadcrumbs
+                    a(href="#") Главная
+                    a(href="#") Индивидуальное проектирование
