@@ -3,13 +3,82 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-SIP-technology'
+    - pageClass = 'sip-technology'
     - headTitle = 'Технология SIP'
 block content
     .page-content
-        .page-SIP-technology__section
+        .sip-technology__breadcrumbs
             .container
                 .breadcrumbs
                     a(href="#") Главная
                     a(href="#") Технология Эко-Сити
                     a(href="#") Технология SIP
+        .sip-technology__keeping
+            .container
+                h1.sip-technology__title.title Технология SIP
+                .keeping
+                    p.keeping__title Содержание
+                    ol.keeping__list
+                        li.keeping__item.keeping__item--video
+                            a(href="#") СИП-технология
+                                +icon('play')
+                        li.keeping__item
+                            a(href="#") Сравнение СИП и каркас
+                                +icon('arrow-small_right')
+                        li.keeping__item
+                            a(href="#") История технологии SIP в России
+                                +icon('arrow-small_right')
+                        li.keeping__item
+                            a(href="#") История технологии SIP в мире
+                                +icon('arrow-small_right')
+        .sip-technology-block
+            .container
+                .bootstrap-wrapper
+                    .row
+                        .col-5
+                            .component-slide
+                                a(href="#").component-slide__link
+                                .component-slide__image
+                                    +icon('play')
+                                    img(src=require('../../public/images/block-built__slide.jpg'))
+                        .col-5
+                            h2.sip-technology-block__title.title.title--gradient СИП-технология
+                            p.sip-technology-block__text СИП-технология применяется в США, Канаде и Европе более полувека. Это разновидность панельного строительства, где каркасом для панелей служат деревянные брусья. Полученная в итоге конструкция хорошо сохраняет тепло, выдерживает высокие ветровые нагрузки, не подвержена влиянию дождя, града, снега. Теперь технология СИП-панелей применяется в России (у нас такие каркасные дома называются «канадскими») и довольно-таки успешно.
+                            a(href="").sip-technology-block__link.btn.btn--link Читать дальше
+                                +icon('arrow_right')
+        .sip-technology-block.sip-technology-block--bg
+            .container
+                .bootstrap-wrapper
+                    .sip-technology-block__row.row
+                        .col-1
+                        .col-4
+                            h2.sip-technology-block__title.title.title--gradient Сравнение СИП и каркас
+                            p.sip-technology-block__text При выборе доступной технологии для строительства зимнего дома обычно сравнивают дома из СИП и каркасные дома. Рассмотрим основные различия между ними: что выгоднее, что прочнее и безопаснее.
+                            a(href="").sip-technology-block__link.btn.btn--link Читать дальше
+                                +icon('arrow_right')
+                        .col-6
+                            img(src=require('../../public/images/block-built__slide.jpg')).sip-technology-block__image
+                        .col-1
+        .sip-technology-block
+            .container
+                .bootstrap-wrapper
+                    .sip-technology-block__row.row
+                        .col-6
+                            img(src=require('../../public/images/block-built__slide.jpg')).sip-technology-block__image
+                        .col-5
+                            h2.sip-technology-block__title.title.title--gradient История технологии SIP в России
+                            p.sip-technology-block__text В России эксперименты по строительству быстровозводимых домов проводились в крайне незначительном объеме. Опыт строительства малоэтажных зданий из комплектов заводской готовности в Советском Союзе ограничивался так называемыми «финскими» или «каркасно-щитовыми» домами.
+                            a(href="").sip-technology-block__link.btn.btn--link Читать дальше
+                                +icon('arrow_right')
+        .sip-technology-block.sip-technology-block--bg
+            .container
+                .bootstrap-wrapper
+                    .sip-technology-block__row.row
+                        .col-5
+                            h2.sip-technology-block__title.title.title--gradient История технологии SIP в мире
+                            p.sip-technology-block__text В мире насчитывает уже более 30 лет. Возникла и наиболее сильно развита данная технология в США и Канаде. В последствие она получила развитие в Северной Европе в частности в Германии. Примерно 10 лет назад технология была завезена в Россию и быстро получила большую популярность благодаря тому что позволяет сочетать в себе основные требования предъявляемые к загородному дому: высокую надежность, теплоэффективность, скорость строительства и относительную доступность.
+                            a(href="").sip-technology-block__link.btn.btn--link Читать дальше
+                                +icon('arrow_right')
+                        .col-6
+                            img(src=require('../../public/images/block-built__slide.jpg')).sip-technology-block__image
+                        .col-1

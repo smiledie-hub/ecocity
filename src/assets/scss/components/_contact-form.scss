@@ -1,5 +1,16 @@
 .contact-form {
+  $root: &;
   position: relative;
+
+  &__map {
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   &__background {
     position: absolute;
@@ -14,6 +25,7 @@
   &__image {
     width: 100%;
     height: 100%;
+    object-position: top center;
     object-fit: cover;
   }
 
@@ -27,11 +39,21 @@
   }
 
   &__header {
+    position: relative;
     max-width: 490px;
 
     &--big {
       max-width: 700px;
     }
+  }
+
+  &__effect {
+    position: absolute;
+    right: calc(100% - 77px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    user-select: none;
   }
 
   &__main {
@@ -78,9 +100,34 @@
   &__label {
     display: block;
     margin-bottom: 50px;
+
+    span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.019em;
+      color: #A0A0A0;
+      margin-bottom: 5px;
+    }
+
+    &--bg {
+      margin-bottom: 20px;
+
+      #{$root} {
+        &__input, &__textarea {
+          background: #F3F4F6;
+          border-radius: 8px;
+          border-bottom: none;
+          padding: 15px;
+          height: auto;
+          box-shadow: none;
+        }
+      }
+    }
   }
 
-  &__input {
+  &__input, &__textarea {
     height: 31px;
     background: none;
     border-bottom: 1px solid #B3B3B3;
@@ -97,6 +144,12 @@
     &:focus {
       border-color: #8FB81E;
     }
+  }
+
+  &__textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
   }
 
   &__submit {

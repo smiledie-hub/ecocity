@@ -3,12 +3,152 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-individual-design'
+    - pageClass = 'individual-design'
     - headTitle = 'Запись к архитектору'
 block content
-    .page-content
-        .page-individual-design__section
+    .individual-design__section
+        .page-content
+            .individual-design__breadcrumbs
+                .container
+                    .breadcrumbs
+                        a(href="#") Главная
+                        a(href="#") Индивидуальное проектирование
+        .individual-design-banner
             .container
-                .breadcrumbs
-                    a(href="#") Главная
-                    a(href="#") Индивидуальное проектирование
+                .bootstrap-wrapper
+                    .row
+                        .col-5
+                            h1.individual-design-banner__title.title.title--gradient Запись к архитектору
+                            p.individual-design-banner__text Мы считаем важным, чтобы дом полностью соответствовал Вашим ожиданиям как по планировке, так и по внешнему виду.
+                            p.individual-design-banner__text Еще до заключения договора на строительство
+                                br
+                                | Вы можете сделать предварительное проектирование и расчет Вашего индивидуального проекта.
+                        .col-6
+                            img(src=require('../../public/images/individual-design-banner.png')).individual-design-banner__image
+    .individual-design-numbers
+        .individual-design-number
+            .individual-design-number__container.container
+                .individual-design-number__number 1
+                .bootstrap-wrapper
+                    .individual-design-number__row.row
+                        .col-2
+                        .col-4
+                            h2.individual-design-number__title Типовой проект
+                            p.individual-design-number__text.individual-design-number__text--line Вы выбираете наш типовой проект, если он полностью Вас устраивает в том виде, как он есть.
+                        .col-6
+                            img(src=require('../../public/images/individual-design-banner-1.png')).individual-design-number__image
+        .individual-design-number
+            .individual-design-number__container.container
+                .individual-design-number__number 2
+                .individual-design-number__background
+                    img(src=require('../../public/images/individual-design-number-item-bg.png'))
+                .bootstrap-wrapper
+                    .individual-design-number__row.row
+                        .col-2
+                        .col-4
+                            h2.individual-design-number__title Типовой проект с изменениями
+                            p.individual-design-number__text Вы берете за основу один из наших типовых проектов и мы вносим в него при Вас необходимые изменения:
+                    .individual-design-number__row.row
+                        .col-2
+                        .col-10
+                            .individual-design-number__items
+                                .individual-design-number-item
+                                    .individual-design-number-item__image
+                                        img(src=require('../../public/images/individual-design-number-item-1.png'))
+                                    .individual-design-number-item__content
+                                        p Меняем внутреннюю планировку
+                                .individual-design-number-item
+                                    .individual-design-number-item__image
+                                        img(src=require('../../public/images/individual-design-number-item-2.png'))
+                                    .individual-design-number-item__content
+                                        p Можно поменять размеры и расположение окон
+                                .individual-design-number-item
+                                    .individual-design-number-item__image
+                                        img(src=require('../../public/images/individual-design-number-item-3.png'))
+                                    .individual-design-number-item__content
+                                        p Добавляем/убираем балкон, террасу, навес, гараж и т.д.
+                                .individual-design-number-item
+                                    .individual-design-number-item__image
+                                        img(src=require('../../public/images/individual-design-number-item-4.png'))
+                                    .individual-design-number-item__content
+                                        p На встрече архитектор компании
+                                            br
+                                            | Эко-Сити сделает Вам расчет Вашего дома с учетом необходимых изменений
+        .individual-design-number
+            .individual-design-number__container.container
+                .individual-design-number__number 3
+                .bootstrap-wrapper
+                    .individual-design-number__row.row
+                        .col-2
+                        .col-5
+                            h2.individual-design-number__title Индивидуальный проект
+                            .individual-design-number__list
+                                .individual-design-number__list-item
+                                    .individual-design-number__icon
+                                        +icon('home-box')
+                                    p Вы приходите со своими рисунками, эскизами или картинками, которые Вы например нашли в интернете.
+                                .individual-design-number__list-item
+                                    .individual-design-number__icon
+                                        +icon('estate-home')
+                                    p И мы все это реализуем в единый проект Вашего дома мечты, как Вы его видите.
+                        .col-5
+                            img(src=require('../../public/images/individual-design-number-3.png')).individual-design-number__image
+    .individual-design__advise.block-advise
+        .container
+            h2.block-advise__title.title Также наши специалисты проконсультируют Вас
+                br
+                | по темам
+            .block-advise__wrapper
+                .block-advise__center
+                    .block-advise-item.block-advise-item--1
+                        .block-advise-item__icon
+                            +icon('budget-money')
+                        p.block-advise-item__text Определения бюджета строительства
+                    .block-advise-item.block-advise-item--2
+                        .block-advise-item__icon
+                            +icon('boxes')
+                        p.block-advise-item__text Выбора планировки или архитектурного решения
+                    .block-advise-item.block-advise-item--3
+                        .block-advise-item__icon
+                            +icon('shovel_weather')
+                        p.block-advise-item__text Правильной посадки дома на участке
+                    img(src=require('../../public/images/block-advise.png')).block-advise__image
+                    .block-advise-item.block-advise-item--4
+                        .block-advise-item__icon
+                            +icon('tap')
+                        p.block-advise-item__text Выбора технологии строительства, подходящей для режима эксплуатации дома
+                    .block-advise-item.block-advise-item--5
+                        .block-advise-item__icon
+                            +icon('file')
+                        p.block-advise-item__text Подготовки документов для подачи уведомления о строительстве
+                    .block-advise-item.block-advise-item--6
+                        .block-advise-item__icon
+                            +icon('heating')
+                        p.block-advise-item__text Выбора системы отопления и других инженерных систем
+                    .block-advise-item.block-advise-item--7
+                        .block-advise-item__icon
+                            +icon('analytics_chart')
+                        p.block-advise-item__text Анализа документов на участок
+            .block-advise__buttons
+                a(href="#").btn.btn--blue Запишитесь на бесплатную работу с архитектором
+                a(href="#").btn.btn--blue-outline Полный проект (включая архитектурный и конструкторский разделы)
+    .contact-form
+        .contact-form__background
+            img(src=require('../../public/images/contact-form-2.png')).contact-form__image
+        .contact-form__container.container-small
+            .contact-form__wrapper
+                form.contact-form__main
+                    .contact-form__main-wrapper
+                        p.contact-form__caption Бесплатное проектирование
+                        label.contact-form__label.contact-form__label--bg
+                            span Описание
+                            textarea(name="address" placeholder="У Вас есть хотя бы примерное видение желаемой планировки и внешнего вида?" required).contact-form__textarea
+                        label.contact-form__label.contact-form__label--bg
+                            span Адрес вашего участка
+                            input(type="text" name="address" required).contact-form__input
+                        label.contact-form__label.contact-form__label--bg
+                            span Какой главный вопрос требуется обсудить?
+                            input(type="text" name="question" required).contact-form__input
+                        button(type="submit").contact-form__submit.btn.btn--primary оставить заявку
+                .contact-form__map
+                    img(src=require('../../public/images/map_2.jpg'))

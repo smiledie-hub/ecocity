@@ -45,4 +45,36 @@
     padding: 24px 40px;
     display: inline-flex;
   }
+
+  &--blue-outline {
+    height: 67px;
+    border: 1px solid #57C7EE;
+    border-radius: 8px;
+    color: #29ABD9;
+  }
+
+  &--link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #83B006;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 0;
+
+    &:hover {
+      .icon {
+        transform: translateX(0.4em);
+      }
+    }
+
+    .icon {
+      margin-left: 25px;
+      color: #83B006;
+      transition: 300ms;
+    }
+  }
 }

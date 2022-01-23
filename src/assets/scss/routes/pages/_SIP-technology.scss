@@ -1,3 +1,41 @@
-.page-SIP-technology {
+.sip-technology {
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
 
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__keeping {
+    margin-bottom: 82px;
+  }
+}
+
+.sip-technology-block {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &--bg {
+    padding: 60px 0;
+    background: linear-gradient(113.19deg, #FBFBFB 24.38%, #EFEFEF 60.03%, #FBFBFB 81.76%);
+  }
+
+  &__row {
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    text-transform: none;
+  }
+
+  &__text {
+    margin-bottom: 45px;
+  }
+
+  &__image {
+    border-radius: 12px;
+  }
 }
