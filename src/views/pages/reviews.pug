@@ -6,9 +6,64 @@ block vars
     - pageClass = 'page-reviews'
     - headTitle = 'Отзывы'
 block content
-    .page-content
-        .page-reviews__section
-            .container
-                .breadcrumbs
-                    a(href="#") Главная
-                    a(href="#") Отзывы
+    .page-reviews__section
+        .page-content
+            .page-reviews__breadcrumbs
+                .container
+                    .breadcrumbs
+                        a(href="#") Главная
+                        a(href="#") Отзывы
+            .page-reviews__block
+                .container
+                    .bootstrap-wrapper
+                        .row.page-reviews__row
+                            +loop(6)
+                                .col-4
+                                    .component-slide
+                                        a(href="#").component-slide__link
+                                        .component-slide__image
+                                            +icon('play')
+                                            img(src=require('../../public/images/projects/4.jpg'))
+                        div.page-reviews__button
+                            a(href="#").btn.btn--primary смотреть все видео
+    .container
+        .bootstrap-wrapper
+            .row.page-reviews__row
+                +loop(6)
+                    .col-4
+                        .sertificate
+                            .sertificate__wrapper
+                                .sertificate__item
+                                    .sertificate__image
+                                        a(href="#").sertificate__link
+                                        img(src=require('../../public/images/certificate.jpg'))
+                                        .sertificate__loop
+                                            +icon('search')
+                                    p.sertificate__place
+                                        +icon('place')
+                                        | Кокорево-на-Ладоге
+                                .sertificate__item
+                                    p.sertificate__title Полещиков Вячеслав Васильевич
+                                    .sertificate__quot
+                                        +icon('quotes')
+                                        p.sertificate__text Проект дома выполнен по моему эскизу, учтены все пожелания. Монтаж дома произведен в установленные сроки. Качество работ оцениваю на хорошо.
+        .page-reviews__pagination
+            include ../components/pagination
+        .page-reviews__links
+            .block-links
+                h2.block-links__title.title Вы можете посмотреть отзывы
+                    br
+                    | о работе нашей компании также тут:
+                .block-links__items
+                    .block-links__item
+                        +icon('web')
+                        a(href="https://spb.lesstroy.net/user/9683/" target="_blank") spb.lesstroy.net/user/9683/
+                    .block-links__item
+                        +icon('web')
+                        a(href="https://www.yell.ru/spb/com/eco-city_10782017/" target="_blank") www.yell.ru/spb/com/eco-city_10782017/
+                    .block-links__item
+                        +icon('web')
+                        a(href="https://otzovik.com/reviews/dom_iz_sip_paneley_ekositi/" target="_blank") otzovik.com/reviews/dom_iz_sip_paneley_ekositi/
+                    .block-links__item
+                        +icon('web')
+                        a(href="https://retwork.com/reviews/detail/?id=298557" target="_blank") retwork.com/reviews/detail/?id=298557

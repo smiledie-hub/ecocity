@@ -1,3 +1,29 @@
 .page-reviews {
+  &__section {
+    background: linear-gradient(99.31deg, #FBFBFB 29.79%, #EFEFEF 73.53%, #FBFBFB 100.2%);
+    margin-bottom: 60px;
+  }
 
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    display: table;
+    margin: 60px auto 0 auto;
+    padding-bottom: 60px;
+  }
+
+  &__row {
+    gap: 30px 0;
+  }
+
+  &__pagination {
+    margin-top: 60px;
+  }
+
+  &__links {
+    margin-bottom: 72px;
+    margin-top: 140px;
+  }
 }

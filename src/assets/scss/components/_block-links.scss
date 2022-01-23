@@ -1,0 +1,45 @@
+.block-links {
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+
+    a {
+      color: #22A7D6;
+      transition: 300ms;
+
+
+      &:hover {
+        color: #1384a9;
+      }
+    }
+
+    .icon {
+      color: #1384a9;
+      position: relative;
+      top: 1px;
+      margin-right: 14px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
