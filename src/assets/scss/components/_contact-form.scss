@@ -27,11 +27,21 @@
   }
 
   &__header {
+    position: relative;
     max-width: 490px;
 
     &--big {
       max-width: 700px;
     }
+  }
+
+  &__effect {
+    position: absolute;
+    right: calc(100% - 77px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    user-select: none;
   }
 
   &__main {

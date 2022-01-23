@@ -135,5 +135,10 @@ export default {
             spaceBetween: 18,
             slidesPerView: 5,
         })
+
+        new Swiper('.page-contacts-sertificate__slider', {
+            spaceBetween: 30,
+            slidesPerView: 6,
+        })
     }
 }
