@@ -1,4 +1,4 @@
-import Swiper, {Pagination} from 'swiper';
+import Swiper, {Pagination, Navigation} from 'swiper';
 import noUiSlider from 'nouislider';
 import IMask from 'imask';
 
@@ -96,6 +96,21 @@ export default {
         })
     },
     finalize() {
+
+        new Swiper('.single-slider', {
+            spaceBetween: 40,
+            slidesPerView: 1,
+            modules: [Pagination, Navigation],
+            pagination: {
+                clickable: true,
+                el: '.single-slider__pagination',
+            },
+            navigation: {
+                nextEl: '.single-slider .single-slider__button--next',
+                prevEl: '.single-slider .single-slider__button--prev',
+            },
+        })
+
         new Swiper('.slider-default', {
             spaceBetween: 40,
             slidesPerView: 3,

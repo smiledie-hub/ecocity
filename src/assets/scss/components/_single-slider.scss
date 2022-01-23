@@ -1,0 +1,67 @@
+.single-slider {
+  border-radius: 18px;
+  overflow: hidden;
+  user-select: none;
+
+  &__slider {
+    img {
+      width: 100%;
+      border-radius: 18px;
+    }
+  }
+
+  &__pagination {
+    width: 100% !important;
+    bottom: 0 !important;
+    background: linear-gradient(0deg, #060606 -73.23%, rgba(6, 6, 6, 0) 100%);
+    border-radius: 0 0 18px 18px;
+    height: 99px;
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+    pointer-events: none;
+
+    span {
+      pointer-events: initial;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(248, 255, 225, 0.6);
+    transition: 300ms;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .icon {
+      color: #2C3B00;
+      transition: 300ms;
+    }
+
+    &:hover {
+      background: rgba(241, 255, 196, 0.75);
+
+      .icon {
+        color: #5D7E00;
+      }
+    }
+
+
+    &--next {
+      right: 30px;
+    }
+
+    &--prev {
+      left: 30px;
+    }
+  }
+}

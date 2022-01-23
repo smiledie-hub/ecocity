@@ -1,0 +1,54 @@
+.block-additional {
+  background: #F8FDFF;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 8px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #010101;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    border: 1px solid #CCF7FF;
+    border-radius: 6px;
+    padding: 22px 38px 65px 27px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &__item {
+    width: calc(50% - (32px / 2));
+    display: flex;
+    align-items: center;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #838383;
+  }
+
+  &__value {
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #010101;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    color: #00BDE3;
+    margin-right: 8px;
+  }
+}
