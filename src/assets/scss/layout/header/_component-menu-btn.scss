@@ -1,0 +1,12 @@
+.component-menu-btn {
+  display: none;
+
+  @include media-down(sm) {
+    display: block;
+  }
+
+  .icon {
+    width: 47px;
+    height: 47px;
+  }
+}

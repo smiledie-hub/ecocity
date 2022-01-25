@@ -6,6 +6,10 @@
   &__section {
     background: #F8F8F8;
     padding-top: 51px + 184px;
+
+    @include media-down(sm) {
+      padding-top: 120px;
+    }
   }
 
   &__stanndart-projects {

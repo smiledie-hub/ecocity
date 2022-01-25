@@ -5,6 +5,10 @@
   gap: 0 40px;
   padding: 30px 0;
 
+  @include media-down(sm) {
+    display: none;
+  }
+
   a {
     font-size: 16px;
     line-height: 140%;

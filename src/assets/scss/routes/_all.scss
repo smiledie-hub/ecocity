@@ -1,8 +1,16 @@
 .page-content {
   padding-top: 51px + 184px;
 
+  @include media-down(sm) {
+    padding-top: 120px;
+  }
+
   .page-home & {
     padding-top: 184px;
+
+    @include media-down(sm) {
+      padding-top: 120px;
+    }
   }
 
   .page-sample-projects & {

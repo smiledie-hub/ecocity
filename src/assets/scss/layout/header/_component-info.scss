@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include media-down(sm) {
+    display: none;
+  }
+
   &__link {
     font-size: 16px;
     line-height: 140%;
