@@ -1,6 +1,10 @@
 .footer {
   margin-top: 38px;
 
+  @include media-down(xl) {
+    display: none;
+  }
+
   &__navs {
     border-bottom: 1px solid #DBDBDB;
   }

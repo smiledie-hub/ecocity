@@ -1,6 +1,12 @@
 .block-suitable {
   position: relative;
 
+  &__col {
+    @include media-down(sm) {
+      position: static !important;
+    }
+  }
+
   &__title {
     margin-bottom: 17px;
   }
@@ -17,6 +23,13 @@
     gap: 32px;
     justify-content: space-between;
 
+    @include media-down(sm) {
+      position: absolute;
+      top: calc(100% - 300px);
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
     .btn {
       width: 100%;
     }
@@ -24,6 +37,11 @@
 
   &__row {
     align-items: center;
+
+    @include media-down(sm) {
+      flex-direction: column-reverse;
+      padding-bottom: 300px;
+    }
   }
 
   &__background {

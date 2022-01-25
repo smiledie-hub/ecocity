@@ -2,6 +2,10 @@
   &__items {
     display: inline-flex;
     gap: 30px;
+
+    @include media-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__wrapper {
@@ -20,11 +24,20 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include media-down(sm) {
+    padding: 30px 58px 40px 38px;
+    min-height: auto;
+  }
+
   &__title {
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     margin-bottom: 12px;
+
+    @include media-down(sm) {
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
@@ -32,6 +45,10 @@
     font-size: 16px;
     line-height: 140%;
     margin-bottom: 12px;
+
+    @include media-down(sm) {
+      margin-bottom: 30px;
+    }
   }
 
   &__socials {

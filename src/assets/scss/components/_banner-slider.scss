@@ -8,6 +8,13 @@
     cursor: grab;
   }
 
+  &__row {
+    @include media-down(sm) {
+      flex-direction: column-reverse;
+      padding-bottom: 60px;
+    }
+  }
+
   &__title {
     font-family: $font-proxima;
     font-style: normal;
@@ -17,15 +24,35 @@
     letter-spacing: 0.01em;
     text-transform: uppercase;
     max-width: 482px;
+
+    @include media-down(lg) {
+      font-size: 38px;
+    }
+
+    @include media-down(md) {
+      font-size: 34px;
+    }
   }
 
   &__image {
     border-radius: 18px;
     max-width: 100%;
+
+    @include media-down(sm) {
+      margin-bottom: 25px;
+    }
   }
 
   .swiper-pagination {
     bottom: 52px + 26px;
+
+    @include media-down(xl) {
+      bottom: 26px;
+    }
+
+    @include media-down(md) {
+      bottom: 0;
+    }
   }
 }
 
@@ -35,6 +62,7 @@
   display: table !important;
 
   .swiper-pagination-bullet {
+    position: relative;
     width: 10px;
     height: 10px;
     background: #CBD8A4;
@@ -43,7 +71,7 @@
     overflow: hidden;
 
     &:before {
-      content: '';
+      content: none;
       width: 14px;
       height: 10px;
       background: #B2D551;
@@ -59,6 +87,7 @@
       transition: 300ms;
 
       &:before {
+        content: '';
         left: 0;
       }
     }

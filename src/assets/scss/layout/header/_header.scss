@@ -3,6 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
+    
+    @include media-down(xl) {
+        display: none;
+    }
 
     &__wrapper {
         display: flex;

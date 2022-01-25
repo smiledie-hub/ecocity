@@ -10,8 +10,16 @@
         max-width: 1530px + 60px;
     }
 
+    @include media-down(sm) {
+        max-width: 480px;
+    }
+
     &-small {
         @extend .container;
         max-width: 1270px + 60px;
+
+        @include media-down(sm) {
+            max-width: 480px;
+        }
     }
 }

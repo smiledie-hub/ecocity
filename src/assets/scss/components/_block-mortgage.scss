@@ -43,6 +43,10 @@
   justify-content: center;
   grid-template-columns: repeat(2, 360px);
   grid-gap: 30px;
+
+  @include media-down(sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .block-mortgage-item {

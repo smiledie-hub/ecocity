@@ -109,16 +109,22 @@ export default {
                 nextEl: '.single-slider .single-slider__button--next',
                 prevEl: '.single-slider .single-slider__button--prev',
             },
-        })
+        });
 
         new Swiper('.slider-default', {
-            spaceBetween: 40,
-            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerView: 1,
             modules: [Pagination],
             pagination: {
                 clickable: true,
                 el: '.slider-default__pagination',
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+            }
         })
 
         new Swiper('.banner-slider', {

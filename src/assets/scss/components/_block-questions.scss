@@ -67,13 +67,21 @@
   &__content {
     padding: 0 40px;
     display: flex;
-    gap: 0 30px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 74px;
   }
 
   &__footer {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 32px;
+    gap: 30px;
+
+    @include media-down(md) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
 
@@ -167,12 +175,22 @@
   background: #EEF1D9;
   padding: 40px 26px 50px;
 
+  @include media-down(md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__image {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 315px;
     z-index: 0;
+
+    @include media-down(md) {
+      width: 144px;
+    }
   }
 
   &__question {
@@ -191,6 +209,15 @@
     text-transform: uppercase;
     color: #3A3A3A;
     z-index: 1;
+
+    @include media-down(md) {
+      position: static;
+      max-width: 206px;
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
 
     span {
       color: #79A500;

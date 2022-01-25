@@ -3,12 +3,12 @@
         .banner-slider__wrapper.swiper-wrapper
             +loop(4)
                 .banner-slider__slide.bootstrap-wrapper.swiper-slide
-                    .row
-                        .col-5
+                    .banner-slider__row.row
+                        .col-md-5
                             h2.banner-slider__title.title.title--gradient
                                 | Реализуем Вашу мечту
                                 br
                                 | о загородном доме
-                        .col-7
+                        .col-md-7
                             img(src=require('../../public/images/banner.jpg')).banner-slider__image
         .banner-slider__pagination.swiper-pagination
