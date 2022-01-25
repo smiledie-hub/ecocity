@@ -1,4 +1,9 @@
 .individual-design {
+
+  @include media-down(sm) {
+    display: none; //TODO
+  }
+
   &__section {
     background: linear-gradient(99.2deg, #EFEFEF -1.03%, #FBFBFB 51.26%, #EFEFEF 100.2%);
   }

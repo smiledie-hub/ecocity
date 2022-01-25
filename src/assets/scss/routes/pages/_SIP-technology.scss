@@ -13,6 +13,8 @@
 }
 
 .sip-technology-block {
+  $root: &;
+
   &:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -20,6 +22,14 @@
   &--bg {
     padding: 60px 0;
     background: linear-gradient(113.19deg, #FBFBFB 24.38%, #EFEFEF 60.03%, #FBFBFB 81.76%);
+
+    #{$root} {
+      &__row {
+        @include media-down(sm) {
+          flex-direction: column-reverse;
+        }
+      }
+    }
   }
 
   &__row {
@@ -29,6 +39,10 @@
   &__title {
     margin-bottom: 6px;
     text-transform: none;
+
+    @include media-down(sm) {
+      margin: 20px 0;
+    }
   }
 
   &__text {

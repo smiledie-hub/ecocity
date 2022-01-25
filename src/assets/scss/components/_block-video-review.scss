@@ -76,12 +76,24 @@
         z-index: 3;
         width: 378px;
         height: 661px;
+
+        @include media-down(sm) {
+          width: 95px;
+          height: 336px;
+        }
       }
+
       &:nth-child(2) {
         z-index: 2;
         width: 820px;
         height: 440px;
+        @include media-down(sm) {
+          width: 416px;
+          height: 222px;
+          right: -120px;
+        }
       }
+
       &:nth-child(3) {
         z-index: 1;
         width: 100%;

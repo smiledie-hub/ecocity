@@ -7,6 +7,13 @@
   overflow: hidden;
   transition: 300ms;
 
+  @include media-down(sm) {
+    margin: 0 -35px;
+    text-align: left;
+    padding: 120px 35px;
+    min-height: auto;
+  }
+
   &:hover {
     background: #f4ffe0;
   }
@@ -19,6 +26,10 @@
     line-height: 150%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+
+    @include media-down(sm) {
+      font-size: 20px;
+    }
   }
 
   &__link {

@@ -6,6 +6,10 @@ h1, .h1 {
   font-size: 54px;
   line-height: 135%;
   letter-spacing: 0.01em;
+
+  @include media-down(sm) {
+
+  }
 }
 
 h2, .h2 {
@@ -13,6 +17,10 @@ h2, .h2 {
   font-weight: 600;
   font-size: 42px;
   line-height: 140%;
+
+  @include media-down(sm) {
+    font-size: 20px;
+  }
 }
 
 h3, .h3 {
@@ -32,6 +40,10 @@ h5, .h5, p, .text {
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
+
+  @include media-down(sm) {
+    font-size: 14px;
+  }
 }
 
 h6, .h6 {
@@ -44,6 +56,10 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
+
+  @include media-down(sm) {
+    font-size: 14px;
+  }
 }
 
 .title {
@@ -52,6 +68,10 @@ a {
   line-height: 140%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+
+  @include media-down(sm) {
+    font-size: 20px;
+  }
 
   &--gradient {
     background-size: 100%;

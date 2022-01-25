@@ -4,6 +4,22 @@
     margin-bottom: 60px;
   }
 
+  &__title {
+    margin-bottom: 40px;
+
+    @include media-down(sm) {
+      margin-bottom: 30px;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include media-down(sm) {
+        display: block;
+      }
+    }
+  }
+
   &__breadcrumbs {
     margin-bottom: 40px;
   }

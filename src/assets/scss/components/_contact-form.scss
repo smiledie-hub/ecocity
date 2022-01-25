@@ -36,6 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__header {
@@ -44,6 +49,10 @@
 
     &--big {
       max-width: 700px;
+    }
+
+    @include media-down(sm) {
+      margin-bottom: 23px;
     }
   }
 
@@ -64,6 +73,11 @@
     border-radius: 16px;
     padding: 8px;
     margin-right: 120px;
+
+    @include media-down(sm) {
+      margin: 0 -30px;
+      width: calc(100% + 60px);
+    }
 
     &-wrapper {
       border: 1px solid #E7E7E7;
@@ -89,6 +103,10 @@
 
     &--big {
       font-size: 56px;
+
+      @include media-down(sm) {
+        font-size: 20px;
+      }
     }
   }
 

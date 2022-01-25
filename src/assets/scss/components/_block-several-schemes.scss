@@ -1,5 +1,9 @@
 .block-several-schemes {
 
+  @include media-down(sm) {
+    display: none;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 437px 1fr;

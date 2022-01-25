@@ -15,10 +15,11 @@ block content
                         a(href="#") Отзывы
             .page-reviews__block
                 .container
+                    h2.title.page-reviews__title Отзывы
                     .bootstrap-wrapper
                         .row.page-reviews__row
                             +loop(6)
-                                .col-4
+                                .col-md-4
                                     .component-slide
                                         a(href="#").component-slide__link
                                         .component-slide__image
@@ -28,9 +29,12 @@ block content
                             a(href="#").btn.btn--primary смотреть все видео
     .container
         .bootstrap-wrapper
+            h2.title.page-reviews__title.page-reviews__title--mobile Отзывы
+                br
+                | в бумажном виде
             .row.page-reviews__row
                 +loop(6)
-                    .col-4
+                    .col-md-4
                         .sertificate
                             .sertificate__wrapper
                                 .sertificate__item

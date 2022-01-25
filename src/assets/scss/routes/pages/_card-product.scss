@@ -19,6 +19,11 @@
       display: inline-flex;
       margin: 55px auto;
       width: 490px;
+
+      @include media-down(sm) {
+        width: 100%;
+        margin: 30px auto;
+      }
     }
   }
 

@@ -1,6 +1,15 @@
 .page-contacts {
+
+  @include media-down(sm) {
+    display: none; //TODO
+  }
+
   &__breadcrumbs {
     margin-bottom: 60px;
+
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__info {

@@ -5,6 +5,10 @@
   max-width: 880px;
   counter-reset: section;
 
+  @include media-down(sm) {
+    padding: 30px 35px;
+  }
+
   &__title {
     font-weight: 900;
     font-size: 24px;
@@ -12,6 +16,11 @@
     letter-spacing: 0.01em;
     text-transform: uppercase;
     margin-bottom: 38px;
+
+    @include media-down(sm) {
+      margin-bottom: 17px;
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -19,6 +28,11 @@
     flex-wrap: wrap;
     gap: 30px 50px;
     padding-left: 0;
+
+    @include media-down(sm) {
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__item {
@@ -30,6 +44,10 @@
     color: #454545;
     display: flex;
     align-items: center;
+
+    @include media-down(sm) {
+      width: 100%;
+    }
 
     a {
       display: flex;

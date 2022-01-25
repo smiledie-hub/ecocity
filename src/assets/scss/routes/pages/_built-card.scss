@@ -17,6 +17,16 @@
 
   &__construction {
     margin-bottom: 80px;
+
+    &-row {
+      @include media-down(sm) {
+        & > div {
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
   }
 
   &__single-slider {

@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
+    @include media-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -11,6 +15,13 @@
     &:last-child {
       padding-right: 100px;
     }
+
+    @include media-down(sm) {
+      width: 100%;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 
   &__buttons {
@@ -18,6 +29,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 54px;
+
+    @include media-down(sm) {
+      flex-direction: column;
+      gap: 20px 0;
+    }
 
     .btn {
       width: 100%;
@@ -67,6 +83,10 @@
   flex-wrap: wrap;
   margin-bottom: 34px;
   gap: 30px 0;
+
+  @include media-down(sm) {
+    flex-direction: column;
+  }
 }
 
 .block-product-detail-item {
@@ -81,6 +101,10 @@
   line-height: 140%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+
+  @include media-down(sm) {
+    width: 100%;
+  }
 
   &__icon {
     color: #00BDE3;

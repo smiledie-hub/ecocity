@@ -7,8 +7,17 @@
   grid-gap: 30px;
   padding-bottom: 55px;
 
+  @include media-down(sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "aside" "header" "main";
+  }
+
   &--type2 {
     grid-template-areas: "aside main" "aside main";
+
+    @include media-down(sm) {
+      grid-template-areas: "aside" "main";
+    }
 
     #{$root}-aside {
       &__wrapper{
@@ -25,10 +34,18 @@
 
   &-header {
     grid-area: header;
+
+    @include media-down(sm) {
+      display: none; // TODO
+    }
   }
 
   &-aside {
     grid-area: aside;
+
+    @include media-down(sm) {
+      display: none; // TODO
+    }
 
     &__wrapper {
       background: #FFFFFF;

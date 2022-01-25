@@ -12,6 +12,13 @@
     border: 1px solid #C4EF4C;
     border-radius: 50%;
 
+    @include media-down(sm) {
+      width: 295px;
+      height: 295px;
+      margin: 0 auto;
+      display: table;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -22,6 +29,11 @@
       border-radius: 50%;
       width: 360px;
       height: 360px;
+
+      @include media-down(sm) {
+        width: 232px;
+        height: 232px;
+      }
     }
 
     img {
@@ -31,6 +43,10 @@
       transform: translate(-50%, -50%);
       width: 585px;
       max-width: none;
+
+      @include media-down(sm) {
+        width: 335px;
+      }
     }
   }
 
