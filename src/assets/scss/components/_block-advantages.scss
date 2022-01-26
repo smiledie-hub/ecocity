@@ -22,6 +22,11 @@
   &__title {
     text-align: center;
     margin-bottom: 10px;
+
+    @include media-down(sm) {
+      margin: 0 auto 5px;
+      max-width: 278px;
+    }
   }
 
   &__text {
@@ -31,6 +36,11 @@
 
     @include media-down(sm) {
       margin: 0 auto 98px auto;
+      max-width: 320px;
+
+      br {
+        display: none;
+      }
     }
   }
 

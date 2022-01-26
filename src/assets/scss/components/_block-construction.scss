@@ -27,6 +27,7 @@
   @include media-down(sm) {
     padding: 30px 58px 40px 38px;
     min-height: auto;
+    margin: 0 -38px;
   }
 
   &__title {

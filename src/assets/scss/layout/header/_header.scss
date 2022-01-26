@@ -16,6 +16,13 @@
       background: #fff;
       top: 0;
       opacity: 0;
+      visibility: visible;
+
+      @include media-down(sm) {
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
     }
 
     .header__wrapper {
@@ -35,6 +42,7 @@
       background: #fff;
       top: 100%;
       opacity: 1;
+      visibility: visible;
     }
 
     .header__menu-btn {
@@ -115,6 +123,7 @@
     @include media-down(sm) {
       opacity: 0;
       top: 0;
+      visibility: hidden;
     }
 
     @include media-down(sm) {

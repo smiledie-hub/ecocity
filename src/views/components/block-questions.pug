@@ -1,7 +1,9 @@
 .block-questions
     .block-questions__background
         img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
-        img(src=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        picture
+            source(srcset=require('../../public/images/block-questions__bottom--tablet.png') media="(max-width: 768px)" type="image/png")
+            img(srcset=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
         img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
     .container-small
         .block-questions__wrapper

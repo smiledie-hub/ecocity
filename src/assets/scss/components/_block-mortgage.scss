@@ -4,6 +4,10 @@
     padding-bottom: 91px;
     position: relative;
     z-index: 1;
+
+    @include media-down(sm) {
+      padding-top: 260px;
+    }
   }
 
   &__background {
@@ -26,6 +30,11 @@
   &__title {
     text-align: center;
     margin-bottom: 12px;
+
+    @include media-down(sm) {
+      max-width: 187px;
+      margin: 0 auto 10px;
+    }
   }
 
   &__text {
@@ -46,6 +55,7 @@
 
   @include media-down(sm) {
     grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 

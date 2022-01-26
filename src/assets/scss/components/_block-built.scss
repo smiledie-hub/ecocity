@@ -3,6 +3,10 @@
 
   &__title {
     margin-bottom: 40px;
+
+    @include media-down(sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__buttons {

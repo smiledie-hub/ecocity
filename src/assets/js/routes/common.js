@@ -5,6 +5,24 @@ import IMask from 'imask';
 export default {
     init() {
 
+        const tableMobile = document.querySelectorAll('.block-table-mobile__item')
+        tableMobile.forEach(item => {
+            const btn = item.querySelector('.block-table-mobile__button')
+            if(btn) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault()
+
+                    if(item.classList.contains('block-table-mobile__item--open')) {
+                        item.classList.remove('block-table-mobile__item--open')
+                        btn.querySelector('span').innerText = "раскрыть"
+                    } else {
+                        item.classList.add('block-table-mobile__item--open')
+                        btn.querySelector('span').innerText = "Скрыть"
+                    }
+                })
+            }
+        })
+
         const header = document.querySelector('.header')
         if (header) {
             const menuBtn = document.querySelector('.component-menu-btn')
@@ -157,11 +175,6 @@ export default {
         new Swiper('.block-product-detail-gallary__items', {
             spaceBetween: 18,
             slidesPerView: 5,
-        })
-
-        new Swiper('.page-contacts-sertificate__slider', {
-            spaceBetween: 30,
-            slidesPerView: 6,
         })
     }
 }

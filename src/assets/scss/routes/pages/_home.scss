@@ -15,6 +15,10 @@
 
   &__suitable {
     margin-bottom: 147px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+    }
   }
 
   &__why {

@@ -18,45 +18,45 @@ block content
                     .row
                         .col-md-6
                             h1.page-contacts__title.title.title--gradient контакты
-                        .col-md-6
+                            .page-contacts__row.row
+                                .col-md-6
+                                    .page-contacts__items
+                                        .page-contacts__item
+                                            +icon('place')
+                                            p г. Санкт-Петербург ул. Киевская, 14
+                                        .page-contacts__item-group
+                                            .page-contacts__item
+                                                +icon('phone')
+                                                a(href="tel:+78129506050") +7 (812) 950-60-50
+                                            .page-contacts__item
+                                                +icon('phone')
+                                                a(href="tel:+79111774778") +7 (911) 177-47-78
+                                                    span (Отдел снабжения)
+                                        .page-contacts__item
+                                            +icon('mail')
+                                            a(href="mailto:info@eco-city.spb.ru") info@eco-city.spb.ru
+                                .col-md-6
+                                    .page-contacts__item
+                                        +icon('time')
+                                        p Офис работает:
+                                    .page-contacts__item
+                                        p.page-contacts__caption Пн - Пт
+                                        p 10:00 - 21:00
+                                    .page-contacts__item
+                                        p.page-contacts__caption Сб
+                                        p 10:00 - 16:00
+                                .col-md-12
+                                    h3.page-contacts__subtitle ООО «Эко-Сити-Инвест»
+                                    .page-contacts__items2
+                                        p ИНН: 7811410226
+                                        p ОКПО: 87313532
+                                        p КПП: 781001001
+                                        p ОГРН: 1089847251460
+                        .page-contacts__text-block.col-md-4
                             h2.page-contacts__title.title.title--gradient Компания эко-сити
-                        .col-md-3
-                            .page-contacts__items
-                                .page-contacts__item
-                                    +icon('place')
-                                    p г. Санкт-Петербург ул. Киевская, 14
-                                .page-contacts__item-group
-                                    .page-contacts__item
-                                        +icon('phone')
-                                        a(href="tel:+78129506050") +7 (812) 950-60-50
-                                    .page-contacts__item
-                                        +icon('phone')
-                                        a(href="tel:+79111774778") +7 (911) 177-47-78
-                                            span (Отдел снабжения)
-                                .page-contacts__item
-                                    +icon('mail')
-                                    a(href="mailto:info@eco-city.spb.ru") info@eco-city.spb.ru
-                        .col-md-2
-                            .page-contacts__item
-                                +icon('time')
-                                p Офис работает:
-                            .page-contacts__item
-                                p.page-contacts__caption Пн - Пт
-                                p 10:00 - 21:00
-                            .page-contacts__item
-                                p.page-contacts__caption Сб
-                                p 10:00 - 16:00
-                        .col-md-1
-                        .col-md-4
                             p.page-contacts__text Специализируется на проектировании и строительстве малоэтажных зданий, а также занимается производством сэндвич-панелей, и успешно работает на рынке загородной недвижимости с февраля 2007 года.
                             p.page-contacts__text Используя популярную на западе и проверенную в течение десятилетий технологию SIP, мы накопили большой опыт в возведении домов, коттеджей, общественных и производственных зданий.
-                        .col-md-12
-                            h3.page-contacts__subtitle ООО «Эко-Сити-Инвест»
-                            .page-contacts__items2
-                                p ИНН: 7811410226
-                                p ОКПО: 87313532
-                                p КПП: 781001001
-                                p ОГРН: 1089847251460
+
                     .page-contacts__map.block-map
                         img(src=require('../../public/images/map.jpg')).block-map__map
         .page-contacts-sertificate
@@ -64,19 +64,17 @@ block content
                 .page-contacts-sertificate__wrapper
                     h2.page-contacts-sertificate__title.title.title--gradient Сертификаты
                     .page-contacts-sertificate__items
-                        .swiper.page-contacts-sertificate__slider
-                            .swiper-wrapper
-                                +loop(12)
-                                    .swiper-slide.page-contacts-sertificate__item
-                                        a(href="#").page-contacts-sertificate__link
-                                            +icon('search')
-                                        img(src=require('../../public/images/certificate.jpg')).page-contacts-sertificate__image
+                        +loop(6)
+                            .swiper-slide.page-contacts-sertificate__item
+                                a(href="#").page-contacts-sertificate__link
+                                    +icon('search')
+                                img(src=require('../../public/images/certificate.jpg')).page-contacts-sertificate__image
         .contact-form
             .contact-form__background
                 img(src=require('../../public/images/contact-form.jpg')).contact-form__image
             .contact-form__container.container-small
                 .contact-form__wrapper
-                    .contact-form__header
+                    .contact-form__header.contact-form__header--effect
                         img(src=require("../../public/images/effect.png")).contact-form__effect
                         h2.contact-form__title.title.title--gradient Остались вопросы?
                         p.contact-form__text Оставьте заявку и мы свяжемся с вами в течении 5 минут

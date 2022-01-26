@@ -29,5 +29,14 @@
 
   &__table {
     margin-bottom: 100px;
+    @include media-down(sm) {
+      display: none;
+    }
+
+    &--mobile {
+      @include media-down(sm) {
+        display: block;
+      }
+    }
   }
 }

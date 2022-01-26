@@ -21,7 +21,6 @@
     transition: color 300ms;
     font-weight: 500;
     white-space: nowrap;
-    width: 100%;
 
     @include media-down(sm) {
       font-weight: 500;
@@ -29,6 +28,8 @@
       line-height: 140%;
       color: #464646;
       padding: 25px 0;
+      width: 100%;
+      white-space: initial;
 
       &:not(:last-child) {
         border-bottom: 1px solid #E2E2E2;

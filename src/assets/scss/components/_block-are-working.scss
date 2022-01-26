@@ -1,9 +1,17 @@
 .block-are-working {
+
+
+
   &__wrapper {
     display: flex;
     background: #FFFFFF;
     border-radius: 16px;
     overflow: hidden;
+
+    @include media-down(sm) {
+      flex-direction: column;
+      margin: 0 -53px;
+    }
   }
 
   &__title {
@@ -23,6 +31,10 @@
     display: flex;
     border: 1px solid #EEEEEE;
     border-radius: 0 8px 8px 0;
+
+    @include media-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__number {
@@ -33,6 +45,11 @@
     line-height: 140%;
     color: #E5F5B6;
     margin-bottom: 26px;
+
+    @include media-down(sm) {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
@@ -80,6 +97,10 @@
     &:not(:last-child) {
       border-right: 1px solid #EEEEEE;
     }
+
+    @include media-down(sm) {
+      padding: 21px 84px 21px 84px;
+    }
   }
 
   &__section {
@@ -90,6 +111,15 @@
       display: flex;
       align-items: center;
       padding: 0 0 0 55px;
+
+      @include media-down(sm) {
+        min-width: auto;
+        height: 156px;
+
+        .icon {
+          display: none;
+        }
+      }
     }
 
     &:last-child {

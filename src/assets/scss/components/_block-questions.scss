@@ -2,6 +2,10 @@
   position: relative;
   padding-bottom: 20px;
 
+  @include media-down(sm) {
+    padding-bottom: 80px;
+  }
+
   &__background {
     position: absolute;
     top: 0;
@@ -16,12 +20,26 @@
       position: absolute;
       bottom: 0;
       left: 0;
+
+      @include media-down(sm) {
+        bottom: auto;
+        top: 50px;
+        width: 166px;
+        height: 155px;
+      }
     }
 
     &-right {
       position: absolute;
       bottom: 0;
       right: 0;
+
+      @include media-down(sm) {
+        bottom: auto;
+        top: 50px;
+        width: 166px;
+        height: 155px;
+      }
     }
 
     &-bottom {
@@ -29,6 +47,10 @@
       bottom: 0;
       left: 0;
       width: 100%;
+
+      @include media-down(sm) {
+       height: 100%;
+      }
     }
   }
 
@@ -70,6 +92,10 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 74px;
+
+    @include media-down(sm) {
+      gap: 22px;
+    }
   }
 
   &__footer {
@@ -80,7 +106,7 @@
 
     @include media-down(md) {
       flex-direction: column-reverse;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
@@ -89,6 +115,10 @@
     display: flex;
     align-items: center;
     margin-left: 40px;
+
+    @include media-down(md) {
+      margin-left: 0;
+    }
 
     .icon {
       width: 48px;
@@ -265,6 +295,14 @@
   display: block;
   height: auto;
 
+  @include media-down(sm) {
+    max-width: calc(50% - 11px);
+  }
+
+  @include media-down(xss) {
+    max-width: 100%;
+  }
+
   &__radio {
     display: none;
 
@@ -287,6 +325,10 @@
     border-radius: 8px 8px 0 0;
     height: 128px;
     object-fit: cover;
+
+    @include media-down(xss) {
+      width: 100%;
+    }
   }
 
   &__wrapper {
@@ -296,6 +338,11 @@
     border-radius: 0 0 8px 8px;
     min-height: 90px;
     transition: 300ms;
+
+    @include media-down(sm) {
+      padding: 12px 14px;
+      min-height: 70px;
+    }
   }
 
   &__icon {

@@ -2,11 +2,20 @@
   &__title {
     max-width: 576px;
     margin-bottom: 94px;
+
+    @include media-down(sm) {
+      margin-bottom: 23px;
+      margin-top: 30px;
+    }
   }
 
   &__image {
     pointer-events: none;
     user-select: none;
+
+    @include media-down(sm) {
+      margin: -40px 0 -20px 0;
+    }
   }
 
   &__buttons {
@@ -16,9 +25,21 @@
     justify-content: center;
     gap: 30px;
 
+    @include media-down(sm) {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
     .btn {
       max-width: 416px;
       font-size: 14px;
+
+      @include media-down(sm) {
+        max-width: 100%;
+        width: 100%;
+        font-size: 10px;
+        padding: 0 46px;
+      }
     }
   }
 
@@ -39,6 +60,12 @@
   max-width: 345px;
   display: flex;
   align-items: center;
+
+  @include media-down(sm) {
+    position: static;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
   &__icon {
     background: #DDF6FF;
@@ -62,6 +89,10 @@
     top: -48px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media-down(sm) {
+      transform: none;
+    }
   }
 
   &--7 {
