@@ -6,7 +6,6 @@
   width: 100%;
   z-index: 100;
 
-
   &--fixed {
     position: fixed;
     background: #fff;
@@ -95,6 +94,10 @@
     grid-gap: 36px;
     height: 102px;
     border-bottom: 1px solid #E2E2E2;
+
+    @include media-down(sm) {
+      border-bottom: none;
+    }
   }
 
   .component-info__block {

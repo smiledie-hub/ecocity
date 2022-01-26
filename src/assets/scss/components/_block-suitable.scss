@@ -34,6 +34,12 @@
 
     .btn {
       width: 100%;
+
+      @include media-down(sm) {
+        br {
+          display: none;
+        }
+      }
     }
   }
 

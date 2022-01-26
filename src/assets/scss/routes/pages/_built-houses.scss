@@ -1,14 +1,17 @@
 .page-built-houses {
   &__section {
     margin-bottom: 40px;
-  }
-
-  &__catalog {
-    margin-bottom: 113px;
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__map {
     margin-bottom: 60px;
+
+    @include media-down(sm) {
+      margin-bottom: 10px;
+    }
   }
 
   &__catalog {
@@ -17,5 +20,9 @@
 
   &__order-house {
     margin-bottom: 120px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+    }
   }
 }

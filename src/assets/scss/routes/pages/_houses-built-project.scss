@@ -1,6 +1,9 @@
 .page-houses-built-project {
   &__section {
     margin-bottom: 40px;
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__block {

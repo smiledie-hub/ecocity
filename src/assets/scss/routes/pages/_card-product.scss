@@ -1,6 +1,9 @@
 .page-card-product {
   &__section {
     margin-bottom: 51px;
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__product-detail {

@@ -1,15 +1,23 @@
 .catalog
-    aside.catalog-aside
+    aside.catalog-aside#catalog-aside
         .catalog-aside__wrapper
+            .catalog-aside__caption Фильтр
+                button.catalog-aside__close
+                    +icon('menu-close')
             form.catalog-aside__items
                 include filter/price
                 include filter/floor
                 include filter/room
         a(href="#").btn.btn--primary-outline как заказать дом
-    header.catalog-header
+    header.catalog-header#catalog-header
         .catalog-header__wrapper
             include filter/sorting
     main.catalog-main
+        .catalog-buttons
+            button(data-id="#catalog-aside").catalog-buttons__btn Фильтр
+                +icon('filter')
+            button(data-id="#catalog-header").catalog-buttons__btn Сортировать по
+                +icon('arrow-small_down')
         .catalog-main__wrapper
             .catalog-main__projects.block-projects__items
                 article.project.project--blue

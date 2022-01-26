@@ -5,6 +5,36 @@ import IMask from 'imask';
 export default {
     init() {
 
+        const catalogAsideClose = document.querySelector('.catalog-aside__close')
+        if(catalogAsideClose) {
+            catalogAsideClose.addEventListener('click', (e) => {
+                e.preventDefault()
+
+                document.querySelector('#catalog-aside').classList.remove('open')
+            })
+        }
+
+        const catalogSortingClose = document.querySelector('.sorting__close')
+        if(catalogSortingClose) {
+            catalogSortingClose.addEventListener('click', (e) => {
+                e.preventDefault()
+
+                document.querySelector('#catalog-header').classList.remove('open')
+            })
+        }
+
+        const catalogButtonsFilter = document.querySelectorAll('.catalog-buttons__btn')
+        catalogButtonsFilter.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault()
+                const id = item.getAttribute('data-id')
+
+                if(id) {
+                    document.querySelector(id).classList.add('open')
+                }
+            })
+        })
+
         const tableMobile = document.querySelectorAll('.block-table-mobile__item')
         tableMobile.forEach(item => {
             const btn = item.querySelector('.block-table-mobile__button')

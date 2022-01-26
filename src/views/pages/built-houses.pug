@@ -22,8 +22,11 @@ block content
             .page-built-houses__catalog
                 .container
                     .catalog.catalog--type2
-                        aside.catalog-aside
+                        aside.catalog-aside#catalog-aside
                             .catalog-aside__wrapper
+                                .catalog-aside__caption Фильтр
+                                    button.catalog-aside__close
+                                        +icon('menu-close')
                                 form.catalog-aside__items
                                     .catalog-aside__item
                                         p.catalog-aside__title Место
@@ -61,6 +64,9 @@ block content
                                                     +icon('checkmark')
                                                 span.checkbox__value До 400
                         main.catalog-main
+                            .catalog-buttons.catalog-buttons--single
+                                button(data-id="#catalog-aside").catalog-buttons__btn Фильтр
+                                    +icon('filter')
                             .catalog-main__wrapper
                                 .catalog-main__projects.block-projects__items
                                     +loop(12)

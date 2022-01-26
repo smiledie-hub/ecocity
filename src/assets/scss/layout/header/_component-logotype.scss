@@ -2,5 +2,10 @@
   svg, img {
     width: 99px;
     height: 63px;
+
+    @include media-down(sm) {
+      width: 81px;
+      height: 51px;
+    }
   }
 }

@@ -176,6 +176,10 @@
     line-height: 140%;
     transition: 300ms;
 
+    @include media-down(sm) {
+      font-size: 14px;
+    }
+
     &::placeholder {
       color: #B3B3B3;
     }

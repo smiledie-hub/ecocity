@@ -5,7 +5,9 @@
   }
 
   &__breadcrumbs {
-
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__advise {

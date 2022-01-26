@@ -22,6 +22,9 @@
 
   &__breadcrumbs {
     margin-bottom: 40px;
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__button {
