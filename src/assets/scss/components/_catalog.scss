@@ -28,6 +28,11 @@
     #{$root}-main {
       &__projects {
         grid-gap: 100px 30px;
+
+        @include media-down(sm) {
+          grid-gap: 30px;
+          grid-template-columns: 1fr;
+        }
       }
     }
   }

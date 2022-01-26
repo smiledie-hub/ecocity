@@ -5,15 +5,25 @@
 
   &__product-detail {
     margin-bottom: 100px;
+
+    @include media-down(sm) {
+      margin-bottom: 50px;
+    }
   }
 
   &__contact-form {
-
+    @include media-down(sm) {
+      margin-top: 40px;
+    }
   }
 
   &__button {
     text-align: center;
     margin-bottom: 100px;
+
+    @include media-down(sm) {
+      margin-bottom: 50px;
+    }
 
     .btn {
       display: inline-flex;

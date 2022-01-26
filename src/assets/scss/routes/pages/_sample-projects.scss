@@ -14,11 +14,19 @@
 
   &__stanndart-projects {
     padding-bottom: 52px;
+
+    @include media-down(sm) {
+      padding-bottom: 0;
+    }
   }
 
   &__choose-house {
     margin-top: 70px;
     margin-bottom: 60px;
+
+    @include media-down(sm) {
+      margin-top: 0;
+    }
   }
 
   &__you-decide {

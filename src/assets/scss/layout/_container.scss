@@ -11,7 +11,11 @@
     }
 
     @include media-down(sm) {
-        max-width: 480px;
+        max-width: 480px + 32px;
+    }
+
+    @include media-down(xs) {
+        max-width: 320px + 32px;
     }
 
     &-small {
@@ -19,7 +23,11 @@
         max-width: 1270px + 60px;
 
         @include media-down(sm) {
-            max-width: 480px;
+            max-width: 480px + 32px;
+        }
+
+        @include media-down(xs) {
+            max-width: 320px + 32px;
         }
     }
 }

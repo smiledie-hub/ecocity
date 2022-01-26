@@ -16,6 +16,10 @@
     line-height: 140%;
     color: #010101;
     margin-top: 20px;
+
+    @include media-down(sm) {
+      font-size: 18px;
+    }
   }
 
   &__image {

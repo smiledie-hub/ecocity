@@ -11,6 +11,11 @@
   background-color: #fff;
   user-select: none;
 
+  @include media-down(sm) {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
   &--blue {
     background-color: #22A7D6;
     color: #FFFFFF;

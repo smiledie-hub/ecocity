@@ -1,7 +1,7 @@
 .block-several-schemes {
 
   @include media-down(sm) {
-    display: none;
+    margin: 0 -37px;
   }
 
   &__wrapper {
@@ -13,6 +13,10 @@
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.04);
     border-radius: 18px;
     overflow: hidden;
+
+    @include media-down(sm) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__block {
@@ -23,6 +27,10 @@
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+
+      @include media-down(sm) {
+        display: block;
+      }
     }
   }
 
@@ -35,6 +43,10 @@
     object-fit: cover;
     user-select: none;
     pointer-events: none;
+
+    @include media-down(sm) {
+
+    }
   }
 
   &__title {
@@ -47,6 +59,11 @@
     line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+
+    @include media-down(sm) {
+      font-size: 20px;
+      max-width: 250px;
+    }
   }
 }
 
@@ -56,27 +73,50 @@
   padding: 20px 55px 55px 55px;
   $root: &;
 
+  @include media-down(sm) {
+    width: 100%;
+    height: auto;
+
+    border-bottom: 1px solid #DDF6FF;
+  }
+
   &:nth-child(1) {
     #{$root}__wrapper {
       max-width: 370px;
+
+      @include media-down(sm) {
+        max-width: 263px;
+      }
     }
   }
 
   &:nth-child(2) {
     #{$root}__wrapper {
       max-width: 440px;
+
+      @include media-down(sm) {
+        max-width: 320px;
+      }
     }
   }
 
   &:nth-child(3) {
     #{$root}__wrapper {
       max-width: 420px;
+
+      @include media-down(sm) {
+        max-width: 320px;
+      }
     }
   }
 
   &:nth-child(4) {
     #{$root}__wrapper {
       max-width: 380px;
+
+      @include media-down(sm) {
+        max-width: 320px;
+      }
     }
   }
 
@@ -88,6 +128,11 @@
     line-height: 140%;
     color: #22A7D6;
     margin-bottom: 10px;
+
+    @include media-down(sm) {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
   }
 
   &__number {
@@ -98,5 +143,10 @@
     line-height: 140%;
     color: #CAF1FF;
     margin-bottom: 12px;
+
+    @include media-down(sm) {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
   }
 }

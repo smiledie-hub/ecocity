@@ -32,8 +32,12 @@
       z-index: 1;
     }
 
+    @include media-down(xs) {
+      top: calc(100% - (290px + 290px) - 80px);
+    }
 
-    @media (max-width: 380px) {
+
+    @include media-down(xss) {
       top: calc(100% - (290px + 290px) - 100px);
     }
   }
@@ -59,12 +63,21 @@
 
     .icon {
       margin-right: 10px;
+
+      @include media-down(sm) {
+        width: 22px;
+        height: 22px;
+      }
     }
 
     a, p {
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
+
+      @include media-down(sm) {
+        font-size: 14px;
+      }
 
       span {
         font-size: 14px;
@@ -143,6 +156,7 @@
 
   @include media-down(sm) {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   &__title {

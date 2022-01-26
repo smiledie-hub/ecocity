@@ -70,6 +70,12 @@
     opacity: 1;
     overflow: hidden;
 
+    @include media-down(sm) {
+      width: 5px;
+      height: 5px;
+      border-radius: 1px;
+    }
+
     &:before {
       content: none;
       width: 14px;
@@ -79,12 +85,22 @@
       position: absolute;
       top: 0;
       left: -100%;
+
+      @include media-down(sm) {
+        width: 5px;
+        height: 5px;
+        border-radius: 1px;
+      }
     }
 
     &.swiper-pagination-bullet-active {
       width: 27px;
       position: relative;
       transition: 300ms;
+
+      @include media-down(sm) {
+        width: 10px;
+      }
 
       &:before {
         content: '';

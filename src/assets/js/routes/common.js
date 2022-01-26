@@ -173,8 +173,13 @@ export default {
         })
 
         new Swiper('.block-product-detail-gallary__items', {
-            spaceBetween: 18,
+            spaceBetween: 8,
             slidesPerView: 5,
+            breakpoints: {
+                768: {
+                    spaceBetween: 18,
+                },
+            }
         })
     }
 }

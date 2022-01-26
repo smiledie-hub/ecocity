@@ -54,7 +54,7 @@
 
     &--effect {
       @include media-down(sm) {
-        padding-left: 45px;
+        padding-left: 55px;
       }
     }
 
@@ -113,6 +113,10 @@
     line-height: 140%;
     text-align: center;
     margin-bottom: 40px;
+
+    @include media-down(sm) {
+      font-size: 18px;
+    }
   }
 
   &__title {

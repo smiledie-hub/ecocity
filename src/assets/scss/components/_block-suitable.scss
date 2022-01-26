@@ -28,6 +28,8 @@
       top: calc(100% - 300px);
       flex-wrap: wrap;
       gap: 15px;
+      margin-top: 0;
+      width: 100%;
     }
 
     .btn {
@@ -69,6 +71,11 @@
     height: 317px;
     border-radius: 16px;
 
+    @include media-down(sm) {
+      height: 163px;
+      margin-top: 28px;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -87,6 +94,11 @@
     padding: 4px;
     bottom: -53px;
 
+    @include media-down(sm) {
+      max-width: 110px;
+      bottom: -30px;
+    }
+
     p {
       font-size: 16px;
       line-height: 140%;
@@ -97,16 +109,33 @@
       filter: drop-shadow(0px 1px 15px rgba(138, 138, 138, 0.25));
       border-radius: 14px;
       font-weight: 500;
+
+      @include media-down(sm) {
+        font-size: 10px;
+        padding: 7px 5px;
+      }
     }
 
     &--first {
       left: 50px;
       max-width: 168px;
+
+      @include media-down(sm) {
+        max-width: 110px;
+      }
+
+      @media (max-width: 380px){
+        left: 10px;
+      }
     }
 
     &--last {
       background: #22A7D6;
       right: 50px;
+
+      @media (max-width: 380px){
+        right: 10px;
+      }
 
       p {
         color: #fff;

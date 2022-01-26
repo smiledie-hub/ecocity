@@ -22,6 +22,10 @@
     padding-bottom: 30px;
     pointer-events: none;
 
+    @include media-down(sm) {
+      padding-bottom: 12px;
+    }
+
     span {
       pointer-events: initial;
     }
@@ -42,6 +46,11 @@
     border-radius: 50%;
     cursor: pointer;
 
+    @include media-down(sm) {
+      width: 46px;
+      height: 46px;
+    }
+
     .icon {
       color: #2C3B00;
       transition: 300ms;
@@ -58,10 +67,18 @@
 
     &--next {
       right: 30px;
+
+      @include media-down(sm) {
+        right: 12px;
+      }
     }
 
     &--prev {
       left: 30px;
+
+      @include media-down(sm) {
+        left: 12px;
+      }
     }
   }
 }

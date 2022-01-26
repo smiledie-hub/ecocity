@@ -9,6 +9,12 @@
     }
   }
 
+  &__row {
+    @include media-down(sm) {
+      gap: 25px 0;
+    }
+  }
+
   &__item {
     width: 50%;
 
@@ -35,6 +41,12 @@
       gap: 20px 0;
     }
 
+    .btn--empty {
+      @include media-down(sm) {
+        display: none;
+      }
+    }
+
     .btn {
       width: 100%;
     }
@@ -46,6 +58,11 @@
     line-height: 140%;
     color: #010101;
     margin-bottom: 18px;
+
+    @include media-down(sm) {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
   }
 
   &__text {
@@ -64,8 +81,17 @@
     color: #010101;
     gap: 24px;
 
+    @include media-down(sm) {
+      gap: 12px;
+      font-size: 21px;
+    }
+
     &--big {
       font-size: 32px;
+
+      @include media-down(sm) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -138,6 +164,10 @@
   &__header {
     position: relative;
     margin-bottom: 25px;
+
+    @include media-down(xs) {
+      margin-bottom: 10px;
+    }
   }
 
   &__image {
@@ -145,6 +175,10 @@
     height: 430px;
     width: 100%;
     object-fit: cover;
+
+    @include media-down(xs) {
+      height: 210px;
+    }
   }
 
   &__badge {

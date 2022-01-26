@@ -1,7 +1,9 @@
 .block-several-schemes
     .block-several-schemes__wrapper
         .block-several-schemes__block
-            img(src=require('../../public/images/several-schemes.jpg')).block-several-schemes__image
+            picture
+                source(srcset=require('../../public/images/several-schemes--mobile.jpg') media="(max-width: 768px)")
+                img(srcset=require('../../public/images/several-schemes.jpg')).block-several-schemes__image
             h2.block-several-schemes__title Поэтому наша компания работает по нескольким схемам:
         .block-several-schemes__block
             article.block-several-schemes-item

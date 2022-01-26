@@ -1,10 +1,21 @@
 .page-built-card {
   &__section {
     margin-bottom: 70px;
+
+    @include media-down(sm) {
+      display: none;
+    }
   }
 
   &__product-detail {
     margin-bottom: 50px;
+  }
+
+  &__sertificate {
+    @include media-down(sm) {
+      margin: 0 -35px;
+      margin-top: 40px;
+    }
   }
 
   &__tags {
@@ -17,6 +28,10 @@
 
   &__construction {
     margin-bottom: 80px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+    }
 
     &-row {
       @include media-down(sm) {
@@ -31,5 +46,9 @@
 
   &__single-slider {
     margin-top: 30px;
+
+    @include media-down(sm) {
+      margin-top: 20px;
+    }
   }
 }
