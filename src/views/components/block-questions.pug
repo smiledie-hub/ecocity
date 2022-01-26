@@ -1,4 +1,4 @@
-.block-questions
+.block-questions.block-questions--target
     .block-questions__background
         img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
         picture
@@ -17,19 +17,19 @@
                                 .block-questions-test__content
                                     label.block-questions-test-item
                                         input(type="radio" name="questions" value="Жить в нём постоянно" checked).block-questions-test-item__radio
-                                        img(src=require('../../public/images/block-questions-item-1.jpg')).block-questions-test-item__image
+                                        img(src=require('../../public/images/block-questions/1/block-questions-item-1.jpg')).block-questions-test-item__image
                                         .block-questions-test-item__wrapper
                                             span.block-questions-test-item__icon
                                             p.block-questions-test-item__text Жить в нём постоянно
                                     label.block-questions-test-item
                                         input(type="radio" name="questions" value="Летом").block-questions-test-item__radio
-                                        img(src=require('../../public/images/block-questions-item-2.jpg')).block-questions-test-item__image
+                                        img(src=require('../../public/images/block-questions/1/block-questions-item-2.jpg')).block-questions-test-item__image
                                         .block-questions-test-item__wrapper
                                             span.block-questions-test-item__icon
                                             p.block-questions-test-item__text Летом
                                     label.block-questions-test-item
                                         input(type="radio" name="questions" value="По выходным и летом и зимой").block-questions-test-item__radio
-                                        img(src=require('../../public/images/block-questions-item-3.jpg')).block-questions-test-item__image
+                                        img(src=require('../../public/images/block-questions/1/block-questions-item-3.jpg')).block-questions-test-item__image
                                         .block-questions-test-item__wrapper
                                             span.block-questions-test-item__icon
                                             p.block-questions-test-item__text По выходным и летом и зимой
@@ -39,7 +39,259 @@
                                             button.btn
                                                 +icon('arrow-small_left')
                                                 | Назад
+                                            button.btn.block-questions__next
+                                                | Далее
+                                                +icon('arrow_right')
+                                    .block-questions-test__sale
+                                        +icon('percent')
+                                        div
+                                            p
+                                                | Ваша текущая скидка:
+                                                span 1%
+                                            progress(max="5" value="1")
+                        .col-lg-4
+                            .block-questions-help
+                                img(src=require('../../public/images/block-questions-help.png')).block-questions-help__image
+                                .block-questions-help__wrapper
+                                    +icon('chat-plus')
+                                    div
+                                        p.block-questions-help__title Важная информация!
+                                        p.block-questions-help__text Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.
+                                .block-questions-help__block
+                                    p.block-questions-help__question
+                                        | вопрос
+                                        span 1/5
+.block-questions
+    .block-questions__background
+        img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
+        picture
+            source(srcset=require('../../public/images/block-questions__bottom--tablet.png') media="(max-width: 768px)" type="image/png")
+            img(srcset=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
+    .container-small
+        .block-questions__wrapper
+            h2.block-questions__title.title.title--gradient Подберем дом за 5 минут, Дадим скидку 5%
+            .block-questions__content
+                .bootstrap-wrapper
+                    .row
+                        .col-lg-8
+                            .block-questions-test
+                                h3.block-questions-test__title Когда планируете стройку?
+                                .block-questions-test__content
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-2" value="В ближайшее время" checked).block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/2/block-questions-item-1.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text В ближайшее время
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-2" value="В этом году").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/2/block-questions-item-2.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text В этом году
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-2" value="В следующем году").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/2/block-questions-item-3.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text В следующем году
+                                .block-questions-test__footer
+                                    .block-questions-test__buttons
+                                        div.block-questions-test__buttons-wrapper
                                             button.btn
+                                                +icon('arrow-small_left')
+                                                | Назад
+                                            button.btn.block-questions__next
+                                                | Далее
+                                                +icon('arrow_right')
+                                    .block-questions-test__sale
+                                        +icon('percent')
+                                        div
+                                            p
+                                                | Ваша текущая скидка:
+                                                span 1%
+                                            progress(max="5" value="1")
+                        .col-lg-4
+                            .block-questions-help
+                                img(src=require('../../public/images/block-questions-help.png')).block-questions-help__image
+                                .block-questions-help__wrapper
+                                    +icon('chat-plus')
+                                    div
+                                        p.block-questions-help__title Важная информация!
+                                        p.block-questions-help__text Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.
+                                .block-questions-help__block
+                                    p.block-questions-help__question
+                                        | вопрос
+                                        span 1/5
+.block-questions
+    .block-questions__background
+        img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
+        picture
+            source(srcset=require('../../public/images/block-questions__bottom--tablet.png') media="(max-width: 768px)" type="image/png")
+            img(srcset=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
+    .container-small
+        .block-questions__wrapper
+            h2.block-questions__title.title.title--gradient Подберем дом за 5 минут, Дадим скидку 5%
+            .block-questions__content
+                .bootstrap-wrapper
+                    .row
+                        .col-lg-8
+                            .block-questions-test
+                                h3.block-questions-test__title Сколько этажей будет в Вашем доме?
+                                .block-questions-test__content
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-3" value="1 этаж" checked).block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/3/block-questions-item-1.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 1 этаж
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-3" value="1,5 этажа").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/3/block-questions-item-2.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 1,5 этажа
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-3" value="2 этажа").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/3/block-questions-item-3.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 2 этажа
+                                .block-questions-test__footer
+                                    .block-questions-test__buttons
+                                        div.block-questions-test__buttons-wrapper
+                                            button.btn
+                                                +icon('arrow-small_left')
+                                                | Назад
+                                            button.btn.block-questions__next
+                                                | Далее
+                                                +icon('arrow_right')
+                                    .block-questions-test__sale
+                                        +icon('percent')
+                                        div
+                                            p
+                                                | Ваша текущая скидка:
+                                                span 1%
+                                            progress(max="5" value="1")
+                        .col-lg-4
+                            .block-questions-help
+                                img(src=require('../../public/images/block-questions-help.png')).block-questions-help__image
+                                .block-questions-help__wrapper
+                                    +icon('chat-plus')
+                                    div
+                                        p.block-questions-help__title Важная информация!
+                                        p.block-questions-help__text Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.
+                                .block-questions-help__block
+                                    p.block-questions-help__question
+                                        | вопрос
+                                        span 1/5
+.block-questions
+    .block-questions__background
+        img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
+        picture
+            source(srcset=require('../../public/images/block-questions__bottom--tablet.png') media="(max-width: 768px)" type="image/png")
+            img(srcset=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
+    .container-small
+        .block-questions__wrapper
+            h2.block-questions__title.title.title--gradient Подберем дом за 5 минут, Дадим скидку 5%
+            .block-questions__content
+                .bootstrap-wrapper
+                    .row
+                        .col-lg-8
+                            .block-questions-test
+                                h3.block-questions-test__title Сколько жилых комнат вы хотите (включая кухню-гостиную)
+                                .block-questions-test__content
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-4" value="2" checked).block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/4/block-questions-item-1.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 2
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-4" value="3").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/4/block-questions-item-2.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 3
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-4" value="4").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/4/block-questions-item-3.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 4
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-4" value="5").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/4/block-questions-item-4.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text 5
+                                .block-questions-test__footer
+                                    .block-questions-test__buttons
+                                        div.block-questions-test__buttons-wrapper
+                                            button.btn
+                                                +icon('arrow-small_left')
+                                                | Назад
+                                            button.btn.block-questions__next
+                                                | Далее
+                                                +icon('arrow_right')
+                                    .block-questions-test__sale
+                                        +icon('percent')
+                                        div
+                                            p
+                                                | Ваша текущая скидка:
+                                                span 1%
+                                            progress(max="5" value="1")
+                        .col-lg-4
+                            .block-questions-help
+                                img(src=require('../../public/images/block-questions-help.png')).block-questions-help__image
+                                .block-questions-help__wrapper
+                                    +icon('chat-plus')
+                                    div
+                                        p.block-questions-help__title Важная информация!
+                                        p.block-questions-help__text Дома из СИП идеальны для любого режима проживания. Зимой в них тепло, а летом нежарко.
+                                .block-questions-help__block
+                                    p.block-questions-help__question
+                                        | вопрос
+                                        span 1/5
+.block-questions
+    .block-questions__background
+        img(src=require('../../public/images/block-questions__left.png')).block-questions__background-left
+        picture
+            source(srcset=require('../../public/images/block-questions__bottom--tablet.png') media="(max-width: 768px)" type="image/png")
+            img(srcset=require('../../public/images/block-questions__bottom.png')).block-questions__background-bottom
+        img(src=require('../../public/images/block-questions__right.png')).block-questions__background-right
+    .container-small
+        .block-questions__wrapper
+            h2.block-questions__title.title.title--gradient Подберем дом за 5 минут, Дадим скидку 5%
+            .block-questions__content
+                .bootstrap-wrapper
+                    .row
+                        .col-lg-8
+                            .block-questions-test
+                                h3.block-questions-test__title Планируете ли привлекать кредитные средства?
+                                .block-questions-test__content
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-5" value="Да" checked).block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/5/block-questions-item-1.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text Да
+                                    label.block-questions-test-item
+                                        input(type="radio" name="questions-5" value="Нет").block-questions-test-item__radio
+                                        img(src=require('../../public/images/block-questions/5/block-questions-item-2.png')).block-questions-test-item__image
+                                        .block-questions-test-item__wrapper
+                                            span.block-questions-test-item__icon
+                                            p.block-questions-test-item__text Нет
+                                .block-questions-test__footer
+                                    .block-questions-test__buttons
+                                        div.block-questions-test__buttons-wrapper
+                                            button.btn
+                                                +icon('arrow-small_left')
+                                                | Назад
+                                            button.btn.block-questions__next
                                                 | Далее
                                                 +icon('arrow_right')
                                     .block-questions-test__sale

@@ -72,6 +72,11 @@
   &__title {
     margin-bottom: 40px;
   }
+
+  display: none;
+  &--target {
+    display: block;
+  }
 }
 
 .block-questions-test {

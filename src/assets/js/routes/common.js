@@ -5,6 +5,30 @@ import IMask from 'imask';
 export default {
     init() {
 
+        const blockQquestions = document.querySelectorAll('.block-questions')
+        for (let i = 0; i < blockQquestions.length; i++) {
+            const item = blockQquestions[i]
+
+            if(item) {
+                const next = item.querySelector('.block-questions__next')
+
+                if(next) {
+                    next.addEventListener('click', (e) => {
+                        e.preventDefault()
+
+                        if((i + 1) < blockQquestions.length) {
+                            blockQquestions.forEach(block => {
+                                block.classList.remove('block-questions--target')
+                            })
+
+                            blockQquestions[i + 1].classList.add('block-questions--target')
+                        }
+                    })
+                }
+            }
+        }
+
+
         const catalogAsideClose = document.querySelector('.catalog-aside__close')
         if(catalogAsideClose) {
             catalogAsideClose.addEventListener('click', (e) => {
