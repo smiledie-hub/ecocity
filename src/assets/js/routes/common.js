@@ -11,6 +11,21 @@ export default {
 
             if(item) {
                 const next = item.querySelector('.block-questions__next')
+                const prev = item.querySelector('.block-questions__prev')
+
+                if(prev) {
+                    prev.addEventListener('click', (e) => {
+                        e.preventDefault()
+
+                        if(i !== 0) {
+                            blockQquestions.forEach(block => {
+                                block.classList.remove('block-questions--target')
+                            })
+
+                            blockQquestions[i - 1].classList.add('block-questions--target')
+                        }
+                    })
+                }
 
                 if(next) {
                     next.addEventListener('click', (e) => {
