@@ -5,6 +5,24 @@ import IMask from 'imask';
 export default {
     init() {
 
+        const header = document.querySelector('.header')
+        if (header) {
+            const menuBtn = document.querySelector('.component-menu-btn')
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function (e) {
+                    e.preventDefault()
+                    header.classList.toggle('header--open')
+                })
+            }
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 0) {
+                    header.classList.add('header--fixed')
+                } else {
+                    header.classList.remove('header--fixed')
+                }
+            })
+        }
+
         const phone_mask = document.querySelectorAll('.phone-mask')
         phone_mask.forEach(item => {
             IMask(item, {
@@ -96,7 +114,6 @@ export default {
         })
     },
     finalize() {
-
         new Swiper('.single-slider', {
             spaceBetween: 40,
             slidesPerView: 1,

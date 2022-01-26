@@ -1,9 +1,5 @@
 .component-menu-btn {
-  display: none;
-
-  @include media-down(sm) {
-    display: block;
-  }
+  transition: 300ms;
 
   .icon {
     width: 47px;

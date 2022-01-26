@@ -7,22 +7,25 @@ header.header
                     +icon('logo')
             .component-info
                 .component-info__block
-                    .component-info__links
-                        .component-info__item
-                            +icon('mail')
-                            a(href="mailto:info@eco-city.spb.ru").component-info__link info@eco-city.spb.ru
-                    .component-info__phone.component-info__item
-                        +icon('phone')
-                        span
-                            a(href="tel:+78129506050").component-info__link +7 (812) 950-60-50
-                            a(href="#").component-info__order Заказать звонок
-            button.component-menu-btn
-                +icon('menu')
+                    .component-info__container.container
+                        .component-info__links
+                            .component-info__item
+                                +icon('mail')
+                                a(href="mailto:info@eco-city.spb.ru").component-info__link info@eco-city.spb.ru
+                        .component-info__phone.component-info__item
+                            +icon('phone')
+                            span
+                                a(href="tel:+78129506050").component-info__link +7 (812) 950-60-50
+                                a(href="#").component-info__order Заказать звонок
+                button.header__menu-btn.component-menu-btn
+                    +icon('menu')
+                    +icon('menu-close')
         nav.header__navs.component-navs
-            a(href="#").current Типовые проекты
-            a(href="#") Построенные дома
-            a(href="#") Технология Эко-Сити
-            a(href="#") Индивидуальное проектирование
-            a(href="#") Отзывы
-            a(href="#") О нас
-            a(href="#") Контакты
+            .component-navs__container.container
+                a(href="#").current Типовые проекты
+                a(href="#") Построенные дома
+                a(href="#") Технология Эко-Сити
+                a(href="#") Индивидуальное проектирование
+                a(href="#") Отзывы
+                a(href="#") О нас
+                a(href="#") Контакты
