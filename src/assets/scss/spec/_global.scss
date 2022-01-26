@@ -1,5 +1,9 @@
 @import "variables";
 
+html, body {
+  overflow-x: hidden;
+}
+
 h1, .h1 {
   font-style: normal;
   font-weight: 700;
