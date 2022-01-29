@@ -66,7 +66,7 @@ block content
                     .page-contacts-sertificate__items
                         +loop(6)
                             .swiper-slide.page-contacts-sertificate__item
-                                a(href="#").page-contacts-sertificate__link
+                                a(href=require('../../public/images/certificate.jpg')).page-contacts-sertificate__link.js-modal-image
                                     +icon('search')
                                 img(src=require('../../public/images/certificate.jpg')).page-contacts-sertificate__image
         .contact-form
