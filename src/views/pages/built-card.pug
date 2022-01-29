@@ -30,25 +30,25 @@ block content
                                     .block-product-detail-gallary__main
                                         .block-product-detail-gallary__items.swiper
                                             .swiper-wrapper
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/2.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                    img(src=require('../../public/images/projects/2.jpg'))
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
-                                                    img(src=require('../../public/images/projects/1.jpg'))
-                                                div(data-src=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
+                                                div(data-bp=require('../../public/images/projects/1.jpg')).block-product-detail-gallary__item.swiper-slide
                                                     img(src=require('../../public/images/projects/1.jpg'))
 
                             .col-md-5
@@ -96,7 +96,7 @@ block content
                                 .sertificate__wrapper
                                     .sertificate__item
                                         .sertificate__image
-                                            a(href="#").sertificate__link
+                                            a(href=require('../../public/images/certificate.jpg')).sertificate__link.js-modal-image
                                             img(src=require('../../public/images/certificate.jpg'))
                                             .sertificate__loop
                                                 +icon('search')
@@ -147,7 +147,7 @@ block content
                         .col-md-7
                             h2.block-video-review__title.title Видео отзыв
                             .block-video-review__image
-                                a(href="#").block-video-review__link
+                                a(href="https://youtu.be/QwHhxnv6BYo" data-video-id="QwHhxnv6BYo").js-modal-video.block-video-review__link
                                 +icon('play')
                                 img(src=require('../../public/images/block-video-review-4.jpg'))
                         .col-md-5

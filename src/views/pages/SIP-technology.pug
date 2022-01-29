@@ -20,24 +20,24 @@ block content
                     p.keeping__title Содержание
                     ol.keeping__list
                         li.keeping__item.keeping__item--video
-                            a(href="#") СИП-технология
+                            a(href="#sip-block-1").js-smooth-scroll СИП-технология
                                 +icon('play')
                         li.keeping__item
-                            a(href="#") Сравнение СИП и каркас
+                            a(href="#sip-block-2").js-smooth-scroll Сравнение СИП и каркас
                                 +icon('arrow-small_right')
                         li.keeping__item
-                            a(href="#") История технологии SIP в России
+                            a(href="#sip-block-3").js-smooth-scroll История технологии SIP в России
                                 +icon('arrow-small_right')
                         li.keeping__item
-                            a(href="#") История технологии SIP в мире
+                            a(href="#sip-block-4").js-smooth-scroll История технологии SIP в мире
                                 +icon('arrow-small_right')
-        .sip-technology-block
+        .sip-technology-block#sip-block-1
             .container
                 .bootstrap-wrapper
                     .row
                         .col-md-5
                             .component-slide
-                                a(href="#").component-slide__link
+                                a(href="https://youtu.be/QwHhxnv6BYo" data-video-id="QwHhxnv6BYo").js-modal-video.component-slide__link
                                 .component-slide__image
                                     +icon('play')
                                     img(src=require('../../public/images/block-built__slide.jpg'))
@@ -46,7 +46,7 @@ block content
                             p.sip-technology-block__text СИП-технология применяется в США, Канаде и Европе более полувека. Это разновидность панельного строительства, где каркасом для панелей служат деревянные брусья. Полученная в итоге конструкция хорошо сохраняет тепло, выдерживает высокие ветровые нагрузки, не подвержена влиянию дождя, града, снега. Теперь технология СИП-панелей применяется в России (у нас такие каркасные дома называются «канадскими») и довольно-таки успешно.
                             a(href="").sip-technology-block__link.btn.btn--link Читать дальше
                                 +icon('arrow_right')
-        .sip-technology-block.sip-technology-block--bg
+        .sip-technology-block.sip-technology-block--bg#sip-block-2
             .container
                 .bootstrap-wrapper
                     .sip-technology-block__row.row
@@ -59,7 +59,7 @@ block content
                         .col-md-6
                             img(src=require('../../public/images/block-built__slide.jpg')).sip-technology-block__image
                         .col-md-1
-        .sip-technology-block
+        .sip-technology-block#sip-block-3
             .container
                 .bootstrap-wrapper
                     .sip-technology-block__row.row
@@ -70,7 +70,7 @@ block content
                             p.sip-technology-block__text В России эксперименты по строительству быстровозводимых домов проводились в крайне незначительном объеме. Опыт строительства малоэтажных зданий из комплектов заводской готовности в Советском Союзе ограничивался так называемыми «финскими» или «каркасно-щитовыми» домами.
                             a(href="").sip-technology-block__link.btn.btn--link Читать дальше
                                 +icon('arrow_right')
-        .sip-technology-block.sip-technology-block--bg
+        .sip-technology-block.sip-technology-block--bg#sip-block-4
             .container
                 .bootstrap-wrapper
                     .sip-technology-block__row.row

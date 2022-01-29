@@ -74,6 +74,12 @@
 }
 
 .block-table-mobile {
+  display: none;
+
+  @include media-down(sm) {
+    display: block;
+  }
+
   &__button {
     margin: 10px 26px 0 26px;
     font-style: normal;
