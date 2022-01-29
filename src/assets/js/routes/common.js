@@ -5,7 +5,7 @@ import BigPicture from 'bigpicture'
 
 export default {
     init() {
-
+        
         const cardImageMain = document.querySelector('.block-product-detail-gallary__image');
         if (cardImageMain) {
 
