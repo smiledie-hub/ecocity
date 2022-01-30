@@ -3,21 +3,21 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-built-card'
+    - pageClass = 'built-card'
     - headTitle = 'Карточка построенного проекта'
 block content
     .page-content
-        .page-built-card__section
+        .built-card__section
             .container
                 .breadcrumbs
                     a(href="#") Главная
                     a(href="#") Построенные дома
                     a(href="#") Осиновая роща
-        .page-built-card__tags
+        .built-card__tags
             .container
                 .tags
                     a(href="#").tag #экосити_глубокое
-        .page-built-card__product-detail
+        .built-card__product-detail
             .block-product-detail
                 .container
                     .bootstrap-wrapper
@@ -62,7 +62,7 @@ block content
                                 .block-product-detail__buttons
                                     a(href="#").btn.btn--primary.btn--text-small Оставить заявку
                                     span.btn.btn--empty
-        .page-built-card__additional
+        .built-card__additional
             .container
                 .bootstrap-wrapper
                     .row
@@ -92,7 +92,7 @@ block content
                                             p.block-additional__value 2
 
                         .col-md-4
-                            .page-built-card__sertificate.sertificate
+                            .built-card__sertificate.sertificate
                                 .sertificate__wrapper
                                     .sertificate__item
                                         .sertificate__image
@@ -108,13 +108,13 @@ block content
                                         .sertificate__quot
                                             +icon('quotes')
                                             p.sertificate__text Проект дома выполнен по моему эскизу, учтены все пожелания. Монтаж дома произведен в установленные сроки. Качество работ оцениваю на хорошо.
-        .page-built-card__construction
+        .built-card__construction
             .container
                 .bootstrap-wrapper
-                    .page-built-card__construction-row.row
+                    .built-card__construction-row.row
                         .col-md-6
                             h2.title Ход строительства
-                            .page-built-card__single-slider.single-slider.swiper
+                            .built-card__single-slider.single-slider.swiper
                                 .single-slider__wrapper.swiper-wrapper
                                     +loop(6)
                                         .single-slider__slide.swiper-slide
@@ -126,7 +126,7 @@ block content
                                     +icon('slider-prev')
                         .col-md-6
                             h2.title Фасады
-                            .page-built-card__single-slider.single-slider.swiper
+                            .built-card__single-slider.single-slider.swiper
                                 .single-slider__wrapper.swiper-wrapper
                                     +loop(6)
                                         .single-slider__slide.swiper-slide
@@ -136,7 +136,7 @@ block content
                                     +icon('slider-next')
                                 .single-slider__button.single-slider__button--prev
                                     +icon('slider-prev')
-        .page-built-card__video-review.block-video-review
+        .built-card__video-review.block-video-review
             .block-video-review__background
                 img(src=require('../../public/images/block-video-review.png'))
                 img(src=require('../../public/images/block-video-review-2.png'))
@@ -151,7 +151,7 @@ block content
                                 +icon('play')
                                 img(src=require('../../public/images/block-video-review-4.jpg'))
                         .col-md-5
-        .page-built-card__contact-form
+        .built-card__contact-form
             .contact-form
                 .contact-form__background
                     img(src=require('../../public/images/contact-form.jpg')).contact-form__image

@@ -3,23 +3,23 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-built-houses'
+    - pageClass = 'built-houses'
     - headTitle = 'Построенные дома'
 block content
     .page-content
-        .page-built-houses__section
+        .built-houses__section
             .container
                 .breadcrumbs
                     a(href="#") Главная
                     a(href="#") Построенные дома
-        .page-built-houses__blocks
-            .page-built-houses__map
+        .built-houses__blocks
+            .built-houses__map
                 .block-map
                     .container
                         h2.block-map__title.title.title--gradient Построенные дома
                     .block-map__container.container
                         script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1c738ed80c66993242ac691cccedc967b111aba3ddba2cb6068bbf2551375ac&amp;width=100%25&amp;height=555&amp;lang=ru_RU&amp;scroll=true")
-            .page-built-houses__catalog
+            .built-houses__catalog
                 .container
                     .catalog.catalog--type2
                         aside.catalog-aside#catalog-aside
@@ -76,7 +76,7 @@ block content
                                                 img(src=require('../../public/images/block-built__slide.jpg'))
                                             h3.component-slide__title Осиновая роща
                             include ../components/pagination
-            .page-built-houses__order-house
+            .built-houses__order-house
                 .container
                     .block-order-house
                         a(href="#").block-order-house__link

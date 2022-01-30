@@ -1,4 +1,4 @@
-.page-contacts {
+.contacts {
 
   &__info {
     position: relative;
@@ -151,7 +151,7 @@
   }
 }
 
-.page-contacts-sertificate {
+.contacts-sertificate {
   margin-bottom: 120px;
 
   @include media-down(sm) {

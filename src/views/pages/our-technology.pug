@@ -3,12 +3,75 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-our-technology'
+    - pageClass = 'our-technology'
     - headTitle = 'Наша технология'
 block content
-    .page-content
-        .page-our-technology__section
+    .our-technology__wrapper
+        .page-content
+            .our-technology__breadcrumbs
+                .container
+                    .breadcrumbs
+                        a(href="#") Главная
+                        a(href="#") Технология Эко-Сити
             .container
-                .breadcrumbs
-                    a(href="#") Главная
-                    a(href="#") Технология Эко-Сити
+                .bootstrap-wrapper
+                    .row
+                        .col-md-4
+                            h2.our-technology__title.title Преимущества запатентованной технологии ЭКО-СИТИ
+                        .col-md-4
+                        .col-md-4
+                            p.our-technology__text Особое внимание мы уделяем прочности здания. Собственное производство и проектный отдел позволили нам усовершенствовать самые важные узлы и устранить минусы канадской технологии.
+                            p.our-technology__text Результатом этого стали 3 патента на технологию сборки.
+            .block-advantages
+                .block-advantages__container.container-small
+                    .block-advantages-block
+                        p.block-advantages-block__title Посадка стропил в упор на опорную кровлю
+                        ul.block-advantages-block__list.ul
+                            li Надежное крепление стропил
+                            li Исключение прогиба кровли и деформации стен
+                    .block-advantages__center
+                        img(src=require('../../public/images/block-advantages__home.png')).block-advantages__image
+                        .block-advantages__items
+                            .block-advantages-item
+                                p.block-advantages-item__title Даем пожизненную гарантию
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item1.png'))
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item2.png'))
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item3.png'))
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item4.png'))
+                                p.block-advantages-item__text Патент №174105
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item5.png'))
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item6.png'))
+                                p.block-advantages-item__text Патент №174105
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item7.png'))
+                            .block-advantages-item
+                                img(src=require('../../public/images/block-advantages__item8.png'))
+                                p.block-advantages-item__text Патент №180607
+        .block-chronology
+            .container
+                .block-chronology__items
+                    .block-chronology__item
+                        p.block-chronology__text Технология SIP
+                        .block-chronology-dropdowns
+                            .block-chronology-dropdown
+                                p.block-chronology-dropdown__text СИП-технология
+                            .block-chronology-dropdown
+                                p.block-chronology-dropdown__text Сравнение СИП и каркас
+                            .block-chronology-dropdown
+                                p.block-chronology-dropdown__text История технологии SIP в России
+                            .block-chronology-dropdown
+                                p.block-chronology-dropdown__text История технологии SIP в России
+                    .block-chronology__item
+                        p.block-chronology__text Производство SIP
+                    .block-chronology__item
+                        p.block-chronology__text Недостатки SIP
+                    .block-chronology__item
+                        p.block-chronology__text Преимущества SIP
+                    .block-chronology__item
+                        p.block-chronology__text Строительство из SIP

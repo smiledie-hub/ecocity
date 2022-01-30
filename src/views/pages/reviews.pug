@@ -3,21 +3,21 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-reviews'
+    - pageClass = 'reviews'
     - headTitle = 'Отзывы'
 block content
-    .page-reviews__section
+    .reviews__section
         .page-content
-            .page-reviews__breadcrumbs
+            .reviews__breadcrumbs
                 .container
                     .breadcrumbs
                         a(href="#") Главная
                         a(href="#") Отзывы
-            .page-reviews__block
+            .reviews__block
                 .container
-                    h2.title.page-reviews__title Отзывы
+                    h2.title.reviews__title Отзывы
                     .bootstrap-wrapper
-                        .row.page-reviews__row
+                        .row.reviews__row
                             +loop(6)
                                 .col-md-4
                                     .component-slide
@@ -25,14 +25,14 @@ block content
                                         .component-slide__image
                                             +icon('play')
                                             img(src=require('../../public/images/projects/4.jpg'))
-                        div.page-reviews__button
+                        div.reviews__button
                             a(href="#").btn.btn--primary смотреть все видео
     .container
         .bootstrap-wrapper
-            h2.title.page-reviews__title.page-reviews__title--mobile Отзывы
+            h2.title.reviews__title.reviews__title--mobile Отзывы
                 br
                 | в бумажном виде
-            .row.page-reviews__row
+            .row.reviews__row
                 +loop(6)
                     .col-md-4
                         .sertificate
@@ -51,9 +51,9 @@ block content
                                     .sertificate__quot
                                         +icon('quotes')
                                         p.sertificate__text Проект дома выполнен по моему эскизу, учтены все пожелания. Монтаж дома произведен в установленные сроки. Качество работ оцениваю на хорошо.
-        .page-reviews__pagination
+        .reviews__pagination
             include ../components/pagination
-        .page-reviews__links
+        .reviews__links
             .block-links
                 h2.block-links__title.title Вы можете посмотреть отзывы
                     br

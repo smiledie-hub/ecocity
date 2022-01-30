@@ -3,11 +3,11 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-card-product'
+    - pageClass = 'card-product'
     - headTitle = 'Карточка товара'
 block content
     .page-content
-        .page-card-product__section
+        .card-product__section
             .container
                 .breadcrumbs
                     a(href="#") Главная
@@ -15,7 +15,7 @@ block content
                     a(href="#") Осиновая роща
 
 
-        .page-card-product__product-detail
+        .card-product__product-detail
             .block-product-detail
                 .container
                     .block-product-detail__wrapper
@@ -71,12 +71,12 @@ block content
                             .block-product-detail__buttons
                                 a(href="#").btn.btn--primary.btn--text-small Оставить заявку
                                 a(href="#").btn.btn--primary-outline.btn--text-small Получить консультацию
-        .page-card-product__button
+        .card-product__button
             .container
                 hr
                 a(href="#").btn.btn--primary.btn--text-small Дома, построенные по этому проекту
                 hr
-        .page-card-product__table
+        .card-product__table
             .container
                 .block-table
                     .block-table__item
@@ -216,7 +216,7 @@ block content
                         .block-table__cell
                         .block-table__cell
                             +icon('check', 'block-table__icon')
-        .page-card-product__table--mobile
+        .card-product__table--mobile
             .container
                 .block-table-mobile
                     h2.block-table-mobile__title.title Комплектация
@@ -384,7 +384,7 @@ block content
                         button.block-table-mobile__button
                             span раскрыть
                             +icon('arrow-small_down')
-        .page-card-product__contact-form
+        .card-product__contact-form
             .contact-form
                 .contact-form__background
                     img(src=require('../../public/images/contact-form.jpg')).contact-form__image

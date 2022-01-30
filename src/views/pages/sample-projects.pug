@@ -3,32 +3,32 @@ include ../components/mixins/loop
 include ../components/mixins/icon
 
 block vars
-    - pageClass = 'page-sample-projects'
+    - pageClass = 'sample-projects'
     - headTitle = 'Типовые проекты'
 block content
     .page-content
-        .page-sample-projects__section
+        .sample-projects__section
             .container
                 .breadcrumbs
                     a(href="#") Главная
                     a(href="#") Типовые проекты
-            .page-sample-projects__blocks
-                .page-sample-projects__stanndart-projects
+            .sample-projects__blocks
+                .sample-projects__stanndart-projects
                     include ../components/block-stanndart-projects
                     block content
                         include ../components/block-are-working
-                .page-sample-projects__catalog
+                .sample-projects__catalog
                     .container
                         include ../components/catalog
-                .page-sample-projects__choose-house
+                .sample-projects__choose-house
                     include ../components/block-choose-house
-                .page-sample-projects__you-decide
+                .sample-projects__you-decide
                     .container-small
                         include ../components/block-you-decide
-                .page-sample-projects__several-schemes
+                .sample-projects__several-schemes
                     .container
                         include ../components/block-several-schemes
-                .page-sample-projects__contact-form
+                .sample-projects__contact-form
                     include ../components/contact-form
 
 
