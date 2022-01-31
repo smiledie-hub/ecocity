@@ -1,5 +1,52 @@
 .our-technology {
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
   &__wrapper {
     background: linear-gradient(252.92deg, #FBFBFB 35.34%, #EFEFEF 70.58%, #FBFBFB 92.07%);
+  }
+
+  &__title {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 70%;
+      top: 20px;
+      width: 125%;
+      height: 1px;
+      background: #A4A4A4;
+
+      @include media-down(sm) {
+        content: none;
+      }
+    }
+
+    @include media-down(sm) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: .8em;
+    }
+  }
+
+  &__explanation {
+    margin-top: 14px;
+    margin-bottom: 120px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__different-sizes {
+    margin-bottom: 131px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+    }
   }
 }

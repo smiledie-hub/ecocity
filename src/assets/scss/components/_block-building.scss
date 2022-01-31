@@ -1,0 +1,69 @@
+.block-building {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 55px;
+
+  @include media-down(sm) {
+    padding-bottom: 68px;
+    padding-top: 50px;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    z-index: 0;
+    width: 912px;
+    height: 662px;
+    pointer-events: none;
+    user-select: none;
+
+    @include media-down(sm) {
+      left: auto;
+      bottom: 0;
+      width: 151px;
+      height: 135px;
+      right: -40px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    @include media-down(sm) {
+      position: static;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    font-size: 42px;
+
+    @include media-down(sm) {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
+    &:last-child {
+      @include media-down(sm) {
+        padding-right: 70px;
+      }
+    }
+  }
+}

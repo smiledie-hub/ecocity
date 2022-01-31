@@ -21,7 +21,9 @@ block content
                         .col-md-4
                         .col-md-4
                             p.our-technology__text Особое внимание мы уделяем прочности здания. Собственное производство и проектный отдел позволили нам усовершенствовать самые важные узлы и устранить минусы канадской технологии.
-                            p.our-technology__text Результатом этого стали 3 патента на технологию сборки.
+                            p.our-technology__text Результатом этого стали 3 патента
+                                br
+                                | на технологию сборки.
             .block-advantages
                 .block-advantages__container.container-small
                     .block-advantages-block
@@ -53,25 +55,293 @@ block content
                             .block-advantages-item
                                 img(src=require('../../public/images/block-advantages__item8.png'))
                                 p.block-advantages-item__text Патент №180607
-        .block-chronology
-            .container
-                .block-chronology__items
-                    .block-chronology__item
-                        p.block-chronology__text Технология SIP
-                        .block-chronology-dropdowns
-                            .block-chronology-dropdown
-                                p.block-chronology-dropdown__text СИП-технология
-                            .block-chronology-dropdown
-                                p.block-chronology-dropdown__text Сравнение СИП и каркас
-                            .block-chronology-dropdown
-                                p.block-chronology-dropdown__text История технологии SIP в России
-                            .block-chronology-dropdown
-                                p.block-chronology-dropdown__text История технологии SIP в России
-                    .block-chronology__item
-                        p.block-chronology__text Производство SIP
-                    .block-chronology__item
-                        p.block-chronology__text Недостатки SIP
-                    .block-chronology__item
-                        p.block-chronology__text Преимущества SIP
-                    .block-chronology__item
-                        p.block-chronology__text Строительство из SIP
+            .block-chronology
+                .block-chronology__background
+                    img(src=require('../../public/images/block-chronology.jpg'))
+                .container.block-chronology__container
+                    .block-chronology__items
+                        .block-chronology__item
+                            .block-chronology__item-wrapper
+                                p.block-chronology__text Технология
+                                div.block-chronology__wrapper
+                                    p.block-chronology__text SIP
+                                        .block-chronology-dropdowns
+                                            .block-chronology-dropdowns__header
+                                                .block-chronology-dropdowns__button
+                                                    +icon('arrow-small_right')
+                                            .block-chronology-dropdowns__main
+                                                a.block-chronology-dropdown.block-chronology-dropdown--video
+                                                    .block-chronology-dropdown__link СИП-технология
+                                                    +icon('play', 'block-chronology-dropdown__video')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link Сравнение СИП и каркас
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                        .block-chronology__item
+                            .block-chronology__item-wrapper
+                                p.block-chronology__text Производство
+                                div.block-chronology__wrapper
+                                    p.block-chronology__text SIP
+                                        .block-chronology-dropdowns
+                                            .block-chronology-dropdowns__header
+                                                .block-chronology-dropdowns__button
+                                                    +icon('arrow-small_right')
+                                            .block-chronology-dropdowns__main
+                                                a.block-chronology-dropdown.block-chronology-dropdown--video
+                                                    .block-chronology-dropdown__link СИП-технология
+                                                    +icon('play', 'block-chronology-dropdown__video')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link Сравнение СИП и каркас
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                        .block-chronology__item
+                            .block-chronology__item-wrapper
+                                p.block-chronology__text Недостатки
+                                div.block-chronology__wrapper
+                                    p.block-chronology__text SIP
+                                        .block-chronology-dropdowns
+                                            .block-chronology-dropdowns__header
+                                                .block-chronology-dropdowns__button
+                                                    +icon('arrow-small_right')
+                                            .block-chronology-dropdowns__main
+                                                a.block-chronology-dropdown.block-chronology-dropdown--video
+                                                    .block-chronology-dropdown__link СИП-технология
+                                                    +icon('play', 'block-chronology-dropdown__video')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link Сравнение СИП и каркас
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                        .block-chronology__item
+                            .block-chronology__item-wrapper
+                                p.block-chronology__text Преимущества
+                                div.block-chronology__wrapper
+                                    p.block-chronology__text SIP
+                                        .block-chronology-dropdowns
+                                            .block-chronology-dropdowns__header
+                                                .block-chronology-dropdowns__button
+                                                    +icon('arrow-small_right')
+                                            .block-chronology-dropdowns__main
+                                                a.block-chronology-dropdown.block-chronology-dropdown--video
+                                                    .block-chronology-dropdown__link СИП-технология
+                                                    +icon('play', 'block-chronology-dropdown__video')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link Сравнение СИП и каркас
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                        .block-chronology__item
+                            .block-chronology__item-wrapper
+                                p.block-chronology__text Строительство
+                                div.block-chronology__wrapper
+                                    p.block-chronology__text из SIP
+                                        .block-chronology-dropdowns
+                                            .block-chronology-dropdowns__header
+                                                .block-chronology-dropdowns__button
+                                                    +icon('arrow-small_right')
+                                            .block-chronology-dropdowns__main
+                                                a.block-chronology-dropdown.block-chronology-dropdown--video
+                                                    .block-chronology-dropdown__link СИП-технология
+                                                    +icon('play', 'block-chronology-dropdown__video')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link Сравнение СИП и каркас
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+                                                a.block-chronology-dropdown
+                                                    .block-chronology-dropdown__link История технологии SIP в России
+                                                    +icon('arrow-small_right', 'block-chronology-dropdown__icon')
+            .block-building
+                .block-building__container.container
+                    .block-building__background
+                        img(src=require('../../public/images/block-building.png'))
+                    .block-building__wrapper.bootstrap-wrapper
+                        .row
+                            .col-md-6
+                            .col-md-4
+                                h2.block-building__title.title.title--gradient Строительство по СИП-технологии: плюсы и минусы
+                                p.block-building__text Технология малоэтажного строительства SIP применяется в России с 2005 года, в мире же такое строительство уже давно известно и хорошо зарекомендовало себя.
+                                p.block-building__text Это связано с уникальными теплоизоляционными
+                                    br
+                                    | и влагостойкими качествами материалов: в таком доме
+                                    br
+                                    | в самые сильные морозы тепло, а в летнюю жару — прохладно.
+                                p.block-building__text Дом, выполненный по технологии SIP, отвечает всем требованиям современной жизни — экологичный, долговечный, надежный и доступный по цене.
+    .block-technology
+        .container-small
+            .block-technology__content
+                h2.block-technology__title.title СИП-технология
+                p.block-technology__text Применяется в США, Канаде и Европе более полувека. Это разновидность панельного строительства, где каркасом для панелей служат деревянные брусья. Полученная в итоге конструкция хорошо сохраняет тепло, выдерживает высокие ветровые нагрузки, не подвержена влиянию дождя, града, снега. Теперь технология СИП-панелей применяется в России (у нас такие каркасные дома называются «канадскими») и довольно-таки успешно.
+                p.block-technology__text СИП (структурные изоляционные панели) – это трехслойные блоки, состоящие из двух OSB-плит (внутренний и внешний слои) и слоя вспененного пенополистирола EPS (утеплителя). Все эти элементы склеиваются между собой, и мы получаем плиту: простую, надежную и капитальную конструкцию.
+                .block-technology__wrapper
+                    p.block-technology__text Все этапы изготовления проходят на производстве, в заводских условиях. Там же, на производстве, СИП-блок разрезается в зависимости от проекта, маркируется, и уже полностью готовый комплект дома отгружается с завода.
+                    p.block-technology__text Соединительным элементом для СИП-панелей служит деревянная балка, которая монтируется в паз между двумя плитами ОСБ по принципу паз-шпонка, то есть тут нет сквозных отверстий.
+        .block-technology__background
+            img(src=require('../../public/images/block-technology-1.png'))
+            img(src=require('../../public/images/block-technology-2.png'))
+
+    .block-components
+        .block-components__background
+            img(src=require('../../public/images/block-components.png'))
+        .block-components__container.container
+            h2.block-components__title.title Итак, рассмотрим подробнее составные части СИП-панели:
+            .bootstrap-wrapper
+                .row
+                    .col-md-4
+                        .block-components__item
+                            .block-components__wrapper
+                                p.block-components__number 1
+                                .block-components__content
+                                    p.block-components__caption OSB-плита
+                                    p.block-components__text OSB – это ориентированно-стружечная плита. Узкие щепки укладываются в три слоя и спрессовываются при высокой температуре. При этом щепа в наружном слое располагается вдоль главной оси плиты, а во внутреннем – перпендикулярно. Такая конструкция повышает упругость плиты и ее прочность. Ориентированное расположение щепы позволяет вкручивать в плиту метизы (шурупы, скобы и т. д) без дюбелей. Плиты делают из сосновых пород, доля натуральных материалов в составе – не менее 97%.
+                                    p.block-components__text lorem text
+                                button.block-components__show
+                                    span Развернуть
+                                    +icon('arrow-small_down')
+                    .col-md-4
+                        .block-components__item
+                            .block-components__wrapper
+                                p.block-components__number 2
+                                .block-components__content
+                                    p.block-components__caption Вспененный пенополистирол EPS
+                                    p.block-components__text Пенополистирол (ППС) – газонаполненный изоляционный материал из пенополистирольных шариков. Однороден, устойчив к сжатию, нетоксичный, не гниет, не плесневеет. Производится в огнестойком исполнении. При производстве наших СИП-панелей мы используем ППС с характеристиками прочности на сжатие 7 тонн/м2.
+                                    p.block-components__text На сегодняшний день это самый
+                                        br
+                                        | подходящий материал.
+                                    p.block-components__text lorem text
+                                button.block-components__show
+                                    span Развернуть
+                                    +icon('arrow-small_down')
+                    .col-md-4
+                        .block-components__item
+                            .block-components__wrapper
+                                p.block-components__number 3
+                                .block-components__content
+                                    p.block-components__caption Несущий брус
+                                    p.block-components__text Сечением 60х146 мм. Формирует каркас дома, соединяется
+                                        br
+                                        | с СИП-панелями методом «шип-паз» (брус помещается в зазор между двумя OSB-плитами).
+                                    p.block-components__text Обрабатывается мощным промышленным  антисептиком.
+                                button.block-components__show
+                                    span Развернуть
+                                    +icon('arrow-small_down')
+    .block-explanation
+        .container
+            .our-technology__explanation.block-explanation__wrapper
+                p.block-explanation__text Мы в Эко-Сити изготавливаем СИП-панели стандартных размеров.
+                    br
+                    | Толщина плит зависит от их назначения, а иногда и от региона, где возводится здание:
+    .our-technology__different-sizes.block-different-sizes
+        .container
+            h2.block-different-sizes__title.title Существуют разные размеры СИП-панелей.
+            .bootstrap-wrapper
+                .row.block-different-sizes__row
+                    .col-md-4
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon
+                                    +icon('parquet-floor')
+                                p.block-different-sizes__caption Для перекрытия фундамента
+                            p.block-different-sizes__text То есть для пола, используется СИП-панель 174 мм толщиной, для Северо-Западного региона это с большим запасом. А вот для северных и сибирских регионов мы рекомендуем толщину панелей 224 мм. Кроме того, по нашей запатентованной технологии мы используем для пола ассиметричные панели и укладываем их поверх несущих лаг, а не между ними.
+                    .col-md-1
+                    .col-md-4
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon
+                                    +icon('work_building')
+                                p.block-different-sizes__caption Стены
+                            p.block-different-sizes__text Это всегда 174 мм. Использовать стены толще – просто бессмысленно, при чем даже для северных регионов это не целесообразно.
+                .row.block-different-sizes__row
+                    .col-md-4
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon
+                                    +icon('architecture_design')
+                                p.block-different-sizes__caption Перекрытие чердака и кровля
+                            p.block-different-sizes__text Тоже чаще всего 174 мм, но тут можно использовать панели и 224 мм – по желанию заказчика. Почему важно использовать СИП-панели в перекрытии чердака и кровле – потому что через чердак и кровлю идет существенная доля теплопотерь, и заменять эти ответственные конструкции на обычный каркас - ошибочное решение.
+                    .col-md-1
+                    .col-md-4
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon
+                                    +icon('apartment_architecture')
+                                p.block-different-sizes__caption Межэтажное перекрытие
+                            p.block-different-sizes__text Мы делаем из панели 124 мм, так как здесь не так важна теплоизоляция, а с учетом того, что Эко-Сити укрепляет пол  дополнительными лагами, то эта толщина идеальна.
+                .row.block-different-sizes__row
+                    .col-md-4
+                        .block-different-sizes__block
+                            p.block-different-sizes__block-text Весь пиломатериал, который мы используем – это антисептированная, сухая (камерная сушка 12%), калибрированная древесина.
+    .block-house-benefits
+        .block-house-benefits__background
+            img(src=require('../../public/images/block-house-benefits.png'))
+            img(src=require('../../public/images/block-you-decide.png'))
+        .block-house-benefits__container.container
+            h2.block-house-benefits__title.title Преимущества дома из SIP-панелей:
+            .bootstrap-wrapper
+                .row.block-house-benefits__items
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Экономия на отоплении: затраты на строительство дома окупаются в течение 10 лет.
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Безопасность: СИП-панели не выделяют вредных веществ, пенополистирол не поддерживает горение.
+                .row.block-house-benefits__items
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Скорость строительства: дом возводится за 2-3 месяца.
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Не нужен дорогой фундамент, дом обладает колоссальной внутренней прочностью
+                .row.block-house-benefits__items
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Строительство возможно круглый год, в том числе зимой.
+                    .col-md-3.block-house-benefits__item
+                        .block-house-benefits__icon
+                            +icon('add')
+                        p.block-house-benefits__text Легко выполняется отделка: все плоскости ровные дом не дает осадки
+            .block-house-benefits__block
+                p Подробнее о СИП-технологии строительства домов вам сообщит консультант Eco-City.
+                    span Звоните, будем рады помочь.
+    .contact-form
+        .contact-form__background
+            img(src=require('../../public/images/contact-form-3.jpg')).contact-form__image
+        .contact-form__container.container-small
+            .contact-form__wrapper
+                .contact-form__header
+                    h2.contact-form__title.title.title--gradient Давайте начнем!
+                    p Чтобы стать заказчиком, позвоните (812) 950-60-50
+                        br
+                        | или оставьте заявку на обратный звонок.
+                form.contact-form__main
+                    .contact-form__main-wrapper
+                        p.contact-form__caption Обратиться к нам
+                        label.contact-form__label
+                            input(type="text" name="username" placeholder="Имя(без фамилии)" required).contact-form__input
+                        label.contact-form__label
+                            input(type="text" name="userphone" placeholder="Телефон" required).contact-form__input.phone-mask
+                        button(type="submit").contact-form__submit.btn.btn--primary оставить заявку
