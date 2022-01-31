@@ -6,9 +6,252 @@ block vars
     - pageClass = 'about-us'
     - headTitle = 'О нас'
 block content
-    .page-content
-        .about-us__section
-            .container
-                .breadcrumbs
-                    a(href="#") Главная
-                    a(href="#") О нас
+    .about-us__section
+        .page-content
+            .about-us__breadcrumbs
+                .container
+                    .breadcrumbs
+                        a(href="#") Главная
+                        a(href="#") О нас
+            .about-banner
+                .container
+                    h1.about-banner__title.title Почему эко-сити?
+                    .bootstrap-wrapper
+                        .row.about-banner__row
+                            .col-md-4
+                                img(src=require('../../public/images/about-banner.png')).about-banner__image
+                            .col-md-4
+                                p.about-banner__text построено
+                                    span.about-banner__number 950
+                                        span.about-banner__plus +
+                                    | Домов
+                            .col-md-4
+                                .about-banner__patents
+                                    .patent
+                                        .patent__icon
+                                            +icon('plus')
+                                        p.patent__text Патент №174105
+                                    .patent
+                                        .patent__icon
+                                            +icon('plus')
+                                        p.patent__text Патент №180607
+                                    .patent
+                                        .patent__icon
+                                            +icon('plus')
+                                        p.patent__text Патент №174105
+    .about-us__items.block-different-sizes
+        .container
+            .bootstrap-wrapper
+                .row.block-different-sizes__row
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('2007')
+                                p.block-different-sizes__caption Строим с 2007 года
+                            p.block-different-sizes__text Компания Эко-Сити уже 15
+                                br
+                                | лет строит дома из СИП панелей в Санкт-Петербурге и в других регионах России.
+                            p.block-different-sizes__text Хотите построить для себя и близких теплый и уютный дом из экологичных материалов? Мы поможем!
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('certificate')
+                                p.block-different-sizes__caption Запатентованная технология
+                            p.block-different-sizes__text Особое внимание мы уделяем прочности здания и всех несущих конструкций. Собственный проектный отдел и инженеры, которые работают в компании с ее основания, позволили нам усовершенствовать самые важные узлы и устранить минусы канадской технологии.
+                            p.block-different-sizes__text Результатом этого стали 3 патента
+                                br
+                                | на технологию сборки.
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('bank')
+                                p.block-different-sizes__caption Аккредитованы
+                                    br
+                                    | в банках
+                            p.block-different-sizes__text Мы аккредитованы во всех ведущих банках России, которые работают с ипотекой на строительство своего дома, таких как Сбербанк, Домрф, Почтабанк, РСХБ.
+                            p.block-different-sizes__text Если Вы интересуетесь ипотекой, то мы проконсультируем Вас по всем ставкам и актуальным программам.
+                .row.block-different-sizes__row
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('factory')
+                                p.block-different-sizes__caption Собственное производство
+                            p.block-different-sizes__text Свое производство на 18000 м2 в г. Чудово Новгородской области позволяет нам производить по 14 домокомплектов в месяц. Мощность завода – 7500 м2 панелей и 230 м3 пиломатериалов в месяц.
+                            p.block-different-sizes__text Удобное расположение и транспортная доступность позволяют качественно организовать логистику по всему Северо-Западу и Центральной России.
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('infinite')
+                                p.block-different-sizes__caption Пожизненная
+                                    br
+                                    | гарантия
+                            p.block-different-sizes__text Мы уверены в качестве наших СИП-панелей настолько, что даем Вам пожизненную гарантию.
+                            p.block-different-sizes__text По окончании строительства вы получаете официальный документ - гарантийный сертификат, где это будет четко указано.
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--42
+                                    +icon('maternity')
+                                p.block-different-sizes__caption Работаем с материнским капиталом
+                            p.block-different-sizes__text Если Вы хотите при строительстве дома реализовать свой материнский капитал, то мы подготовим договор для Пенсионного фонда, на основании которого эти средства будут перечислены.
+                            p.block-different-sizes__text Мы построили уже десятки домов с использованием материнского капитала.
+    .block-ecocity-numbers
+        .block-ecocity-numbers__background
+            img(src=require('../../public/images/block-ecocity-numbers.png'))
+            img(src=require('../../public/images/block-ecocity-numbers-1.png'))
+        .block-ecocity-numbers__container.container
+            h2.block-ecocity-numbers__title.title Эко-Сити в цифрах
+            .block-ecocity-numbers__items
+                .block-ecocity-numbers-item
+                    p.block-ecocity-numbers-item__number 15
+                        span лет
+                    p.block-ecocity-numbers-item__title строим из сип панелей
+                    p.block-ecocity-numbers-item__text Работаем с 27 февраля 2007 г.
+                        br
+                        | Подтверждено документально!
+                    a(href="#").block-ecocity-numbers-item__link Посмотреть
+                        span свидетельство
+                            +icon("arrow-small_right")
+                .block-ecocity-numbers-item
+                    p.block-ecocity-numbers-item__number 55
+                    p.block-ecocity-numbers-item__title Типовых проектов
+                    p.block-ecocity-numbers-item__text Проекты, доказавшие свою надежность + бесплатное проектирование домов по индивидуальным размерам
+                .block-ecocity-numbers-item
+                    p.block-ecocity-numbers-item__number 67
+                    p.block-ecocity-numbers-item__title Сотрудников
+                    p.block-ecocity-numbers-item__text В штате только опытные сотрудники, которые успешно справляются с поставленными задачами
+                .block-ecocity-numbers-item
+                    p.block-ecocity-numbers-item__number 970+
+                    p.block-ecocity-numbers-item__title домов
+                    p.block-ecocity-numbers-item__text Построено в 18 регионах России
+    .about-us__my-house.block-different-sizes
+        .container
+            h2.about-us__my-house-title.title Свой дом из SIP панелей – это
+            .bootstrap-wrapper
+                .row.block-different-sizes__row
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--green
+                                    +icon('like')
+                                p.block-different-sizes__caption Качественно
+                            p.block-different-sizes__text Мы не работаем в спешке. В очень короткий срок невозможно построить по-настоящему прочный и долговечный дом. Безопасность и уют стоят того, чтобы делать все правильно. Загородный дом или коттедж по индивидуальному проекту будет готов через 2 месяца, по типовому проекту – через 1,5 месяца.
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--green
+                                    +icon('defense')
+                                p.block-different-sizes__caption Безопасно
+                            p.block-different-sizes__text Рациональные планировки, экологически чистые стройматериалы, соблюдение международных стандартов качества – всё это гарантирует здоровье и счастье жильцов. Вы платите не только за уютное место для отдыха, но и за отсутствие проблем в будущем.
+                    .col-md-1
+                    .col-md-3
+                        .block-different-sizes__item
+                            .block-different-sizes__header
+                                .block-different-sizes__icon.block-different-sizes__icon--green
+                                    +icon('home_icon')
+                                p.block-different-sizes__caption Удобно
+                            p.block-different-sizes__text За 15 лет работы наши инженеры внесли массу доработок в стандартную американскую технологию. Мы улучшили конструктивные решения всех элементов дома: полов, стен, кровли. Это выгодно отличает Эко-Сити от других компаний в сфере СИП-строительства.
+    .block-about-technology
+        .container
+            h2.block-about-technology__title.title О технологии
+            .bootstrap-wrapper
+                .row
+                    .col-md-4
+                        p.block-about-technology__text У СИП-технологии свои преимущества и несколько недостатков
+                    .col-md-2
+                        +icon('line', 'block-about-technology__line')
+                    .col-md-3
+                        p.block-about-technology__text Узнайте о них и сделайте правильный выбор
+            p.block-about-technology__caption Плюсы СИП-технологии:
+            .block-about-technology__items
+                .block-about-technology__item
+                    .block-about-technology__patent.patent
+                        .patent__icon
+                            +icon('plus')
+                        p.patent__text Тепло
+                    p.block-about-technology__paragraph Дом прогревается от -20 до +20 за пару часов. СИП-технология – единственная из массовых строительных, которая это позволяет.
+                .block-about-technology__item
+                    .block-about-technology__patent.patent
+                        .patent__icon
+                            +icon('plus')
+                        p.patent__text Экономия
+                    p.block-about-technology__paragraph Через 10 лет (точнее, зим), затраты на дом окупятся благодаря экономии на обогреве.
+                .block-about-technology__item
+                    .block-about-technology__patent.patent
+                        .patent__icon
+                            +icon('plus')
+                        p.patent__text Скорость строительства
+                    p.block-about-technology__paragraph Новоселье уже через 2-3 месяца после подписания договора.
+                .block-about-technology__item
+                    .block-about-technology__patent.patent
+                        .patent__icon
+                            +icon('plus')
+                        p.patent__text Без удорожания
+                    p.block-about-technology__paragraph Гарантируем, что уложимся в смету, и вам не придется доплачивать.
+
+    .block-flaws
+        .block-flaws__background
+            img(src=require('../../public/images/block-flaws.png'))
+        .block-flaws__container.container
+            p.block-flaws__title Недостатки есть, но мы приняли меры
+            .bootstrap-wrapper
+                .row
+                    .col-md-3
+                        p.block-flaws__text Доработали основные узлы фундамента, перекрытий, стен и кровли.
+                    .col-md-2
+                        +icon('line', 'block-about-technology__line')
+                    .col-md-4
+                        p.block-flaws__text.block-flaws__text--line Благодаря этому наши дома стали надежнее, теплее и долговечнее, чем дома, построенные другими компаниями по классической СИП-технологии.
+    .block-created-ecocity
+        .block-created-ecocity__background
+            img(src=require('../../public/images/block-created-eco-city.png'))
+        .block-created-ecocity__container.container
+            .block-created-ecocity__background-2
+                img(src=require('../../public/images/block-created-eco-city-1.png'))
+            .block-created-ecocity__wrapper
+                h2.block-created-ecocity__title.title Дом, созданный в
+                    span  Эко-Сити
+                    br
+                    | прочнее и экологичнее
+    .block-ecocity-company
+        .block-ecocity-company__background
+            img(src=require('../../public/images/block-ecocity-company.png'))
+        .block-ecocity-company__container.container-small
+            .bootstrap-wrapper
+                .row.block-ecocity-company__center.block-ecocity-company__row
+                    .col-md-6
+                        img(src=require('../../public/images/logo.png')).block-ecocity-company__logo
+                    .col-md-6
+                        h2.block-ecocity-company__title.title Компания эко-сити
+                        p.block-ecocity-company__text Мы обеспечиваем индивидуальный подход к каждому клиенту. Специалисты компании помогут Вам определиться с выбором наиболее подходящего проекта, который бы соответствовал Вашим запросам, пожеланиям и вкусу. Цикл строительных работ реализуется нами на самом высоком уровне. Наши заказчики получают уютное, теплое жилье наивысшего качества по низким ценам.
+                        p.block-ecocity-company__text Постройки, которыми мы занимаемся, относятся к каркасно-панельным по конструктивному типу. Используемые нами стеновые панели совмещают несущие и ограждающие функции, кроме того, они очень прочные и надежные. Панельные здания выдерживают нагрузку, в несколько раз превышающую нормативные требования. Так как мы применяем SIP панели, заранее изготовленные в заводских условиях, возведение дома идет чрезвычайно быстро. Одним из удобств панельной технологии является возможность круглогодичного строительства.
+                        a(href="#").block-ecocity-company__link.btn.btn--link Читать дальше
+                            +icon('arrow_right')
+
+                        .row.block-ecocity-company__center
+                            .col-md-6.col-7
+                                p.block-ecocity-company__caption С уважением
+                                p.block-ecocity-company__author Захаров Дмитрий Николаевич
+                                p.block-ecocity-company__ecocity Генеральный директор ООО «Eco-City»
+                            .col-md-6.col-5
+                                img(src=require('../../public/images/painting.png'))
+    .contacts-sertificate
+        .container
+            .contacts-sertificate__wrapper
+                h2.contacts-sertificate__title.title.title--gradient Сертификаты
+                .contacts-sertificate__items
+                    +loop(6)
+                        .swiper-slide.contacts-sertificate__item
+                            a(href=require('../../public/images/certificate.jpg')).contacts-sertificate__link.js-modal-image
+                                +icon('search')
+                            img(src=require('../../public/images/certificate.jpg')).contacts-sertificate__image

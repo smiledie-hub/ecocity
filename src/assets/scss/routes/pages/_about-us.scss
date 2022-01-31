@@ -1,3 +1,189 @@
 .about-us {
+  position: relative;
 
+  &__section {
+    background: linear-gradient(99.31deg, #FBFBFB 29.79%, #EFEFEF 73.53%, #FBFBFB 100.2%);
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
+  &__my-house {
+    background: linear-gradient(99.31deg, #FBFBFB 29.79%, #EFEFEF 73.53%, #FBFBFB 100.2%);
+    padding: 60px 0;
+    margin-bottom: 60px;
+
+    @include media-down(sm) {
+      margin-bottom: 40px;
+      padding: 50px 0 40px;
+    }
+
+    &-title {
+      margin-bottom: 60px;
+
+      @include media-down(sm) {
+        max-width: 226px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__items {
+    margin-bottom: 60px;
+    margin-top: 166px;
+
+    @include media-down(sm) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about-banner {
+  position: relative;
+
+  &__title {
+    @include media-down(sm) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__row {
+    align-items: center;
+
+    @include media-down(sm) {
+      flex-direction: column-reverse;
+    }
+
+    & > div {
+      position: static !important;
+    }
+  }
+
+  &__image {
+    pointer-events: none;
+    user-select: none;
+
+    @include media-down(sm) {
+      position: absolute;
+      bottom: 0;
+      left: -55px;
+      z-index: 0;
+      width: 300px;
+      
+      @media (max-width: 460px) {
+        left: -125px;
+      }
+
+      @media (max-width: 360px) {
+        left: -165px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $font-gotham;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #1E1E1E;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include media-down(sm) {
+      margin-left: auto;
+      display: table;
+      font-size: 20px;
+      margin-top: 30px;
+      width: 50%;
+    }
+  }
+
+  &__number {
+    display: block;
+    font-size: 94px;
+    line-height: 100%;
+    font-weight: 700;
+
+    @include media-down(sm) {
+      font-size: 54px;
+    }
+  }
+
+  &__plus {
+    color: #22A7D6;
+  }
+
+  &__patents {
+    @include media-down(sm) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .patent {
+      @include media-down(sm) {
+        width: 50%;
+
+        &:last-child {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+.patent {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  &:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  &__icon {
+    max-width: 69px;
+    max-height: 69px;
+    min-width: 69px;
+    min-height: 69px;
+    background: #D1F3FF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+
+    @include media-down(sm) {
+      max-width: 40px;
+      max-height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+
+      @include media-down(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 10px;
+
+    @include media-down(sm) {
+      font-size: 11px;
+    }
+  }
 }

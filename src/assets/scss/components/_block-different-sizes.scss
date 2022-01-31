@@ -19,6 +19,10 @@
     min-width: 69px;
     min-height: 69px;
 
+    &--green {
+      background: #F8FFE1;
+    }
+
     @include media-down(sm) {
       max-width: 54px;
       max-height: 54px;
@@ -29,6 +33,13 @@
     .icon {
       width: 100%;
       height: 100%;
+    }
+
+    &--42 {
+      .icon {
+        width: 42px;
+        height: 42px;
+      }
     }
   }
 
@@ -44,7 +55,7 @@
 
   &__caption {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 140%;
     color: #272727;
     max-width: 205px;
@@ -79,6 +90,10 @@
 
   &__text {
     color: #000000;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
   }
 
   &__block {

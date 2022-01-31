@@ -1,0 +1,76 @@
+.block-created-ecocity {
+  position: relative;
+
+  @include media-down(sm) {
+    padding: 24px 0 0 0;
+  }
+
+  &__background-2 {
+    pointer-events: none;
+    user-select: none;
+    width: 771px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    @include media-down(sm) {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  &__background {
+    pointer-events: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    @include media-down(sm) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    min-height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @include media-down(sm) {
+      min-height: auto;
+    }
+  }
+
+  &__title {
+    span {
+      color: #B2D551;
+    }
+
+    @include media-down(sm) {
+      font-size: 24px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
