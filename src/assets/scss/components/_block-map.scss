@@ -4,14 +4,19 @@
   }
 
   &__map {
-    height: 555px;
     border-radius: 18px;
     overflow: hidden;
     user-select: none;
     object-fit: cover;
 
+    iframe {
+      height: 555px!important;
+    }
+
     @include media-down(sm) {
-      height: 290px;
+      iframe {
+        height: 290px !important;
+      }
       border-radius: 0;
     }
   }
