@@ -72,4 +72,6 @@ import "@icons/factory.svg"
 import "@icons/infinite.svg"
 import "@icons/maternity.svg"
 import "@icons/line.svg"
+import "@icons/line2.svg"
+import "@icons/questionmark.svg"
 

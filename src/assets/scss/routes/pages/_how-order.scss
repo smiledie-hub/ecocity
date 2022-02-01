@@ -1,3 +1,139 @@
 .how-order {
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+}
 
+.how-order-banner {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    max-width: 521px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #3C3C3C;
+  }
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 906px;
+    margin-bottom: 65px;
+
+    .icon {
+      max-width: 194px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    max-width: 276px;
+    font-family: $font-gotham;
+    font-size: 16px;
+    line-height: 140%;
+    color: #3C3C3C;
+
+    &--2 {
+      max-width: 386px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+
+    & > p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 140%;
+      color: #3C3C3C;
+    }
+
+    .icon-number {
+      margin-right: 14px;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 40px;
+  }
+
+  &__point {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      max-width: 69px;
+      max-height: 69px;
+      min-width: 69px;
+      min-height: 69px;
+      background: #DDF6FF;
+      border-radius: 8px;
+      margin-right: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 140%;
+      color: #010101;
+    }
+  }
+}
+
+.icon-number {
+  background: #F8FFE1;
+  border-radius: 8px;
+  max-width: 69px;
+  max-height: 69px;
+  min-width: 69px;
+  min-height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #B2D551;
+}
+
+.how-order-standard {
+  &__sect {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    background: #FBFBFB;
+    border-radius: 25px 267.5px 267.5px 25px;
+    padding: 36px 61px;
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -233px;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
 }
