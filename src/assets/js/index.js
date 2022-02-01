@@ -9,8 +9,8 @@ import home from './routes/home';
 const routes = new Router({
     common,
     home,
-})
+});
 
 window.addEventListener("DOMContentLoaded", () => {
     routes.loadEvents()
-})
+});

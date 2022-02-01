@@ -6,11 +6,11 @@ import BigPicture from 'bigpicture'
 export default {
     init() {
 
-        const blockComponentsItems = document.querySelectorAll('.block-components__item')
+        const blockComponentsItems = document.querySelectorAll('.block-components__item');
         blockComponentsItems.forEach(item => {
-            const content = item.querySelector('.block-components__content')
-            const showBtn = item.querySelector('.block-components__show')
-            let constant = 310
+            const content = item.querySelector('.block-components__content');
+            const showBtn = item.querySelector('.block-components__show');
+            let constant = 310;
 
             if (window.innerWidth <= 767) {
                 constant = 190
@@ -21,15 +21,15 @@ export default {
                     showBtn.setAttribute('disabled', "true")
                 } else {
                     showBtn.addEventListener('click', (e) => {
-                        e.preventDefault()
+                        e.preventDefault();
 
                         if (showBtn.classList.contains('block-components__show--active')) {
-                            showBtn.querySelector('span').textContent = 'Развернуть'
-                            showBtn.classList.remove('block-components__show--active')
+                            showBtn.querySelector('span').textContent = 'Развернуть';
+                            showBtn.classList.remove('block-components__show--active');
                             content.style.height = constant + 'px'
                         } else {
-                            showBtn.querySelector('span').textContent = 'Скрыть'
-                            showBtn.classList.add('block-components__show--active')
+                            showBtn.querySelector('span').textContent = 'Скрыть';
+                            showBtn.classList.add('block-components__show--active');
                             content.style.height = content.scrollHeight + 'px'
                         }
                     })
