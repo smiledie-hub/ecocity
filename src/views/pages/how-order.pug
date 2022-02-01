@@ -71,77 +71,90 @@ block content
                         .how-order-standard__item
                             .how-order-standard__image--big
                                 img(src=require('../../public/images/kak_zakazat_5.png'))
-                            a(href="#").how-order-standard__link Хочу индивидуальный
+                            a(href="#").how-order-standard__link-wrap Хочу индивидуальный
                                 span проект
                                     +icon('arrow-small_right')
+        img(src=require('../../public/images/how-order-technology-line.svg')).how-order-center
         .how-order-technology
             .container
                 .how-order-technology__wrapper
                     .bootstrap-wrapper
-                        .row
+                        .row.how-order-technology__row
                             .col-md-6
-                                img(src='')
+                                img(src=require('../../public/images/how-order-technology.png')).how-order-technology__image
                             .col-md-6
                                 .how-order-banner__block
                                     span.icon-number 2
                                     p Выберите технологию строительства
-                                .how-order-banner__cell
-                                    +icon('')
+                                a(href="#").how-order-technology__cell
+                                    +icon('house_building_home')
                                     p Узнать больше о нашей технологии
         .how-order-complete
-            .container
+            img(src=require('../../public/images/how-order-complete.png')).how-order-complete__background
+            .container.how-order-complete__container
                 .how-order-banner__block
                     span.icon-number 3
                     p Выберите комплектацию
                 p.how-order-complete__text Вы будете строить своими силами или поручите строительство дома нашей компании?
                 .how-order-complete__items
                     .how-order-complete__item
+                        .how-order-complete__image
+                            img(src=require('../../public/images/how-order-complete-1.png'))
                         p Комплект без сборки
                     .how-order-complete__item
+                        .how-order-complete__image
+                            img(src=require('../../public/images/how-order-complete-2.png'))
                         p Комплект с доставкой, сборкой и фундаментом
                     .how-order-complete__item
+                        .how-order-complete__image
+                            img(src=require('../../public/images/how-order-complete-3.png'))
                         p Комплект  со сборкой
                     .how-order-complete__item
+                        .how-order-complete__image
+                            img(src=require('../../public/images/how-order-complete-4.png'))
                         p Комплект с доставкой, сборкой, фундаментом, отделкой кровли, окнами, дверью и вентиляцией.
         .how-order-funding
-            .how-order-funding__background
-                img('')
-                img('')
-            .container
-                img('').how-order-funding__image
+            img(src=require('../../public/images/how-order-funding.png')).how-order-funding__background
+            .container.how-order-funding__container
                 .how-order-funding__content
+                    img(src=require('../../public/images/how-order-funding-1.png')).how-order-funding__image
                     .how-order-funding__wrapper
-                        .how-order-banner__block
-                            span.icon-number 4
-                            p Определитесь с источниками финансирования
-                        .how-order-funding__item
-                            p Мы предлагаем поэтапную оплату, привязанную к фактическому выполнению
-                        .how-order-funding__item
-                            p У нас также можно построить дом в кредит, мы работаем со всеми ведущими банками. Также мы работаем с материнским капиталом и военной ипотекой
-
+                        .how-order-funding__outline
+                            .how-order-banner__block
+                                span.icon-number 4
+                                p Определитесь с источниками финансирования
+                            .how-order-funding__item
+                                .how-order-funding__icon
+                                    +icon('dynamic_phase_procedure')
+                                p Мы предлагаем поэтапную оплату, привязанную к фактическому выполнению
+                            .how-order-funding__item
+                                .how-order-funding__icon
+                                    +icon('bank_analysis_business')
+                                p У нас также можно построить дом в кредит, мы работаем со всеми ведущими банками. Также мы работаем с материнским капиталом и военной ипотекой
                 .how-order-banner__block
                     span.icon-number 5
                     p Заключите договор на строительство
-                .how-order-banner__month
+                .how-order-funding__month
                     p 3
                         span месяца
-                    p От заключения договора до дома в комплектации «теплый контур»
-                p.how-order-banner__subtitle Из чего складывается этот срок
-                ul.how-order-banner__ul
+                    p От заключения договора до дома в комплектации
+                        span «теплый контур»
+                p.how-order-funding__subtitle Из чего складывается этот срок
+                ul.how-order-funding__ul
                     li Проектирование (индивидуальное либо на основе типового проекта)
                     li Монтаж самого дома на объекте бригадой из 2-3 человек
                     li Внешняя отделка (кровля, фасад, окна, входные двери, водостоки и т.д.)
                     li Инженерные сети и внутренняя отделка – при необходимости
                     li Производство домокомплекта на заводе
                     li Фундамент
+                img(src=require('../../public/images/how-order-funding-2.png')).how-order-funding__image2
         .how-order-engineering
-            .how-order-engineering__background
-                img('')
-            .container
+            img(src=require('../../public/images/how-order-engineering.png')).how-order-engineering__background
+            .container.how-order-engineering__container
                 .how-order-banner__block
                     span.icon-number 6
                     p Выберите инженерные сети и чистовую отделку
-                ul.how-order-banner__ul
+                ul.how-order-funding__ul.how-order-engineering__ul
                     li Система отопления
                     li Газгольдер
                     li Электрооборудование
@@ -153,13 +166,20 @@ block content
                     li Ландшафтный дизайн
         .how-order-furniture
             .container
-                .how-order-banner__block
-                    span.icon-number 7
-                    p Выбирайте мебель и готовьтесь к переезду
-                p.how-order-complete__text Через 100 дней с момента принятия решения о строительстве с Эко-Сити
-                .how-order-furniture__items
-                    .how-order-furniture__item
-                    .how-order-furniture__item
+                .bootstrap-wrapper
+                    .row
+                        .col-md-6
+                            img(src=require('../../public/images/how-order-furniture.png'))
+                        .col-md-6
+                            .how-order-banner__block
+                                span.icon-number 7
+                                p Выбирайте мебель и готовьтесь к переезду
+                            p.how-order-complete__text Через 100 дней с момента принятия решения о строительстве с Эко-Сити
+                            .how-order-furniture__items
+                                .how-order-furniture__item
+                                    img(src=require('../../public/images/how-order-furniture-1.png'))
+                                .how-order-furniture__item
+                                    img(src=require('../../public/images/how-order-furniture-2.png'))
         .contact-form
             .contact-form__background
                 img(src=require('../../public/images/contact-form-3.jpg')).contact-form__image

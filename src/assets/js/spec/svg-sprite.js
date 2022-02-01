@@ -74,4 +74,7 @@ import "@icons/maternity.svg"
 import "@icons/line.svg"
 import "@icons/line2.svg"
 import "@icons/questionmark.svg"
+import "@icons/house_building_home.svg"
+import "@icons/dynamic_phase_procedure.svg"
+import "@icons/bank_analysis_business.svg"
 
