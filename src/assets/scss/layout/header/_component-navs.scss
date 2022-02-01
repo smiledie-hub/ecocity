@@ -35,12 +35,20 @@
     white-space: nowrap;
     cursor: pointer;
 
+    &.current {
+      color: #272727;
+    }
+
     @include media-down(sm) {
       min-height: 50px;
     }
 
     &:hover {
       color: #272727;
+
+      .icon {
+        transform: scaleY(-1);
+      }
     }
 
     @include media-down(sm) {
@@ -75,6 +83,7 @@
       margin-left: 4px;
       position: relative;
       top: 1px;
+      transition: 300ms;
 
       @include media-down(sm) {
         width: 24px;

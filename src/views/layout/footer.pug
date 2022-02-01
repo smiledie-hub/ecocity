@@ -1,14 +1,30 @@
 footer.footer
     .container
         nav.footer__navs.component-navs
-            .component-navs__container
-                a(href="#").current Типовые проекты
-                a(href="#") Построенные дома
-                a(href="#") Технология Эко-Сити
-                a(href="#") Индивидуальное проектирование
-                a(href="#") Отзывы
-                a(href="#") О нас
-                a(href="#") Контакты
+            ul.component-navs__container.container
+                li.current Типовые проекты
+                    +icon('arrow-small_down')
+                    ul
+                        li
+                            a(href="#") Типовые проекты
+                        li
+                            a(href="#") Типовые
+                        li
+                            a(href="#") Проекты
+                        li
+                            a(href="#") Типовые проекты
+                li
+                    a(href="#") Построенные дома
+                li
+                    a(href="#") Технология Эко-Сити
+                li
+                    a(href="#") Индивидуальное проектирование
+                li
+                    a(href="#") Отзывы
+                li
+                    a(href="#") О нас
+                li
+                    a(href="#") Контакты
         .footer__wrapper
             .footer__section
                 .component-logotype
@@ -58,14 +74,30 @@ footer.footer.footer--mobile
                         +icon('logo')
             .footer__section
                 nav.footer__navs.component-navs
-                    .component-navs__container
-                        a(href="#").current Типовые проекты
-                        a(href="#") Построенные дома
-                        a(href="#") Технология Эко-Сити
-                        a(href="#") Индивидуальное проектирование
-                        a(href="#") Отзывы
-                        a(href="#") О нас
-                        a(href="#") Контакты
+                    ul.component-navs__container.container
+                        li.current Типовые проекты
+                            +icon('arrow-small_down')
+                            ul
+                                li
+                                    a(href="#") Типовые проекты
+                                li
+                                    a(href="#") Типовые
+                                li
+                                    a(href="#") Проекты
+                                li
+                                    a(href="#") Типовые проекты
+                        li
+                            a(href="#") Построенные дома
+                        li
+                            a(href="#") Технология Эко-Сити
+                        li
+                            a(href="#") Индивидуальное проектирование
+                        li
+                            a(href="#") Отзывы
+                        li
+                            a(href="#") О нас
+                        li
+                            a(href="#") Контакты
                 .component-info
                     .component-info__block
                         .component-info__container

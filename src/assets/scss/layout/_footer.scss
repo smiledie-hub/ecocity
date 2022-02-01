@@ -27,6 +27,40 @@
 
   &__navs {
     border-bottom: 1px solid #DBDBDB;
+    min-height: 60px;
+
+
+    @include media-down(sm) {
+      min-height: auto;
+      overflow-y: visible;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        @include media-down(sm) {
+
+          .icon {
+            min-width: 18px;
+            min-height: 18px;
+            max-width: 18px;
+            max-height: 18px;
+          }
+
+          min-height: auto;
+
+          & > ul {
+            padding: 10px;
+
+            & > li {
+              min-height: 30px;
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+      }
+    }
 
     @include media-down(sm) {
       padding: 0;
@@ -36,7 +70,7 @@
       .component-navs__container {
         flex-direction: column;
 
-        a {
+        li {
           font-size: 10px;
           padding: 0;
           border: none;
@@ -169,8 +203,10 @@
     }
 
     .icon {
-      width: 24px;
-      height: 24px;
+      min-width: 24px;
+      min-height: 24px;
+      max-width: 24px;
+      max-height: 24px;
     }
 
     &--youtube {
