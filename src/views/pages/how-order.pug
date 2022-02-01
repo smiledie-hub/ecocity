@@ -68,7 +68,7 @@ block content
                         a(href="#").how-order-standard__link посмотреть типовые проекты
                             +icon('arrow-small_right')
                     .how-order-standard__sect
-                        .how-order-standard__item
+                        .how-order-standard__item.how-order-standard__item--mobile
                             .how-order-standard__image--big
                                 img(src=require('../../public/images/kak_zakazat_5.png'))
                             a(href="#").how-order-standard__link-wrap Хочу индивидуальный
@@ -80,9 +80,9 @@ block content
                 .how-order-technology__wrapper
                     .bootstrap-wrapper
                         .row.how-order-technology__row
-                            .col-md-6
+                            .col-md-6.how-order-technology__col
                                 img(src=require('../../public/images/how-order-technology.png')).how-order-technology__image
-                            .col-md-6
+                            .col-md-6.how-order-technology__col
                                 .how-order-banner__block
                                     span.icon-number 2
                                     p Выберите технологию строительства
@@ -167,9 +167,9 @@ block content
         .how-order-furniture
             .container
                 .bootstrap-wrapper
-                    .row
+                    .row.how-order-furniture__row
                         .col-md-6
-                            img(src=require('../../public/images/how-order-furniture.png'))
+                            img(src=require('../../public/images/how-order-furniture.png')).how-order-furniture__image
                         .col-md-6
                             .how-order-banner__block
                                 span.icon-number 7
