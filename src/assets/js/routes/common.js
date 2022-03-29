@@ -6,6 +6,30 @@ import BigPicture from 'bigpicture'
 export default {
     init() {
 
+        const items = document.querySelectorAll('.block-advantages-item')
+        const blocks = document.querySelectorAll('.block-advantages-block')
+        items.forEach((item, i) => {
+            const link = item.getElementsByTagName('a')
+
+            link[0] && link[0].addEventListener('click', (e) => {
+                if (window.innerWidth <= 767) {
+                    e.preventDefault()
+                }
+            })
+
+            item.addEventListener('mouseover', () => {
+                const index = i - 1
+                if (blocks[index])
+                    blocks[index].classList.add('is-hover')
+            })
+
+            item.addEventListener('mouseout', () => {
+                const index = i - 1
+                if (blocks[index])
+                    blocks[index].classList.remove('is-hover')
+            })
+        })
+
         const blockComponentsItems = document.querySelectorAll('.block-components__item');
         blockComponentsItems.forEach(item => {
             const content = item.querySelector('.block-components__content');

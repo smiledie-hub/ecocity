@@ -3,7 +3,7 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 76px + 21px;
+    margin-bottom: 50px;
   }
 
   &__wrapper {
@@ -64,8 +64,8 @@
     transform: translate(-50%, -50%);
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 140%;
+    font-size: 24px;
+    line-height: 100%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #818181;
@@ -79,7 +79,7 @@
     display: block;
     font-style: normal;
     font-weight: 700;
-    font-size: 94px;
+    font-size: 74px;
     line-height: 120%;
     color: #272727;
 
@@ -95,8 +95,8 @@
   &__circle {
     position: relative;
     display: table;
-    width: 566px;
-    height: 566px;
+    width: 396px;
+    height: 396px;
     border: 1px solid #22A7D6;
     box-sizing: border-box;
     border-radius: 50%;
@@ -113,8 +113,8 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 355px;
-      height: 355px;
+      width: 315px;
+      height: 315px;
       border: 2px solid #22A7D6;
       box-sizing: border-box;
       border-radius: 50%;
@@ -128,16 +128,16 @@
 
   &__home {
     position: absolute;
-    bottom: -110px;
+    bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
 
     & > img {
-      max-width: 557px;
+      max-width: 387px;
     }
 
     & > .btn {
-      max-width: 360px;
+      max-width: 320px;
       width: 100%;
       position: absolute;
       bottom: -13px;
@@ -149,7 +149,7 @@
   &__content {
     position: relative;
     top: -21px;
-    padding-bottom: 54px;
+    padding-bottom: 34px;
   }
 }
 
@@ -166,38 +166,38 @@
   }
 
   &:nth-child(1) {
-    top: 56px;
+    top: 16px;
     right: calc(100% - 8px);
     width: 180px;
   }
 
   &:nth-child(2) {
     width: 224px;
-    top: 248px;
+    top: 168px;
     right: calc(100% + 92px);
   }
 
   &:nth-child(3) {
     width: 237px;
-    top: 442px;
+    top: 302px;
     right: calc(100% - 8px);
   }
 
   &:nth-child(4) {
     width: 245px;
-    top: 56px;
+    top: 16px;
     left: calc(100% - 8px);
   }
 
   &:nth-child(5) {
     width: 210px;
-    top: 248px;
+    top: 168px;
     left: calc(100% + 92px);
   }
 
   &:nth-child(6) {
     width: 232px;
-    top: 442px;
+    top: 302px;
     left: calc(100% - 8px);
   }
 
